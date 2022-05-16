@@ -6,10 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nashe American</title>
 
+    <!-- BOOTSTRAP-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--ICONS-->
+    <script src="https://kit.fontawesome.com/be0be54633.js" crossorigin="anonymous"></script>
+
+    <!-- CSS-->
     <link rel="shortcut icon" href="../recursos/logo_pequeño.png">
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/nosotros.css">
 
+    <!-- FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
@@ -17,22 +25,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        
         <section class="header__primero">
             <div class="header__primeroPromo1">
-                <img src="../recursos/envio.png" class="promo1" alt="">
+                <i class="fa-solid fa-truck fa-2x"></i>
                 <b>ENVÍO GRATIS</b>
                 <p class="header__primeroPromoCelu1">PARA COMPRAS MAYORES A $14999</p>
                 <p class="header__primeroPromoCelu2">DESDE $1499</p>
             </div>
 
             <div class="header__primeroPromo2">
-                <img src="../recursos/tarjetas.png" class="promo2" alt="">
+                <i class="fa-solid fa-credit-card fa-2x"></i>
                 <b>3 y 6 CUOTAS SIN INTERESÉS</b>
-                <p class="header__primeroPromoCelu1">DE LUNES A VIERNES</p>
+                <p class="header__primeroPromoCelu1">DE LUNES A JUEVES</p>
             </div>
         </section>
 
@@ -43,32 +58,201 @@
                 </a>
             </div>
 
-            <div class="header__segundoEspacio"></div>
-
             <div class="header__segundoCentro">
                 <nav>
                     <ul>
-                        <li><a href="../paginas/productos.html">Categorías</a></li>
-                        <li><a href="../paginas/productos.html">Mujer</a></li>
-                        <li><a href="../paginas/productos.html">Hombres</a></li>
-                        <li><a href="../paginas/productos.html">Niños</a></li>
-                        <li><a href="../paginas/productos.html">Promociones</a></li>
+                        <li ><a href="productos.html">Categorías</a></li>
+                        <li><a href="productos.html">Mujer</a></li>
+                        <li><a href="productos.html">Hombres</a></li>
+                        <li><a href="productos.html">Niños</a></li>
+                        <li><a href="productos.html">Promociones</a></li>
                     </ul>
                 </nav>
             </div>
 
             <div class="header__segundoDerecha">
-                <a href="../paginas/iniciar_sesion.html">
-                    <img src="../recursos/user.png" alt="" class="header__segundoIcons">
+                <a href="iniciar_sesion.html">
+                    <i class="fa-solid fa-user fa-2x"></i>
                 </a>
+
+                <div class="accordion accordion-flush header__icon" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingSearch">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSearch" aria-expanded="false" aria-controls="flush-collapseSearch">
+                                <i class="fa-solid fa-magnifying-glass fa-2x header__iconBuscador"></i>
+                            </button>
+                        </h2>
+                    </div>
+                </div>
+
                 <a href="#">
-                    <img src="../recursos/buscar.png" alt="" class="header__segundoIcons">
-                </a>
-                <a href="#">
-                    <img src="../recursos/shopping-cart.png" alt="" class="header__segundoIcons">
+                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
                 </a>
             </div>
+        </section>
 
+        <section class="header__buscadorMedio">
+            <div class="header__buscadorPrimero">
+                <div class="header__segundoIzquierda">
+                    <a href="../index.html">
+                        <img src="../recursos/logo.png" alt="">
+                    </a>
+                </div>
+
+                <form class="d-flex header__buscadorLupa">
+                    <button class="btn btn-outline-success header__buscadorButton" type="submit">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </button>
+                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+
+                <div class="header__segundoDerecha">
+                    <a href="iniciar_sesion.html" class="separacion">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </a>
+                </div>
+            </div>
+            <div>
+                <div class="header__segundoCentro">
+                    <nav>
+                        <ul>
+                            <li ><a href="productos.html">Categorías</a></li>
+                            <li><a href="productos.html">Mujer</a></li>
+                            <li><a href="productos.html">Hombres</a></li>
+                            <li><a href="productos.html">Niños</a></li>
+                            <li><a href="productos.html">Promociones</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            
+        </section>
+
+
+
+
+        <section class="header__segundoMobile">
+            <nav class="navbar header__navbar header__navColor">
+                <div class="container-fluid header__menu">
+                        <button class="navbar-toggler header__navButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                            <span class="header__navIcon">
+                                <i class="fa-solid fa-bars fa-3x"></i>
+                            </span>
+                        </button>
+                        <div class="offcanvas offcanvas-end header__menuEscondido" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header header__tituloMenu">
+                            <div class="offcanvas-title" id="offcanvasNavbarLabel">
+                                <img src="../recursos/logo.png" class="header__submenuMarca" alt="">
+                            </div>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body header__navegadorMenu">
+                            <ul class="navbar-nav justify-content-end flex-grow-1">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Categorías
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Moda</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Deportiva</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Mujer
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Remera</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hombres
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Remera</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Niños
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Remera</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="productos.html">Promociones</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="header__marca">
+                    <a href="../index.html">
+                        <img src="../recursos/logo.png" alt="">
+                    </a>
+                </div>
+        
+        
+                <div class="header__icons">
+                    <a href="iniciar_sesion.html" class="header__iconSeparacion">
+                        <i class="fa-solid fa-user fa-2x"></i>
+                    </a>
+                    <div class="accordion accordion-flush header__iconSeparacion header__icon" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingOne">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                    <i class="fa-solid fa-magnifying-glass fa-2x header__iconBuscador"></i>
+                                </button>
+                            </h2>
+                        </div>
+                    </div>
+                    <a href="#">
+                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    </a>
+                </div>
+            </nav>
+        </section>
+
+        <section class="header__conLupa">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    
+                    <div id="flush-collapseSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingSearch" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body header__acordionBuscador">
+                            <form class="d-flex">
+                                <button class="btn btn-outline-success header__buscadorButton" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                                </button>
+                                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="header__sinLupa header__buscador">
+            <form class="d-flex">
+                <button class="btn btn-outline-success header__buscadorButton" type="submit">
+                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                </button>
+                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+            </form>
         </section>
     </header>
 
@@ -86,7 +270,7 @@
             </section>
 
             <section class="main__info">
-                <img src="../recursos/sponsor.png" alt="">
+                <img data-aos="fade-right" src="../recursos/sponsor.png" alt="">
                 <div>
                     <h2>NUESTRO EQUIPO</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum esse harum cumque aliquam reprehenderit accusamus! Fugiat dolore eveniet aliquam quasi enim! Unde saepe eveniet, optio dolores harum sint necessitatibus?</p>
@@ -100,11 +284,11 @@
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum esse harum cumque aliquam reprehenderit accusamus! Fugiat dolore eveniet aliquam quasi enim! Unde saepe eveniet, optio dolores harum sint necessitatibus?</p>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, aliquid minus voluptas non sapiente porro impedit beatae voluptatum, enim reiciendis neque alias laudantium illum tempora autem unde. Modi, accusamus ipsam.</p>
                 </div>
-                <img src="../recursos/motivacion.png" alt="">
+                <img data-aos="fade-left" src="../recursos/motivacion.png" alt="">
             </section>
 
             <section class="main__info">
-                <img src="../recursos/equipo.png" alt="">
+                <img data-aos="fade-right" src="../recursos/equipo.png" alt="">
                 <div>
                     <h2>SPONSOR</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt dolorum esse harum cumque aliquam reprehenderit accusamus! Fugiat dolore eveniet aliquam quasi enim! Unde saepe eveniet, optio dolores harum sint necessitatibus?</p>
@@ -115,91 +299,76 @@
         </main>
 
         <footer>
-        
-            <section class="grid__contenedor">
-    
-                <div class="grid__bloque grid__navegacion1">
-                    <h2>NOSOTROS</h2>
-                    <ul>
-                        <li>><a href="../paginas/sobre_nosotros.html"> Sobre Nosotros</a></li>
-                        <li>><a href=""> Acerca de nosotros</a></li>
-                        <li>><a href=""> Nuestras Sucursales</a></li>
-                        <li>><a href=""> Trabaja con Nosotros</a></li>
-                        
-                    </ul>
-                </div>
-    
-                <div class="grid__bloque grid__navegacion2">
-                    <h2>INFORMACIÓN</h2>
-                    <ul>
-                        <li>><a href=""> ¿Comó Comprar?</a></li>
-                        <li>><a href=""> Garantías</a></li>
-                        <li>><a href=""> Políticas de Cambio</a></li>
-                        <li>><a href=""> Políticas de Devoluciones </a></li>
-                        <li>><a href=""> Preguntas Frecuentes</a></li>
-                        <li>><a href=""> Políticas de Privacidad</a></li>
-                        <li>><a href=""> Defensa al Consumidor</a></li>
-                        <li>><a href=""> Botón de arrepentimiento</a></li>
-                    </ul>
-                </div>
-                <div class="grid__bloque grid__contacto">
-                    <h2>CONTACTO</h2>
-                    <div>
-                        <div>
-                            <div class="grid__contactoImg">
-                                <img src="../recursos/telefono.png" alt="">
-                            </div>
-                            <p>+XX XXXX XXXX</p>
-                        </div>
-                        <div>
-                            <div class="grid__contactoImg">
-                                <img src="../recursos/mail.png" alt="">
-                            </div>
-                            <p>XXXX @XXXX</p>
-                        </div>
-                        <div>
-                            <div class="grid__contactoImg">
-                                <img src="../recursos/ubicacion .png" alt="">
-                            </div>
-                            <p>Ubicacion</p>
-                        </div>
+            <section class="footer__pc">
+                <div class="footer__primero">
+                    <div class="footer__navegacion footer__nav1">
+                        <h2>ACERCA DE</h2>
+                        <ul>
+                            <li><a href="sobre_nosotros.html"> Quiénes somos</a></li>
+                            <li><a href=""> Políticas de Privacidad</a></li>
+                            <li><a href=""> Protocolos COVID-19</a></li>
+                            <li><a href=""> Términos y Condiciones </a></li>
+                            <li><a href=""> Sustentabilidad</a></li>
+                            <li><a href=""> Defensa del Cosumidor</a></li>
+                        </ul>
                     </div>
-                </div>
-                <div class="grid__bloque grid__atencion">
-                    <h2>CENTRO DE ATENCIÓN TELEFÓNICA</h2>
-                    
-                    <p>Lunes a viernes de 08:30 a 18:30hs</p>
-                    <p>Sábados de 9 a 17:30hs</p>
-                    
-                </div>
-                <div class="grid__bloque grid__pagos">
-                    <h2>MEDIOS DE PAGO</h2>
-                    <div class="grid__pagosImg">
-                        <div>
-                            <img src="../recursos/amex.png" alt="">
-                            <img src="../recursos/mastercard.png" alt="">
-                            <img src="../recursos/visa.png" alt="">
-                            <img src="../recursos/tarjeta_naranja.png" alt="">
-                        </div>
-                        <div>
-                            <img src="../recursos/banelco.png" alt="">
-                            <img src="../recursos/mercadopago.png" alt="">
-                            <img src="../recursos/pagofacil.png" alt="">
-                            <img src="../recursos/rapipago.png" alt="">
-                        </div>
+                    <div class="footer__navegacion footer__nav2">
+                        <h2>INFORMACIÓN</h2>
+                        <ul>
+                            <li><a href="">Preguntas Frecuentes</a></li>
+                            <li><a href=""> ¿Comó Comprar?</a></li>
+                            <li><a href=""> Sucursales</a></li>
+                            <li><a href=""> Pagos y promociones</a></li>
+                            <li><a href=""> Entregas </a></li>
+                            <li><a href=""> Cambios</a></li>
+                            <li><a href="">Botón de arrepentimiento</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__atencion">
+                        <h2>CENTRO DE ATENCIÓN AL CLIENTE</h2>
     
+                        <p>Lunes a viernes de 08:30 a 18:30hs</p>
+                        <p>Sábados de 9 a 17:30hs</p>
+                        <a href="">
+                            <i class="fa-solid fa-phone"></i>
+                            +99 9999 9999
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-envelope"></i>
+                                nashe_american@hotmail.com
+                        </a>
+                        <a href="">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Calle Falsa 123
+                        </a>
                     </div>
-                </div>
-                <div class="grid__bloque grid__redes">
-                    <h2>REDES SOCIALES</h2>
-                    <div>
-                        <a href="" class="footer_facebook"><img src="../recursos/facebook.png" alt=""></a>
-                        <a href="" class="footer__twitter"><img src="../recursos/twitter.png" alt=""></a>
-                        <a href="" class="footer__instagram"><img src="../recursos/instagram.png" alt=""></a>
+    
+                    <div class="footer__redes">
+                            <h2>SEGUINOS</h2>
+                            <a href="www.facebook.com">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="www.twitter.com">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="www.instagram.com">
+                                    <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="www.tiktok.com">
+                                    <i class="fa-brands fa-tiktok"></i>
+                            </a>
                     </div>
+    
+                    <div class="footer__seguridad">
+                        <h2>COMPRA 100% SEGURA</h2>
+                        <p>
+                            Nuestro sitio posee toda la seguridad para tu compra.
+                        </p>
+                    </div>
+    
                 </div>
                 
-                <div class="grid__bloque grid__copy">
+                <div class="footer__segundo">
                     <a href="">
                         <img src="../recursos/certificado.png" alt="">
                     </a>
@@ -207,6 +376,131 @@
                 </div>
             </section>
             
+            <div class="accordion footer__accordion" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item footer__accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            NOSOTROS
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body footer__accordion-body">
+                            <ul>
+                                <li><a href="sobre_nosotros.html"> Quiénes somos</a></li>
+                                <li><a href=""> Políticas de Privacidad</a></li>
+                                <li><a href=""> Protocolos COVID-19</a></li>
+                                <li><a href=""> Términos y Condiciones </a></li>
+                                <li><a href=""> Sustentabilidad</a></li>
+                                <li><a href=""> Defensa del Cosumidor</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item footer__accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            INFORMACIÓN
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body footer__accordion-body">
+                            <ul>
+                                <li><a href="">Preguntas Frecuentes</a></li>
+                                <li><a href=""> ¿Comó Comprar?</a></li>
+                                <li><a href=""> Sucursales</a></li>
+                                <li><a href=""> Pagos y promociones</a></li>
+                                <li><a href=""> Entregas </a></li>
+                                <li><a href=""> Cambios</a></li>
+    
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item footer__accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            ATENCIÓN AL CLIENTE
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body footer__accordion-body">
+                            <p>Lunes a viernes de 08:30 a 18:30hs</p>
+                            <p>Sábados de 9 a 17:30hs</p>
+                            <a href="">
+                                <i class="fa-solid fa-phone"></i>
+                                +99 9999 9999
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-envelope"></i>
+                                nashe_american@hotmail.com
+                            </a>
+                            <a href="">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Calle Falsa 123
+                            </a>                        
+    
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item footer__accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            COMPRA 100% SEGURA
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body footer__accordion-body">
+                            <p class="footer__redesP">
+                                Nuestro sitio posee toda la seguridad para tu compra.
+                            </p>                  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer__redes">
+                    <h2 class="footer__titulos">
+                        SEGUINOS
+    
+                        <a href="www.facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="www.twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="www.instagram.com">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="www.tiktok.com">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                        
+                    </h2>
+                </div>
+    
+                <div class="footer__boton">
+                    <a href="">
+                        <button>Botón de Arrepentimiento</button>
+                    </a>
+                </div>
+    
+                <div class="footer__segundo">
+                    <a href="">
+                        <img src="../recursos/certificado.png" alt="">
+                    </a>
+                    <p>© 2022 Nashe American. Todos los derechos reservados
+                </div>
+            </div>
+            
         </footer>
-</body>
+        <!-- SCRIP BOOTSTRAP-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>

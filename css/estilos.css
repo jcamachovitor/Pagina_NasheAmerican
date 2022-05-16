@@ -5,19 +5,46 @@
     text-decoration: none;
     font-family: sans-serif;
 }
-a{
+
+a , p{
+    text-decoration: none;
+    margin-bottom: 0;
+}
+main a{
     color: black;
 }
+main a:hover{
+    color: black;
+}
+
+h2{
+    font-weight:600
+}
+.header__segundoMobile{
+    display: none;
+}
+.header__buscadorMedio{
+    display: none;
+}
+.header__buscador{
+    display: none;
+    visibility: visible;
+}
+
+/*COSAS CON DISPLAY NONE*/
 .header__primeroPromoCelu2{
     display: none;
     visibility: visible;
 }
+.footer__accordion{
+    display: none;
+    visibility: visible;
+}
+
+
 /*HEADER*/
 header{
     background-color: yellow;
-    padding: 0 30px;
-    padding-bottom: 15px;
-
 }
 /*HEADER Primero*/
 .header__primero{
@@ -27,6 +54,8 @@ header{
     align-items: center;
     background-color: black;
     margin-bottom: 15px;
+    padding: 10px 0;
+    margin: 0 30px;
 }
 .header__primero div{
     display: flex;
@@ -36,12 +65,12 @@ header{
     width: 50%;
     color: white;
 }
+.header__primero div i{
+    color: white;
+    margin-right: 10px;
+}
 .header__primero div p{
     margin-left: 10px;
-}
-.header__primero div img{
-    width: 7%;
-    margin-right: 10px;
 }
 
 .header__primeroPromo1{
@@ -90,32 +119,38 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 2rem 30px;
+    border-bottom: 1px solid black;
+    
 
 }
 .header__segundoIzquierda{
-    width: 20%;
+    height: auto;
+    width: 350px;
     border: solid;
     border-color: black;
 }
-
 .header__segundoIzquierda a img{
     width: 100%;
-    height: 90px;
+    height: 100px;
 }
+
 .header__segundoCentro{
-    width: 55%;
-    display: flex;
-    align-content: flex-start;
-    margin-right: 50px;
-}
-nav{
     width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    width: 93%;
     border: solid;
     border-color: black;
     background-color: black;
     
 }
 nav ul{
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around
@@ -142,19 +177,71 @@ nav ul li:hover a{
 }
 
 .header__segundoDerecha{
-    width: 15%;
+    width: auto;
     display: flex;
     justify-content: space-around;
 }
-
-.header__segundoIcons{
-    height: 40px;
-    padding: 7px 10px;
+.header__segundoDerecha a{
+    width: auto;
 }
 
-.header__segundoIcons:hover{
-    filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%);
+.header__segundoDerecha a i{
+    color: black;
+    font-size: 2.5em;
 }
+
+.header__segundoDerecha a i:hover{
+    color: white;
+}
+
+/*ICON LUPA*/
+.header__icon{
+    background: yellow;
+    margin: 0 0.8rem;
+}
+.header__icon div h2 button{
+    padding: 0;
+    font-size: 20px;
+}
+.header__icon div h2 button::after{
+    display: none;
+}
+.header__iconBuscador{
+    background: yellow;
+    color: black;
+}
+.header__iconBuscador:hover{
+    color: white;
+}
+
+/*BUSCARDO DENTRO*/
+.header__acordionBuscador{
+    padding: 0;
+}
+.header__buscador{
+    background: white;
+    border-bottom: 1px grey solid;
+}
+.form-control{
+    border: none;
+}
+.header__buscadorButton{
+    background-color: white;
+    border: none;
+    border-radius: none;
+    margin-left: 1.5rem;
+}
+.header__buscadorButton:hover{
+    background: black;
+}
+.header__buscadorButton:hover i{
+    color: white;
+}
+.header__buscadorButton i{
+    color: black;
+    font-size: 2em;
+}
+
 
 /*MAIN*/
 
@@ -162,14 +249,39 @@ nav ul li:hover a{
 .main__primero{
     background-color: rgb(223, 223, 223);
 }
-.main__primero img{
-    width: 100%;
+
+.main__primeroButtonL{
+    justify-content: flex-start;
+    padding-left: 1rem;
+}
+.main__primeroButtonR{
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+.main__primeroIndicador{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 0;
+}
+.main__primeroIndicador [data-bs-target]{
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    text-indent:0px;
+    background-color: black;
+}
+.main__primeroIndicador .active{
+    height: 13px;
+    width: 13px;
 }
 
 /*MAIN segundo*/
 .main__segundo{
     background-color: rgb(223, 223, 223);
-    padding-top: 70px;
+    padding-top: 1rem;
 }
 .main__segundo img {
     width: 100%;
@@ -197,6 +309,7 @@ nav ul li:hover a{
     margin-bottom: 35px;
     margin-left: 25px;
     font-family: 'Bebas Neue', cursive;
+    color: black;
 }
 .main__terceroBotones{
     height: 20px;
@@ -217,9 +330,12 @@ nav ul li:hover a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    color: black;
 }
 .main__terceroGaleria div h3{
     font-size: 30px;
+    font-weight: bolder;
 }
 .main__terceroIndumentaria{
     margin-bottom: 10px;
@@ -239,7 +355,7 @@ nav ul li:hover a{
     
 }
 .main__cuartoBoleto {
-    width: 70%;
+    width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -258,10 +374,12 @@ nav ul li:hover a{
     font-size: 30px;
     margin-bottom: 10px;
     text-align: center;
+    color: black;
 }
 .main__cuartoBoleto p{
     font-size: 20px;
     margin-bottom: 30px;
+    color: black;
 }
 
 .main__cuartoBoleto div{
@@ -269,14 +387,23 @@ nav ul li:hover a{
     flex-direction: row;
     justify-content: center;
     width: 100%;
+
 }
 .main__cuartoInput1{
-    width: 35%;
-    height: 25px;
+    width: 45%;
+    height: 40px;
+    padding-left: 15px;
+    border: 1px solid black;
+    border-radius: 3px 0 0 3px;
 }
 .main__cuartoInput2{
-    width: 20%;
-    margin-left: 10px;
+    width: 15%;
+    font-weight: 600;
+    border: none;
+    background: rgb(223, 223, 223);
+    color: rgba(0, 0, 0, 0.767);
+    border: 1px solid black;
+    border-radius: 0 3px 3px 0;
 }
 
 
@@ -288,175 +415,185 @@ footer{
     background-color: rgb(71, 70, 70);
     padding-top: 40px;
 }
+footer ul{
+    padding: 0;
+}
+footer a, footer p{
+    color: black;
+    font-size: 1rem;
+    height: 2rem;
+}
+
+footer ul li a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+    color: black;
+}
 
 footer section div h2{ 
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-family: 'Comic Neue';
     margin-bottom: 15px;
     color: white;
-    text-decoration: underline;
 
 }
-footer p, footer a{
-    font-size: 16px;
-}
-
-/*GRID*/
-.grid__contenedor{
+/*FOOTER primero*/
+.footer__primero{
     display: grid;
-    grid-template-areas: "uno dos tres cuatro "
-                        "uno dos cinco seis"
-                        "siete siete siete siete";
+    padding: 0 2rem;
+    grid-template-areas: "uno dos tres cuatro"
+                        "uno dos tres cinco";
+    grid-template-columns: auto auto auto 25%;
 }
 
-.grid__navegacion1{
+.footer__nav1{
     grid-area: uno;
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
 }
-.grid__navegacion2{
-    grid-area: dos;
-    display: flex;
-    flex-direction: column;
-}
-.grid__contacto{
-    grid-area: tres;
+.footer__nav2{
+    grid-area:dos;
 }
 
-.grid__pagos{
+.footer__navegacion{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__atencion{
+    grid-area: tres;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+.footer__atencion a:hover{
+    color: black;
+}
+
+.footer__redes{
     grid-area: cuatro;
 }
+.footer__redes a i{
+    font-size: 2.5em;
+}
+.footer__redes a:hover {
+    color: rgba(0, 0, 0, 0.733);
+}
 
-.grid__atencion{
+.footer__seguridad{
     grid-area: cinco;
 }
-.grid__redes{
-    grid-area: seis;
-}
-.grid__copy{
-    grid-area: siete;
+
+
+/*FOOTER segundo*/
+.footer__segundo{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 40px;
     padding: 15px 30px;
     background: rgb(223, 223, 223);
-
 }
-
-/*FOOTER navegacion*/
-.grid__bloque ul li{
-    margin-bottom: 5px;
+.footer__segundo p{
+    height: auto;
 }
-
-.grid__bloque ul li:hover{
-    color: white;
-}
-
-.grid__bloque ul li a:hover{
-    text-decoration: underline;
-    text-decoration-color: white;
-}
-
-
-/**FOOTER contacto*/
-.grid__contacto div div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-bottom: 5px;
-}
-.grid__contactoImg{
-    width: 8%;
-    margin-right: 5px;
-}
-.grid__contactoImg img{
-    display: relative;
-    width: 20px;
-    height: 20px;
-}
-
-/*FOOTER pagos*/
-.grid__pagosImg{
-    display: flex;
-    flex-direction: column;
-
-}
-.grid__pagosImg div{
-    display: relative;
-}
-.grid__pagosImg div img{
-    position: relative;
-    width: 40px;
-    height: 30px;
-}
-
-/*FOOTER redes*/
-.grid__redes div a img{
-    position: relative;
-    width: 40px;
-    height: 40px;
-}
-.footer__instagram:hover{
-    filter: invert(26%) sepia(84%) saturate(2161%) hue-rotate(312deg) brightness(89%) contrast(95%);
-}
-.footer_facebook:hover{
-    filter: invert(26%) sepia(47%) saturate(7115%) hue-rotate(238deg) brightness(98%) contrast(108%);
-}
-.footer__twitter:hover{
-    filter: invert(64%) sepia(55%) saturate(5857%) hue-rotate(164deg) brightness(100%) contrast(101%);
-}
-
-/*FOOTER copy*/
-.grid__copy a {
-    width: 3%;
-    margin-right: 30px;
-}
-.grid__copy a img{
+.footer__segundo a {
     width: 50px;
+    margin-right: 20px;
+    height: auto;
+}
+.footer__segundo a img{
+    width: auto;
     height: 70px;
-    
 }
 
 /*MOBILE*/
 @media (max-width:1000px) and (min-width:721px){
     header{
-        padding: 0 ;
+        padding: 0;
+    }
+    .header__conLupa{
+        display: none;
+        visibility: visible;
+    }
+
+    /*HEADER PRIMERO*/
+    .header__primero{
+        margin: 0;
     }
     .header__primero div{
         width: 100%;
     }
-    .header__primero div img{
-        width: 5%;
+    .header__primero div i{
+        font-size: 1.6em
     }
-
+    .header__primero div b{
+        font-size: 1rem;
+    }
+    .header__primero div p{
+        font-size: 1rem;
+    }
+    
+    .header__icon{
+        margin-right: 0.9rem;
+    }
+    
+    /*HEADER segundo*/
     .header__segundo{
-        display: grid;
-        grid-template-areas:"uno dos tres"
-                            "cuatro cuatro cuatro"
-    }
-    .header__segundoIzquierda{
-        grid-area: uno;
-        width: 100%;
-        margin-bottom: 15px;
-        margin-left: 2rem;
-    }
-    .header__segundoEspacio{
-        grid-area: dos;
+        display: none;
     }
 
+    .header__buscadorMedio{
+        display: block;
+    }
+    .header__buscadorPrimero{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1rem;
+    }
+
+    .header__segundoIzquierda{
+        width: 209px;
+    }
+    
+    .header__buscadorLupa{
+        width: 50%;
+        height: 40px;
+        background: white;
+        border-radius: 3px;
+        border: 1px solid black;
+    }
+    .header__buscadorButton{
+        margin: 0;
+    }
+    .header__buscadorButton i{
+        font-size: 1.6em;
+    }
+
+
+    
+    /*Header Icons*/
     .header__segundoDerecha{
-        grid-area: tres;
+        justify-content: flex-end;
+        width: auto;
+    }
+    .separacion{
+        margin-right: 0.5rem;
+    }
+    /*navegador*/
+    .header__segundoCentro nav{
         width: 100%;
     }
-    .header__segundoIcons{
-        width: 50px;
-        height: 50px;
+
+    /*MAIN PRIMERO*/
+    .main__primeroButtonR{
+        padding-right: 0.5rem;
     }
-    .header__segundoCentro{
-        grid-area: cuatro;
-        width: 100%;
+    .main__primeroButtonL{
+        padding-left: 0.5rem;
+    }
+    .main__primero div button i{
+        font-size: 2.5em;
     }
 
     /*MAIN SEGUNDO*/
@@ -515,10 +652,10 @@ footer p, footer a{
 
     /*MAIN cuarto*/
     .main__cuarto{
-        padding: 1rem 0;
+        padding: 3rem 0;
     }
     .main__cuartoBoleto{
-        width: 85%;
+        width: 600px;
     }
     .main__cuartoBoleto h2{
         font-size: 1.3rem;
@@ -526,97 +663,227 @@ footer p, footer a{
     } 
     .main__cuartoBoleto p{
         font-size: 1rem;
+        margin-bottom: 10px;
         text-align: center;
     }
     .main__cuartoInput1{
         width: 50%;
+        height: 35px;
+        font-size: 1rem;
     }
     .main__cuartoInput2{
-        width: 25%;
-        font-size: 0.6rem;
-    }
-
-    /*FOOTER*/
-    .grid__contenedor{
-        display: grid;
-        grid-template-areas:"uno dos seis"
-                            "tres cinco cuatro"
-                            "siete siete siete";
-        margin-bottom: 5px;
-    }
-    .grid__navegacion1{
-        padding-left: 3rem;
-    }
-    .grid__contacto{
-        padding-left: 3rem;
-    }
-    .grid__copy{
-        padding-left: 3rem;
-        margin-top: 1rem;
-    }
-    .grid__bloque{
-        font-size: 0.8rem;
-        padding-bottom: 1rem;
-    }
-    
-    .grid__copy a{
-        width: 3rem;
-    }
-
-    .grid__copy p{
+        width: 15%;
         font-size: 0.9rem;
     }
 
+    /*FOOTER*/
+
+    footer ul li a{
+        font-size: 0.95rem;
+    }
+    footer section div h2{
+        font-size: 0.95rem;
+    }
+    .footer a, footer p{
+        font-size: 0.95rem;
+    }
+    .footer__primero{
+        grid-template-areas: "uno dos tres"
+                            "cinco nada cuatro";
+        grid-template-columns: 31% 31% 37%;
+        padding: 0 1rem;
+    }
+
+    .footer__redes{
+        margin-top: 1rem;
+    }
+    .footer__seguridad{
+        margin-top: 1rem;
+    }
+    .footer__segundo{
+        padding-left: 1rem;
+    }
 }
 
 
 @media (max-width:720px) and (min-width:541px){
+    .header__icon, .header__conLupa{
+        display: none;
+        visibility: visible;
+    }
     /*HEADER*/
     header{
         padding: 0;
     }
-
     /*HEADER PRIMERO*/
     .header__primero div{
         width: 100%;
     }
+    .header__primero{
+        margin: 0;
+    }
+    .header__primero div i{
+        font-size: 1.3em
+    }
     .header__primero div b{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .header__primero div p{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 
-    /*HEADER SEGUNDO*/
+    /*BARRA DE MENU*/
     .header__segundo{
-        display: grid;
-        grid-template-areas:"uno dos tres"
-                            "cuatro cuatro cuatro"
+        display: none;
+        visibility: visible;
     }
-    .header__segundoIzquierda{
-        grid-area: uno;
-        width: 100%;
-        margin-bottom: 15px;
-        margin-left: 2rem;
-    }
-    .header__segundoEspacio{
-        grid-area: dos;
+    .header__segundoMobile{
+        display: block;
+        visibility: visible;
     }
 
-    .header__segundoDerecha{
-        grid-area: tres;
+    /*HEADER PRIMERO BOOTSTRAP*/
+    .header__menu{
+        width: 120px;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .header__navbar{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        background: yellow;
+    }
+
+    .header__marca{
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+    .header__marca a{
+        width: 203px;
+        height: auto;
+        border: solid black;
+    }
+    .header__marca a img, .header__submenuMarca{
+        width: 100%;
+        height: 90px;
+    }
+
+    .header__icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 120px;
+    }
+    .header__iconSeparacion{
+        margin-right: 1rem;
+    }
+    
+    .header__icons a i{
+        color: black;
+        font-size: 2.2em;
+    }
+    
+    .header__icons a i:hover{
+        color: white;
+    }
+    
+    /*ICONO DEL MENU DESPLEGABLE*/
+    .header__navButton{
+        padding: 0;
+    }
+    .header__navIcon i{
+        font-size: 2.2em;
+    }
+    .header__navButton:focus{
+        box-shadow: none;
+    }
+    /*MENU NO DESPLEGABLE*/
+    .header__menuEscondido{
+        background-color: rgb(223, 223, 223);
+        left: -1000px;
+    }
+    /*MENU DESPLEGABLE TRANSFORM*/
+    .offcanvas.show{
+        transform: translateX(1000px);
+    }
+
+    /*MENU DESPLEGABLE*/
+    .header__tituloMenu{
+        background-color: yellow;
+        padding: 0 1rem;
+        padding-left: 0.8rem;
+        border: solid black 1px;
+    }
+    .header__navegadorMenu{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .header__segundoMobile nav{
+        padding: 1rem;
+        border: none;
         width: 100%;
     }
-    .header__segundoIcons{
-        width: 50px;
-        height: 50px;
+    .nav ul li{
+        margin: 7px 0rem;
     }
-    .header__segundoCentro{
-        grid-area: cuatro;
-        width: 100%;
+
+    /*submenu*/
+    .header__subNavegacion{
+        padding-left: 2rem;
     }
-    nav ul li a{
-        font-size: 1.3rem;
+    .dropdown-menu[data-bs-popper]{
+        margin-top: 0;
+    }
+
+    /*color*/
+    .header__navColor .navbar-nav .nav-link{
+        color: black;
+        padding-left: 2rem;
+
+    }
+    .header__navColor .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+        color: white;
+        background: black;
+    
+    }
+
+    /*BUSCADOR*/
+    .header__buscador{
+        display: block;
+        background: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .form-control{
+        border: none;
+    }
+    .header__buscadorButton{
+        background-color: white;
+        border: none;
+        border-radius: none;
+        margin-left: 0;
+    }
+    .header__buscadorButton:hover{
+        background: black;
+    }
+    .header__buscadorButton:hover i{
+        color: white;
+    }
+    .header__buscadorButton i{
+        color: black;
+        font-size: 1.6em;
+    }
+    /*MAIN PRIMERO*/
+    .main__primeroButtonR{
+        padding-right: 0.5rem;
+    }
+    .main__primeroButtonL{
+        padding-left: 0.5rem;
+    }
+    .main__primero div button i{
+        font-size: 2em;
     }
     /*MAIN SEGUNDO*/
     .main__segundo{
@@ -659,10 +926,11 @@ footer p, footer a{
     }
     /*MAIN cuarto*/
     .main__cuarto{
-        padding: 1rem 0;
+        padding: 2rem 0;
     }
     .main__cuartoBoleto{
-        width: 90%;
+        width: 32rem;
+        padding: 2rem 0;
     }
     .main__cuartoBoleto h2{
         font-size: 1.2rem;
@@ -670,119 +938,307 @@ footer p, footer a{
     }  
     .main__cuartoBoleto p{
         font-size: 1rem;
+        margin-bottom: 1rem;
         text-align: center;
     }
     .main__cuartoInput1{
-        width: 50%;
+        width: 55%;
     }
     .main__cuartoInput2{
-        width: 25%;
-        font-size: 0.6rem;
+        width: 15%;
+        font-size: 0.7rem;
     }
 
     /*FOOTER*/
-    .grid__contenedor{
-        display: grid;
-        grid-template-areas:"uno dos"
-                            "seis dos"
-                            "tres cuatro"
-                            "cinco cinco"
-                            "siete siete";
-        margin-bottom: 5px;
+    .footer__pc{
+        display: none;
+        visibility: visible;
     }
-    .grid__navegacion1{
-        padding-left: 2rem;
+
+    /*BOOTSTRAP*/
+    footer{
+        padding-top: 2rem;
     }
-    .grid__contacto{
-        padding-left: 2rem;
+    .footer__accordion{
+        display: block;
     }
-    .grid__atencion{
-        padding-left: 2rem;
+    .footer__accordion button{
+        background: rgb(71, 70, 70);
     }
-    .grid__redes{
-        padding-left: 2rem;
-    }
-    .grid__pagos{
+
+    .footer__accordion ul{
         padding-left: 0;
     }
-    .grid__bloque{
-        font-size: 0.8rem;
-        padding-bottom: 1rem;
-
+    .footer__accordion ul li a, .footer__accordion-body a , .footer__accordion-body p{
+        color: rgba(0, 0, 0, 0.637);
     }
-    .grid__copy{
-        padding-left: 2rem;
+    .footer__accordion ul li a:hover{
+        text-decoration: underline;
     }
-
-    .grid__copy a{
-        width: 3rem;
-    }
-    .grid__copy p{
-        font-size: 0.9rem;
+    .footer__accordion-item{
+        border-left: none;
+        border-right: none;
     }
 
+
+    .footer__accordion-body{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(223, 223, 223);
+    }
+    .accordion-button:not(.collapsed){
+        background: black;
+        color: white;
+    }
+    /*REDES*/
+    .footer__redes{
+        padding: 1rem 1.25rem;
+    }
+    .footer__redes h2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer__redes a i{
+        font-size: 1.8rem;
+    }
+    .footer__titulos{
+        font-family: 'Comic Neue';
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    .footer__titulos a{
+        margin-left: 0.6rem;
+        font-size: 1.3rem;
+        color: black;
+    }
+    .footer__titulos a:hover{
+        color: rgba(0, 0, 0, 0.61);
+    }
+
+    /*BOTON ARREPENTIMIENTO*/
+    .footer__boton{
+        margin: 0 1.25rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+    .footer__boton a button{
+        font-family: 'Comic Neue';
+        border: solid 2px;
+        padding: 8px 16px;
+        border-color: black;
+        
+        background: black;
+        color: white;
+    }
+
+    .footer__boton a button:hover{
+        background: rgba(0, 0, 0, 0.548);
+        color: white;
+    }
+
+    /*FOOTER COPY*/
+    .footer__segundo{
+        padding-left: 1rem;
+        margin: 0;
+    }
+    .footer__segundo p{
+        font-size: 0.95rem;
+    }
 }
 
 @media (max-width:540px) and (min-width:320px){
+    .header__icon, .header__conLupa{
+        display: none;
+        visibility: visible;
+    }
+    
     /*HEADER*/
     header{
         padding: 0;
     }
     /*HEADER PRIMERO*/
-    .header__primero div{
-        width: 100%;
-    }
-    .header__primero div b{
-        font-size: 0.8rem;
-    }
     .header__primeroPromoCelu1{
         display: none;
         visibility: visible;
     }
     .header__primeroPromoCelu2{
-        display: inline-block;
-        font-size: 0.8rem;
+        display: block;
+    }
+    .header__primero div{
+        width: 100%;
+    }
+    .header__primero{
+        margin: 0;
+    }
+    .header__primero div i{
+        font-size: 1.3em
+    }
+    .header__primero div b{
+        font-size: 0.9rem;
+    }
+    .header__primero div p{
+        font-size: 0.9rem;
+    }
+
+    /*BARRA DE MENU*/
+    .header__segundo{
+        display: none;
+        visibility: visible;
+    }
+    .header__segundoMobile{
+        display: block;
+        visibility: visible;
+    }
+
+    /*HEADER PRIMERO BOOTSTRAP*/
+    .header__menu{
+        width: 60px;
+        justify-content: flex-start;
+        padding: 0;
+    }
+    .header__navbar{
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        background: yellow;
+    }
+
+    .header__marca{
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+    .header__marca a{
+        width: 160px;
+        height: auto;
+        border: solid black;
+    }
+    .header__marca a img, .header__submenuMarca{
+        width: 100%;
+        height: 70px;
+    }
+
+    .header__icons{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100px;
+    }
+    .header__iconSeparacion{
+        margin-right: 0.5rem;
     }
     
+    .header__icons a i{
+        color: black;
+        font-size: 1.8em;
+    }
+    
+    .header__icons a i:hover{
+        color: white;
+    }
+    
+    /*ICONO DEL MENU DESPLEGABLE*/
+    .header__navButton{
+        padding: 0;
+    }
+    .header__navIcon i{
+        font-size: 1.8em;
+    }
+    .header__navButton:focus{
+        box-shadow: none;
+    }
+    /*MENU NO DESPLEGABLE*/
+    .header__menuEscondido{
+        background-color: rgb(223, 223, 223);
+        left: -1000px;
+    }
+    /*MENU DESPLEGABLE TRANSFORM*/
+    .offcanvas.show{
+        transform: translateX(1000px);
+    }
 
-    /*HEADER SEGUNDO*/
-    .header__segundo{
-        display: grid;
-        grid-template-areas:"uno dos tres"
-                            "cuatro cuatro cuatro"
+    /*MENU DESPLEGABLE*/
+    .header__tituloMenu{
+        background-color: yellow;
+        padding: 0 1rem;
+        padding-left: 0.8rem;
+        border: solid black 1px;
     }
-    .header__segundoIzquierda{
-        grid-area: uno;
-        width: 100%;
-        margin-bottom: 1rem;
+    .header__navegadorMenu{
+        padding-left: 0;
+        padding-right: 0;
     }
-    .header__segundoIzquierda a img{
-        height: 5rem;
-    }
-    .header__segundoEspacio{
-        grid-area: dos;
-    }
-
-    .header__segundoDerecha{
-        grid-area: tres;
-        width: 100%;
-    }
-    .header__segundoIcons{
-        width: 2rem;
-        height: 2rem;
-    }
-    .header__segundoCentro{
-        grid-area: cuatro;
+    .header__segundoMobile nav{
+        padding: 1rem;
+        border: none;
         width: 100%;
         
     }
-    nav ul{
-        display: flex;
-        flex-wrap: wrap;
+    .nav ul li{
+        margin: 7px 0rem;
     }
-    nav ul li a{
-        font-size: 1rem;
+
+    /*submenu*/
+    .header__subNavegacion{
+        padding-left: 2rem;
     }
+    .dropdown-menu[data-bs-popper]{
+        margin-top: 0;
+    }
+
+    /*color*/
+    .header__navColor .navbar-nav .nav-link{
+        color: black;
+        padding-left: 2rem;
+
+    }
+    .header__navColor .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
+        color: white;
+        background: black;
+    
+    }
+
+    /*BUSCADOR*/
+    .header__buscador{
+        display: block;
+        background: white;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    .form-control{
+        border: none;
+    }
+    .header__buscadorButton{
+        background-color: white;
+        border: none;
+        border-radius: none;
+        margin-left: 0;
+        padding: .2rem .5rem;
+    }
+    .header__buscadorButton:hover{
+        background: black;
+    }
+    .header__buscadorButton:hover i{
+        color: white;
+    }
+    .header__buscadorButton i{
+        color: black;
+        font-size: 1.4em;
+    }
+
+    /*MAIN PRIMERO*/
+    .main__primeroButtonR{
+        padding-right: 0.3rem;
+    }
+    .main__primeroButtonL{
+        padding-left: 0.3rem;
+    }
+    .main__primero div button i{
+        font-size: 1.5em;
+    }
+
     /*MAIN SEGUNDO*/
     .main__segundo{
         padding-top: 2rem;
@@ -830,61 +1286,139 @@ footer p, footer a{
     .main__cuartoBoleto{
         width: 95%;
         background-size: auto;
+        padding: 2rem 0;
     }
     .main__cuartoBoleto h2{
         font-size: 1rem;
         text-align: center;
+        margin-bottom: 5px;
     } 
     .main__cuartoBoleto p{
         font-size: 0.8rem;
         text-align: center;
+        margin-bottom: 5px;
     }
     .main__cuartoInput1{
-        width: 60%;
+        width: 50%;
+        height: 30px;
+        padding-left: 5px;
+        font-size: 0.9rem;
     }
     .main__cuartoInput2{
-        width: 25%;
+        width: 20%;
         font-size: 0.6rem;
     }
 
     /*FOOTER*/
-    .grid__contenedor{
-        display: grid;
-        grid-template-areas:"uno"
-                            "dos"
-                            "tres"
-                            "cuatro"
-                            "cinco"
-                            "seis"
-                            "siete";
-        margin-bottom: 5px;
+    .footer__pc{
+        display: none;
+        visibility: visible;
     }
-    .grid__navegacion1{
+
+    /*BOOTSTRAP*/
+    footer{
+        padding-top: 2rem;
+    }
+    .footer__accordion{
+        display: block;
+    }
+    .footer__accordion button{
+        background: rgb(71, 70, 70);
+    }
+
+    .footer__accordion ul{
         padding-left: 0;
-    }
-    .grid__contactoImg{
-        width: auto;
-    }
-    .grid__bloque{
-        font-size: 0.8rem;
-        margin-bottom: 1rem;
-        padding-left: 1rem;
-    }
-    .grid__copy{
-        margin-top: 0;
         margin-bottom: 0;
     }
-    .grid__copy a{
-        width: 5rem;
-        margin-right: 0.5rem;
+    .footer__accordion ul li a, .footer__accordion-body a , .footer__accordion-body p{
+        color: rgba(0, 0, 0, 0.637);
+    }
+    .footer__accordion ul li a:hover{
+        text-decoration: underline;
+    }
+    .footer__accordion-item{
+        border-left: none;
+        border-right: none;
+    }
+
+
+    .footer__accordion-body{
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(223, 223, 223);
+    }
+    .accordion-button:not(.collapsed){
+        background: black;
+        color: white;
+    }
+    /*REDES*/
+    .footer__redes{
+        padding: 1rem 1.25rem;
+    }
+    .footer__redes h2{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer__titulos{
+        font-family: 'Comic Neue';
+        font-size: 1rem;
+        font-weight: 400;
+        color: white;
+    }
+    .footer__titulos a{
+        margin-left: 0.5rem;
+        font-size: 1.3rem;
+        color: black;
+    }
+    .footer__redes a i{
+        font-size: 1.4em;
+    }
+    .footer__redesP{
+        height: auto;
+    }
+    .footer__titulos a:hover{
+        color: rgba(0, 0, 0, 0.61);
+    }
+
+    /*BOTON ARREPENTIMIENTO*/
+    .footer__boton{
+        margin: 0 1.25rem;
+        margin-bottom: 2rem;
+        font-size: 1rem;
+    }
+    .footer__boton a button{
+        font-family: 'Comic Neue';
+        border: solid 2px;
+        padding: 8px 16px;
+        border-color: black;
         
+        background: black;
+        color: white;
     }
-    .grid__copy a img{
-        height: 100%;
+
+    .footer__boton a button:hover{
+        background: rgba(0, 0, 0, 0.548);
+        color: white;
     }
-    .grid__copy p{
+
+    /*FOOTER COPY*/
+    .footer__segundo{
+        margin: 0;
+        padding-right: 0;
+        padding-left: 1rem;
+    }
+    .footer__segundo a{
+        height: auto;
+        margin-right: 10px;
+    }
+    .footer__segundo a img{
+        height: 60px;
+    }
+    .footer__segundo p{
         font-size: 0.8rem;
     }
+
 }
 
 
