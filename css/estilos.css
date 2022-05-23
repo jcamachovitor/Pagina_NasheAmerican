@@ -20,16 +20,7 @@ main a:hover{
 h2{
     font-weight:600
 }
-.header__segundoMobile{
-    display: none;
-}
-.header__buscadorMedio{
-    display: none;
-}
-.header__buscador{
-    display: none;
-    visibility: visible;
-}
+
 
 /*COSAS CON DISPLAY NONE*/
 .header__primeroPromoCelu2{
@@ -40,11 +31,14 @@ h2{
     display: none;
     visibility: visible;
 }
-
+.header__segundoMobile{
+    display: none;
+}
 
 /*HEADER*/
 header{
     background-color: yellow;
+    position: relative;
 }
 /*HEADER Primero*/
 .header__primero{
@@ -114,39 +108,150 @@ header{
 }
 
 /*HEADER Segundo*/
-.header__segundo{
+
+.header__segundoPC{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
-    padding: 2rem 30px;
-    border-bottom: 1px solid black;
-    
-
+    align-items: center;
+    padding: 1.5rem 2rem;
 }
-.header__segundoIzquierda{
+
+
+.header__logo{
     height: auto;
-    width: 350px;
     border: solid;
     border-color: black;
+    width: 250px;
 }
-.header__segundoIzquierda a img{
+.header__logo a img{
     width: 100%;
-    height: 100px;
+    height: 110px;
 }
 
-.header__segundoCentro{
-    width: 100%;
+/*BUSCADOR*/
+.header__buscador{
+    width: 50%;
+    background: white;
+    border-radius:  6px;
+    border: 1px solid black;
+}
+.header__buscador button{
+    margin: 0;
+    background-color: white;
+    border: none;
+    border-radius: none;
+    
+}
+.header__buscador button i{
+    font-size: 1.6em;
+}
+.form-control{
+    border: none;
+}
+.header__buscador button i{
+    color: black;
+    font-size: 2em;
+}
+/*Animacion*/
+.header__buscador button:hover{
+    background: black;
+}
+.header__buscador button:hover i{
+    color: white;
+}
+
+
+/*ICONOS*/
+.header__iconos{
+    width: auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    align-content: center;
+}
+.header__iconos a{
+    display: flex;
+    align-items: center;
+    margin-right: 0.6rem;
 }
 
+.header__iconos i{
+    color: black;
+    font-size: 2.5em;
+}
+.header__iconos a i:hover{
+    color: white;
+}
+
+/*ICON SHOP*/
+.header__iconosShop{
+    padding: 0;
+}
+.header__iconosShop button{
+    padding: 0;
+    margin: 0;
+}
+.header__iconosShop button{
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: none;
+    background: none;
+    height: 100%;
+    line-height: normal;
+}
+.header__iconosShop button:hover{
+    background-color: transparent;
+}
+.header__iconosShop button:focus{
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+
+.header__iconosShop button i{
+    color: black;
+    line-height: normal;
+}
+.header__iconosShop button i:hover{
+    color: white;
+}
+
+.header__iconosShop div{
+    width: 100vw;
+    max-width: 440px;
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+.header__iconosShop div div{
+    background-color: white;
+    border-radius: 5px;
+}
+.header__iconosShop div div p{
+    padding: 50px;
+}
+.header__iconosShop div span{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1rem;
+    padding-bottom: 0;
+    
+}
+.header__iconosShop div span i{
+    color: white;
+    font-size: 2em;
+    margin-right: 0.5rem;
+    line-height: 0;
+}
+
+
+/*NAVEGACION*/
 nav{
-    width: 93%;
+    width: 100%;
     border: solid;
     border-color: black;
     background-color: black;
-    
 }
 nav ul{
     margin: 0;
@@ -157,91 +262,85 @@ nav ul{
 
 }
 nav ul li{
-    padding: 7px 0px;
+    font-size: 25px;
+    padding: 9px 10px;
+    color: white;
+    font-family: 'Bangers', cursive;
+    border: none;
+    line-height: normal;
+    background-color: black;
 }
-
 nav ul li a{
     font-size: 25px;
-    padding: 7px 10px;
     color: white;
     font-family: 'Bangers', cursive;
 }
+/*Animacion*/
+nav ul li:hover{
+    background-color: white;
+    color: black;
+}
+nav ul li:hover a{
+    color: black;
+}
 
+/*SUBMENU*/
+.header__submenuPC{
+    display: none;
 
+    position: absolute;
+    width: 100vw;
+    z-index: 1000;
+    top: 264px;
+    left: 0;
+    background: white;
+    padding: 1rem 0;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header__submenuPC li{
+    margin-right: 4rem;
+    background: transparent;
+}
+.header__submenuPC a{
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header__submenuPCli:last-child{
+    margin-right: 0;
+}
+
+.header__submenuPC i{
+    font-size: 1.5em;
+    padding-bottom: 1rem;
+}
+.header__submenuPC p{
+    font-size: 1rem;
+}
 
 /*Animacion*/
-
-nav ul li:hover a{
-    background-color: white;
-    color: black;
+.header__submenuPC a:hover{
+    color: rgba(0, 0, 0, 0.74)
 }
 
-.header__segundoDerecha{
-    width: auto;
+.nav__hombre:hover ul{
+    display: flex
+}
+
+.nav__mujer:hover ul{
     display: flex;
-    justify-content: space-around;
-}
-.header__segundoDerecha a{
-    width: auto;
 }
 
-.header__segundoDerecha a i{
-    color: black;
-    font-size: 2.5em;
+.nav__niño:hover ul{
+    display: flex;
 }
 
-.header__segundoDerecha a i:hover{
-    color: white;
+.nav__niña:hover ul{
+    display: flex;
 }
-
-/*ICON LUPA*/
-.header__icon{
-    background: yellow;
-    margin: 0 0.8rem;
-}
-.header__icon div h2 button{
-    padding: 0;
-    font-size: 20px;
-}
-.header__icon div h2 button::after{
-    display: none;
-}
-.header__iconBuscador{
-    background: yellow;
-    color: black;
-}
-.header__iconBuscador:hover{
-    color: white;
-}
-
-/*BUSCARDO DENTRO*/
-.header__acordionBuscador{
-    padding: 0;
-}
-.header__buscador{
-    background: white;
-    border-bottom: 1px grey solid;
-}
-.form-control{
-    border: none;
-}
-.header__buscadorButton{
-    background-color: white;
-    border: none;
-    border-radius: none;
-    margin-left: 1.5rem;
-}
-.header__buscadorButton:hover{
-    background: black;
-}
-.header__buscadorButton:hover i{
-    color: white;
-}
-.header__buscadorButton i{
-    color: black;
-    font-size: 2em;
-}
-
 
 /*MAIN*/
 
@@ -537,52 +636,36 @@ footer section div h2{
     }
     
     /*HEADER segundo*/
-    .header__segundo{
-        display: none;
+
+    .header__segundoPC{
+        padding: 1.5rem 1rem;
     }
 
-    .header__buscadorMedio{
-        display: block;
-    }
-    .header__buscadorPrimero{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem 1rem;
-    }
-
-    .header__segundoIzquierda{
+    .header__logo{
         width: 209px;
     }
-    
-    .header__buscadorLupa{
-        width: 50%;
-        height: 40px;
-        background: white;
-        border-radius: 3px;
-        border: 1px solid black;
+    .header__logo a img{
+        height: 90px;
     }
-    .header__buscadorButton{
+    
+    .header__buscador{
+        width: 45%;
+        height: 40px;
+    }
+    .header__buscador button{
         margin: 0;
     }
-    .header__buscadorButton i{
+    .header__buscador button i{
         font-size: 1.6em;
     }
 
+    .header__iconos i{
+        font-size: 2.3em;
+    }
 
-    
-    /*Header Icons*/
-    .header__segundoDerecha{
-        justify-content: flex-end;
-        width: auto;
-    }
-    .separacion{
-        margin-right: 0.5rem;
-    }
-    /*navegador*/
-    .header__segundoCentro nav{
-        width: 100%;
+    /*SUBMENU*/
+    .header__submenuPC{
+        top: 238px;
     }
 
     /*MAIN PRIMERO*/
@@ -707,14 +790,9 @@ footer section div h2{
 
 
 @media (max-width:720px) and (min-width:541px){
-    .header__icon, .header__conLupa{
-        display: none;
-        visibility: visible;
-    }
+
     /*HEADER*/
-    header{
-        padding: 0;
-    }
+
     /*HEADER PRIMERO*/
     .header__primero div{
         width: 100%;
@@ -732,149 +810,173 @@ footer section div h2{
         font-size: 0.9rem;
     }
 
-    /*BARRA DE MENU*/
+    /*HEADER SEGUNDOMOBILE*/
     .header__segundo{
         display: none;
-        visibility: visible;
     }
     .header__segundoMobile{
-        display: block;
-        visibility: visible;
+        display: block
     }
 
-    /*HEADER PRIMERO BOOTSTRAP*/
-    .header__menu{
-        width: 120px;
-        justify-content: flex-start;
-        padding: 0;
-    }
-    .header__navbar{
-        justify-content: space-around;
+    .header__completo{
+        display: flex;
+        flex-direction: column;
         flex-wrap: nowrap;
-        background: yellow;
-    }
-
-    .header__marca{
-        width: 100%;
-        border: none;
-        display: flex;
-        justify-content: center;
-    }
-    .header__marca a{
-        width: 203px;
-        height: auto;
-        border: solid black;
-    }
-    .header__marca a img, .header__submenuMarca{
-        width: 100%;
-        height: 90px;
-    }
-
-    .header__icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 120px;
-    }
-    .header__iconSeparacion{
-        margin-right: 1rem;
-    }
-    
-    .header__icons a i{
-        color: black;
-        font-size: 2.2em;
-    }
-    
-    .header__icons a i:hover{
-        color: white;
-    }
-    
-    /*ICONO DEL MENU DESPLEGABLE*/
-    .header__navButton{
         padding: 0;
     }
-    .header__navIcon i{
+
+    /*HEADER COMPLETO ARRIBA*/
+    .header__completoSuperior{
+        width: 100%;
+        flex-wrap: nowrap;
+        padding: 1rem;
+    }
+
+    /*ICONO DEL MENU DESPLEGABLE*/
+    .header__completoSuperior button{
+        padding: 0;
+    }
+    .header__completoSuperior button div i{
         font-size: 2.2em;
     }
-    .header__navButton:focus{
+    .header__completoSuperior button:focus{
         box-shadow: none;
     }
-    /*MENU NO DESPLEGABLE*/
+
+    /*MENU ESCONDIDO*/
     .header__menuEscondido{
         background-color: rgb(223, 223, 223);
         left: -1000px;
     }
-    /*MENU DESPLEGABLE TRANSFORM*/
     .offcanvas.show{
         transform: translateX(1000px);
     }
-
-    /*MENU DESPLEGABLE*/
+    /*TITULO*/
     .header__tituloMenu{
         background-color: yellow;
         padding: 0 1rem;
         padding-left: 0.8rem;
         border: solid black 1px;
     }
-    .header__navegadorMenu{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .header__segundoMobile nav{
-        padding: 1rem;
-        border: none;
+    .header__tituloMenu div img{
         width: 100%;
+        height: 90px;
     }
-    .nav ul li{
-        margin: 7px 0rem;
+    /*Navegacion*/
+    .header__navegadorMenu{
+        background: transparent;
+        border: none;
+        padding: 1rem 0;
+    }
+    .header__navegadorMenu ul {
+        border-radius: 0;
+        border: none;
     }
 
-    /*submenu*/
+    .header__navegadorMenu li{
+        background: transparent;
+        padding: 0;
+        border: none;
+        margin-bottom: 0.5rem;
+    }
+    .header__navegadorMenu li:last-child{
+        margin-bottom: 0;
+    }
+    .header__opcionesMenu{
+        display: flex;
+        width: 100%;
+        color: black;
+        padding: 1rem 0rem 1rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header__opcionesMenu::after{
+        margin-right: 1rem;
+        align-self: center;
+        transition: transform .2s ease-in-out;
+    }
+
     .header__subNavegacion{
-        padding-left: 2rem;
+        padding: 0.5rem 0rem 0.5rem 2rem;
+    }
+
+    /*ANIMACION*/
+    .header__opcionesMenu:hover{
+        background-color: black;
+        color: white;
+    }
+    .header__opcionesMenu:focus{
+        background-color: black;
+        color: white;
+    }
+    .show:not(.collapsed)::after{
+        transform: rotate(-180deg);
+    }
+
+
+    /*LOGO*/
+    .header__logo{
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+    .header__logo a{
+        width: 203px;
+        height: auto;
+        border: solid black;
+    }
+    .header__logo a img, .header__submenuMarca{
+        width: 100%;
+        height: 90px;
+    }
+
+    /*ICONOS*/
+    .header__iconos a{
+        margin-right: 0.5rem;
+    }
+    .header__iconos i{
+        font-size: 2em;
+    }
+
+    /*ICON SHOP*/
+    .header__iconosShop{
+        position: relative;
+    }
+    .header__iconosShop div{
+        max-width: 370px;
+    }
+    .header__iconosShop div span i{
+        margin-right: 0.35rem;
+    }
+    .header__iconosShop div div p{
+        padding: 40px 1rem;
+        text-align: center;
     }
     .dropdown-menu[data-bs-popper]{
-        margin-top: 0;
-    }
-
-    /*color*/
-    .header__navColor .navbar-nav .nav-link{
-        color: black;
-        padding-left: 2rem;
-
-    }
-    .header__navColor .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-        color: white;
-        background: black;
-    
+        left: auto;
+        right: 0;
     }
 
     /*BUSCADOR*/
     .header__buscador{
-        display: block;
-        background: white;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        width: 100%;
+        border: none;
+        border-radius: 0;
     }
     .form-control{
         border: none;
     }
-    .header__buscadorButton{
-        background-color: white;
-        border: none;
-        border-radius: none;
-        margin-left: 0;
+    .header__buscador button{
+        display: flex;
+        align-content: center;
     }
-    .header__buscadorButton:hover{
-        background: black;
-    }
-    .header__buscadorButton:hover i{
-        color: white;
-    }
-    .header__buscadorButton i{
+    .header__buscador button i{
         color: black;
         font-size: 1.6em;
     }
+
+
     /*MAIN PRIMERO*/
     .main__primeroButtonR{
         padding-right: 0.5rem;
@@ -962,12 +1064,19 @@ footer section div h2{
     .footer__accordion{
         display: block;
     }
+    .accordion-button:not(.collapsed)::after{
+        filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%);
+    }
     .footer__accordion button{
         background: rgb(71, 70, 70);
     }
 
     .footer__accordion ul{
         padding-left: 0;
+        margin-bottom: 0;
+    }
+    .footer__accordion ul li{
+        height: 2rem;
     }
     .footer__accordion ul li a, .footer__accordion-body a , .footer__accordion-body p{
         color: rgba(0, 0, 0, 0.637);
@@ -1049,10 +1158,6 @@ footer section div h2{
 }
 
 @media (max-width:540px) and (min-width:320px){
-    .header__icon, .header__conLupa{
-        display: none;
-        visibility: visible;
-    }
     
     /*HEADER*/
     header{
@@ -1082,151 +1187,174 @@ footer section div h2{
         font-size: 0.9rem;
     }
 
-    /*BARRA DE MENU*/
+    /*HEADER SEGUNDOMOBILE*/
     .header__segundo{
         display: none;
-        visibility: visible;
     }
     .header__segundoMobile{
-        display: block;
-        visibility: visible;
+        display: block
     }
 
-    /*HEADER PRIMERO BOOTSTRAP*/
-    .header__menu{
-        width: 60px;
-        justify-content: flex-start;
-        padding: 0;
-    }
-    .header__navbar{
-        justify-content: space-around;
+    .header__completo{
+        display: flex;
+        flex-direction: column;
         flex-wrap: nowrap;
-        background: yellow;
-    }
-
-    .header__marca{
-        width: 100%;
-        border: none;
-        display: flex;
-        justify-content: center;
-    }
-    .header__marca a{
-        width: 160px;
-        height: auto;
-        border: solid black;
-    }
-    .header__marca a img, .header__submenuMarca{
-        width: 100%;
-        height: 70px;
-    }
-
-    .header__icons{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 100px;
-    }
-    .header__iconSeparacion{
-        margin-right: 0.5rem;
-    }
-    
-    .header__icons a i{
-        color: black;
-        font-size: 1.8em;
-    }
-    
-    .header__icons a i:hover{
-        color: white;
-    }
-    
-    /*ICONO DEL MENU DESPLEGABLE*/
-    .header__navButton{
         padding: 0;
     }
-    .header__navIcon i{
-        font-size: 1.8em;
+
+    /*HEADER COMPLETO ARRIBA*/
+    .header__completoSuperior{
+        width: 100%;
+        flex-wrap: nowrap;
+        padding: 1rem;
     }
-    .header__navButton:focus{
+
+    /*ICONO DEL MENU DESPLEGABLE*/
+    .header__completoSuperior button{
+        padding: 0;
+    }
+    .header__completoSuperior button div i{
+        font-size: 1.6em;
+    }
+    .header__completoSuperior button:focus{
         box-shadow: none;
     }
-    /*MENU NO DESPLEGABLE*/
+
+    /*MENU ESCONDIDO*/
     .header__menuEscondido{
         background-color: rgb(223, 223, 223);
         left: -1000px;
     }
-    /*MENU DESPLEGABLE TRANSFORM*/
     .offcanvas.show{
         transform: translateX(1000px);
     }
-
-    /*MENU DESPLEGABLE*/
+    /*TITULO*/
     .header__tituloMenu{
         background-color: yellow;
         padding: 0 1rem;
         padding-left: 0.8rem;
         border: solid black 1px;
     }
-    .header__navegadorMenu{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .header__segundoMobile nav{
-        padding: 1rem;
-        border: none;
+    .header__tituloMenu div img{
         width: 100%;
-        
+        height: 90px;
     }
-    .nav ul li{
-        margin: 7px 0rem;
+    /*Navegacion*/
+    .header__navegadorMenu{
+        background: transparent;
+        border: none;
+        padding: 1rem 0;
+    }
+    .header__navegadorMenu ul {
+        border-radius: 0;
+        border: none;
     }
 
-    /*submenu*/
+    .header__navegadorMenu li{
+        background: transparent;
+        padding: 0;
+        border: none;
+        margin-bottom: 0.5rem;
+    }
+    .header__navegadorMenu li:last-child{
+        margin-bottom: 0;
+    }
+    .header__opcionesMenu{
+        display: flex;
+        width: 100%;
+        color: black;
+        padding: 1rem 0rem 1rem 2rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .header__opcionesMenu::after{
+        margin-right: 1rem;
+        align-self: center;
+        transition: transform .2s ease-in-out;
+    }
+
     .header__subNavegacion{
-        padding-left: 2rem;
+        padding: 0.5rem 0rem 0.5rem 2rem;
+    }
+
+    /*ANIMACION*/
+    .header__opcionesMenu:hover{
+        background-color: black;
+        color: white;
+    }
+    .header__opcionesMenu:focus{
+        background-color: black;
+        color: white;
+    }
+    .show:not(.collapsed)::after{
+        transform: rotate(-180deg);
+    }
+
+
+    /*LOGO*/
+    .header__logo{
+        width: 100%;
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+    .header__logo a{
+        width: 160px;
+        height: auto;
+        border: solid black;
+    }
+    .header__logo a img, .header__submenuMarca{
+        width: 100%;
+        height: 70px;
+    }
+
+    /*ICONOS*/
+    .header__iconos a{
+        margin-right: 0.2rem;
+    }
+    .header__iconos i{
+        font-size: 1.6em;
+    }
+    /*ICON SHOP*/
+    .header__iconosShop{
+        position: relative;
+    }
+    .header__iconosShop div{
+        max-width: 250px;
+    }
+    .header__iconosShop div span i{
+        margin-right: 0.2rem;
+    }
+    .header__iconosShop div div p{
+        padding: 30px 1rem;
+        text-align: center;
     }
     .dropdown-menu[data-bs-popper]{
-        margin-top: 0;
-    }
-
-    /*color*/
-    .header__navColor .navbar-nav .nav-link{
-        color: black;
-        padding-left: 2rem;
-
-    }
-    .header__navColor .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover{
-        color: white;
-        background: black;
-    
+        left: auto;
+        right: 0;
     }
 
     /*BUSCADOR*/
     .header__buscador{
-        display: block;
-        background: white;
-        border-top: 1px solid black;
-        border-bottom: 1px solid black;
+        width: 100%;
+        border: none;
+        border-radius: 0;
     }
     .form-control{
         border: none;
     }
-    .header__buscadorButton{
-        background-color: white;
-        border: none;
-        border-radius: none;
-        margin-left: 0;
-        padding: .2rem .5rem;
+    .header__buscador button{
+        display: flex;
+        align-content: center;
     }
-    .header__buscadorButton:hover{
-        background: black;
-    }
-    .header__buscadorButton:hover i{
-        color: white;
-    }
-    .header__buscadorButton i{
+    .header__buscador button i{
         color: black;
         font-size: 1.4em;
     }
+    .header__buscador input{
+        padding-left: 0;
+    }
+
 
     /*MAIN PRIMERO*/
     .main__primeroButtonR{
@@ -1238,17 +1366,25 @@ footer section div h2{
     .main__primero div button i{
         font-size: 1.5em;
     }
+    .main__primeroIndicador [data-bs-target]{
+        height: 7px;
+        width: 7px;
+    }
+    .main__primeroIndicador .active{
+        height: 9px;
+        width: 9px;
+    }
 
     /*MAIN SEGUNDO*/
     .main__segundo{
-        padding-top: 2rem;
+        padding-top: 0rem;
     }
     .main__segundo img{
         height: 100%;
     }
     /*MAIN TERCERO*/
     .main__tercero{
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
     .main__terceroBloque div h2{
         text-align: center;
@@ -1322,6 +1458,9 @@ footer section div h2{
     .footer__accordion{
         display: block;
     }
+    .accordion-button:not(.collapsed)::after{
+        filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%);
+    }
     .footer__accordion button{
         background: rgb(71, 70, 70);
     }
@@ -1329,6 +1468,9 @@ footer section div h2{
     .footer__accordion ul{
         padding-left: 0;
         margin-bottom: 0;
+    }
+    .footer__accordion ul li{
+        height: 2rem;
     }
     .footer__accordion ul li a, .footer__accordion-body a , .footer__accordion-body p{
         color: rgba(0, 0, 0, 0.637);

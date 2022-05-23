@@ -43,401 +43,535 @@
             </div>
         </section>
 
+        <!--HEADER DE > 721 px-->
+
         <section class="header__segundo">
-            <div class="header__segundoIzquierda">
-                <a href="../index.html">
-                    <img src="../recursos/logo.png" alt="">
-                </a>
-            </div>
+            <div class="header__segundoPC">
 
-            <div class="header__segundoCentro">
-                <nav>
-                    <ul>
-                        <li ><a href="productos.html">Categorías</a></li>
-                        <li><a href="productos.html">Mujer</a></li>
-                        <li><a href="productos.html">Hombres</a></li>
-                        <li><a href="productos.html">Niños</a></li>
-                        <li><a href="productos.html">Promociones</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header__segundoDerecha">
-                <a href="iniciar_sesion.html">
-                    <i class="fa-solid fa-user fa-2x"></i>
-                </a>
-
-                <div class="accordion accordion-flush header__icon" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingSearch">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSearch" aria-expanded="false" aria-controls="flush-collapseSearch">
-                                <i class="fa-solid fa-magnifying-glass fa-2x header__iconBuscador"></i>
-                            </button>
-                        </h2>
-                    </div>
-                </div>
-
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                </a>
-            </div>
-        </section>
-
-        <section class="header__buscadorMedio">
-            <div class="header__buscadorPrimero">
-                <div class="header__segundoIzquierda">
+                <div class="header__logo">
                     <a href="../index.html">
-                        <img src="../recursos/logo.png" alt="">
+                        <img src="../recursos/logo.png" alt="Logo_Nashe_American">
                     </a>
                 </div>
 
-                <form class="d-flex header__buscadorLupa">
-                    <button class="btn btn-outline-success header__buscadorButton" type="submit">
+                <form class="d-flex header__buscador">
+                    <button class="btn btn-outline-success" type="submit">
                         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                     </button>
                     <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
                 </form>
 
-                <div class="header__segundoDerecha">
-                    <a href="iniciar_sesion.html" class="separacion">
+                <div class="header__iconos">
+                    <a href="../paginas/iniciar_sesion.html">
                         <i class="fa-solid fa-user fa-2x"></i>
                     </a>
-
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    <a href="../paginas/iniciar_sesion.html">
+                        <i class="fa-solid fa-heart"></i>
                     </a>
+
+                    <div class="header__iconosShop">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <span>
+                                <i class="fa-solid fa-caret-up"></i>
+                            </span>
+                            <div>
+                                <p>No tienes ningún producto en tu carrito de compras.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="header__segundoCentro">
-                    <nav>
-                        <ul>
-                            <li ><a href="productos.html">Categorías</a></li>
-                            <li><a href="productos.html">Mujer</a></li>
-                            <li><a href="productos.html">Hombres</a></li>
-                            <li><a href="productos.html">Niños</a></li>
-                            <li><a href="productos.html">Promociones</a></li>
-                        </ul>
-                    </nav>
-                </div>
+
+            <div class="header__navegacion">
+                <nav>
+                    <ul>
+                        <li class="nav__hombre">
+                            <a href="productos.html">Hombres</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__mujer">
+                            <a href="productos.html">Mujeres</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__niño">
+                            <a href="productos.html">Niños</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__niña">
+                            <a href="productos.html">Niñas</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="productos.html">Promociones</a></li>
+                    </ul>
+                </nav>
             </div>
             
         </section>
 
-
-
-
+        <!--HEADER DE 720 a 320 px-->
         <section class="header__segundoMobile">
-            <nav class="navbar header__navbar header__navColor">
-                <div class="container-fluid header__menu">
-                        <button class="navbar-toggler header__navButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="header__navIcon">
-                                <i class="fa-solid fa-bars fa-3x"></i>
-                            </span>
-                        </button>
-                        <div class="offcanvas offcanvas-end header__menuEscondido" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="navbar header__completo">
+                <div class="container-fluid header__completoSuperior">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <div>
+                            <i class="fa-solid fa-bars fa-3x"></i>
+                        </div>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end header__menuEscondido" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header header__tituloMenu">
                             <div class="offcanvas-title" id="offcanvasNavbarLabel">
-                                <img src="../recursos/logo.png" class="header__submenuMarca" alt="">
+                                <img src="../recursos/logo.png" alt="Logo_Nashe_American">
                             </div>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body header__navegadorMenu">
+                        <nav class="offcanvas-body header__navegadorMenu">
                             <ul class="navbar-nav justify-content-end flex-grow-1">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Categorías
+                                    <a class="dropdown-toggle header__opcionesMenu" href="productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hombre
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Moda</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Deportiva</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Calzado</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Ver Todo</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="dropdown-toggle header__opcionesMenu" href="productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Mujer
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Remera</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Calzado</a></li>
                                         <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Ver Todo</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle header__opcionesMenu" href="productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Niño
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Calzado</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Ver Todo</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hombres
+                                    <a class="dropdown-toggle header__opcionesMenu" href="productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Niña
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Remera</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Calzado</a></li>
                                         <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Ver Todo</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Niños
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Remera</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Pantalon</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="productos.html">Accesorios</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="productos.html">Promociones</a>
+                                    <a class="active header__opcionesMenu" aria-current="page" href="productos.html">Promociones</a>
                                 </li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
-                </div>
-        
-                <div class="header__marca">
-                    <a href="../index.html">
-                        <img src="../recursos/logo.png" alt="">
-                    </a>
-                </div>
-        
-        
-                <div class="header__icons">
-                    <a href="iniciar_sesion.html" class="header__iconSeparacion">
-                        <i class="fa-solid fa-user fa-2x"></i>
-                    </a>
-                    <div class="accordion accordion-flush header__iconSeparacion header__icon" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <i class="fa-solid fa-magnifying-glass fa-2x header__iconBuscador"></i>
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                    </a>
-                </div>
-            </nav>
-        </section>
 
-        <section class="header__conLupa">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    
-                    <div id="flush-collapseSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingSearch" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body header__acordionBuscador">
-                            <form class="d-flex">
-                                <button class="btn btn-outline-success header__buscadorButton" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                                </button>
-                                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-                            </form>
+                    <div class="header__logo">
+                        <a href="../index.html">
+                            <img src="../recursos/logo.png" alt="Logo_Nashe_American">
+                        </a>
+                    </div>
+
+                    <div class="header__iconos">
+                        <a href="iniciar_sesion.html">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                        </a>
+                        <div class="header__iconosShop">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                </span>
+                                <div>
+                                    <p>Tu carrito está vacío.</p>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-
-
-        <section class="header__sinLupa header__buscador">
-            <form class="d-flex">
-                <button class="btn btn-outline-success header__buscadorButton" type="submit">
-                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                </button>
-                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-            </form>
+            <div class="header__buscador">
+                <form class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </button>
+                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+            </div>
         </section>
     </header>
 
-        <main>
-            <section>
-                <h1>Registrarse</h1>
-                <div class="main__subtitulo">
-                    <a href="iniciar_sesion.html">Iniciar Sesión</a>
-                    <a href="#" class="main__destacado">Registrarse</a>
+    <main>
+        <section>
+            <h1>Registrarse</h1>
+            <div class="main__subtitulo">
+                <a href="iniciar_sesion.html">Iniciar Sesión</a>
+                <a href="#" class="main__destacado">Registrarse</a>
+            </div>
+
+            <form action="" method="post">
+
+                <div class="main__informacion">
+
+                    <div class="main__informacionPrimero">
+                        <h3>Datos Personales</h3>
+
+                        <div class="main__informacionPersonal">
+                            <div>
+                                <label for="Nombre">Nombre</label>
+                                <input type="text" id="Nombre" required>
+                            </div>
+                            
+                            <div>
+                                <label for="Apellido">Apellido</label>
+                                <input type="text" id="Apellido" required>
+                            </div>
+
+                            <div class="main__informacionNacimiento">
+                                <label for="Nacimiento">Fechas de Nacimiento</label>
+                                
+                                <span>
+                                    <select name="Día" class="main__informacionFecha" required>
+                                        <option value="" selected disabled>Día</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                        <option value="11">11</option>
+                                        <option value="12">12</option>
+                                        <option value="13">13</option>
+                                        <option value="14">14</option>
+                                        <option value="15">15</option>
+                                        <option value="16">16</option>
+                                        <option value="17">17</option>
+                                        <option value="18">18</option>
+                                        <option value="19">19</option>
+                                        <option value="20">20</option>
+                                        <option value="21">21</option>
+                                        <option value="22">22</option>
+                                        <option value="23">23</option>
+                                        <option value="24">24</option>
+                                        <option value="25">25</option>
+                                        <option value="26">26</option>
+                                        <option value="27">27</option>
+                                        <option value="28">28</option>
+                                        <option value="29">29</option>
+                                        <option value="30">30</option>
+                                        <option value="31">31</option>
+                                        
+                                    </select>
+                                    <select name="Mes" class="main__informacionFecha" required>
+                                        <option value="" selected disabled>Mes</option>
+                                        <option value="Enero">Enero</option>
+                                        <option value="Febrero">Febrero</option>
+                                        <option value="Marzo">Marzo</option>
+                                        <option value="Mayo">Mayo</option>
+                                        <option value="Junio">Junio</option>
+                                        <option value="Julio">Julio</option>
+                                        <option value="Agosto">Agosto</option>
+                                        <option value="Septiembre">Septiembre</option>
+                                        <option value="Octubre">Octubre</option>
+                                        <option value="Noviembre">Noviembre</option>
+                                        <option value="Diciembre">Diciembre</option>
+                                    </select>
+                                    <select name="Año"  class="main__informacionFecha" required>
+                                        <option value="" selected disabled>Año</option>
+                                        <option value="2022">2022</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2014">2014</option>
+                                        <option value="2013">2013</option>
+                                        <option value="2012">2012</option>
+                                        <option value="2011">2011</option>
+                                        <option value="2010">2010</option>
+                                        <option value="2009">2009</option>
+                                        <option value="2008">2008</option>
+                                        <option value="2017">2007</option>
+                                        <option value="2006">2006</option>
+                                        <option value="2005">2005</option>
+                                        <option value="2004">2004</option>
+                                        <option value="2003">2003</option>
+                                        <option value="2002">2002</option>
+                                        <option value="2001">2001</option>
+                                        <option value="2000">2000</option>
+                                    </select>
+                                </span>
+                                
+                            </div>
+
+                            <div class="main__informacionDNI">
+                                <span>
+                                    <span>
+                                        <label for="Tipo">Tipo</label>
+                                        <select name="Tipo">
+                                            <option value="DNI">DNI</option>
+                                        </select>
+                                    </span>
+
+                                    <span class="prueba">
+                                        <label for="Numero_de_Documento">N° de Documento</label>
+                                        <input type="text" id="Numero_de_Documento" required>
+                                    </span>
+                                </span>
+                            </div>
+
+                            <div>
+                                <label for="Genero">Genero</label>
+                                <select name="Genero" id="Genero" required>
+                                    <option value="" selected disabled> Seleccionar</option>
+                                    <option value="Hombre">Hombre</option>
+                                    <option value="Mujer">Mujer</option>
+                                    <option value="Ninguno">Prefiero No Decir</option>
+                                </select>
+                            </div>  
+                        </div>
+                    </div>
+
+                    <div class="main__sobretucuenta">
+                        <h3>Sobre tu Cuenta</h3>
+                        <div>
+                            <label for="mail">Mail</label>
+                            <input type="text" id="mail" required>
+                        </div>
+
+                        <div>
+                            <label for="mail_repet">Confirmar Mail</label>
+                            <input type="text" id="mail_repet" required>
+                        </div>
+
+                        <div>
+                            <label for="contraseña">Contraseña (mínimo 8 caracteres)</label>
+                            <input type="password" minlength="8" id="contraseña" required>
+                        </div>
+
+                        <div>
+                            <label for="contraseña_repet">Confirmar Contraseña</label>
+                            <input type="password" minlength="8" id="contraseña_repet" required>
+                        </div>
+
+                        <div>
+                            <label for="telefono">Telefono (cod. area + numero)</label>
+                            <input type="tel" id="telefono" required>
+                        </div>
+                    </div>
+
                 </div>
 
-                <form action="" method="post">
-
-                    <div class="main__informacion">
-
-                        <div class="main__informacionPrimero">
-                            <h3>Datos Personales</h3>
-
-                            <div class="main__informacionPersonal">
-                                <div>
-                                    <label for="Nombre">* Nombre</label>
-                                    <input type="text">
-                                </div>
-                                
-                                <div>
-                                    <label for="Apellido">* Apellido</label>
-                                <input type="text">
-                                </div>
-
-                                <div class="main__informacionNacimiento">
-                                    <label for="Nacimiento">* Fechas de Nacimiento</label>
-                                    
-                                    <span>
-                                        <select name="Día" class="main__informacionFecha">
-                                            <option value="" selected disabled>Día</option>
-                                            <option value="1">1</option>
-                                            <option value="2">2</option>
-                                            <option value="3">3</option>
-                                            <option value="4">4</option>
-                                            <option value="5">5</option>
-                                            <option value="6">6</option>
-                                            <option value="7">7</option>
-                                            <option value="8">8</option>
-                                            <option value="9">9</option>
-                                            <option value="10">10</option>
-                                            <option value="11">11</option>
-                                            <option value="12">12</option>
-                                            <option value="13">13</option>
-                                            <option value="14">14</option>
-                                            <option value="15">15</option>
-                                            <option value="16">16</option>
-                                            <option value="17">17</option>
-                                            <option value="18">18</option>
-                                            <option value="19">19</option>
-                                            <option value="20">20</option>
-                                            <option value="21">21</option>
-                                            <option value="22">22</option>
-                                            <option value="23">23</option>
-                                            <option value="24">24</option>
-                                            <option value="25">25</option>
-                                            <option value="26">26</option>
-                                            <option value="27">27</option>
-                                            <option value="28">28</option>
-                                            <option value="29">29</option>
-                                            <option value="30">30</option>
-                                            <option value="31">31</option>
-                                            
-                                        </select>
-                                        <select name="Mes" class="main__informacionFecha">
-                                            <option value="" selected disabled>Mes</option>
-                                            <option value="Enero">Enero</option>
-                                            <option value="Febrero">Febrero</option>
-                                            <option value="Marzo">Marzo</option>
-                                            <option value="Mayo">Mayo</option>
-                                            <option value="Junio">Junio</option>
-                                            <option value="Julio">Julio</option>
-                                            <option value="Agosto">Agosto</option>
-                                            <option value="Septiembre">Septiembre</option>
-                                            <option value="Octubre">Octubre</option>
-                                            <option value="Noviembre">Noviembre</option>
-                                            <option value="Diciembre">Diciembre</option>
-                                        </select>
-                                        <select name="Año"  class="main__informacionFecha">
-                                            <option value="" selected disabled>Año</option>
-                                            <option value="2022">2022</option>
-                                            <option value="2021">2021</option>
-                                            <option value="2020">2020</option>
-                                            <option value="2019">2019</option>
-                                            <option value="2018">2018</option>
-                                            <option value="2017">2017</option>
-                                            <option value="2016">2016</option>
-                                            <option value="2015">2015</option>
-                                            <option value="2014">2014</option>
-                                            <option value="2013">2013</option>
-                                            <option value="2012">2012</option>
-                                            <option value="2011">2011</option>
-                                            <option value="2010">2010</option>
-                                            <option value="2009">2009</option>
-                                            <option value="2008">2008</option>
-                                            <option value="2017">2007</option>
-                                            <option value="2006">2006</option>
-                                            <option value="2005">2005</option>
-                                            <option value="2004">2004</option>
-                                            <option value="2003">2003</option>
-                                            <option value="2002">2002</option>
-                                            <option value="2001">2001</option>
-                                            <option value="2000">2000</option>
-                                        </select>
-                                    </span>
-                                    
-                                </div>
-
-                                <div class="main__informacionDNI">
-                                    <span>
-                                        <span>
-                                            <label for="Tipo">* Tipo</label>
-                                            <select name="Tipo">
-                                                <option value="DNI">DNI</option>
-                                            </select>
-                                        </span>
-
-                                        <span class="prueba">
-                                            <label for="Numero De Documento">* N° de Documento</label>
-                                            <input type="text">
-                                        </span>
-                                    </span>
-                                </div>
-
-                                <div>
-                                    <label for="Genero">* Genero</label>
-                                    <select name="Genero" id="">
-                                        <option value="" selected disabled> Seleccionar</option>
-                                        <option value="Hombre">Hombre</option>
-                                        <option value="Mujer">Mujer</option>
-                                        <option value="Ninguno">Prefiero No Decir</option>
-                                    </select>
-                                </div>  
-                            </div>
-                        </div>
-
-                        <div class="main__sobretucuenta">
-                            <h3>Sobre tu Cuenta</h3>
-                            <div>
-                                <label for="mail">* Mail</label>
-                                <input type="text">
-                            </div>
-
-                            <div>
-                                <label for="mail">* Confirmar Mail (mínimo 8 caracteres) </label>
-                                <input type="text">
-                            </div>
-
-                            <div>
-                                <label for="contraseña">* Contraseña</label>
-                                <input type="text">
-                            </div>
-
-                            <div>
-                                <label for="contraseña">* Confirmar Contraseña</label>
-                                <input type="text">
-                            </div>
-
-                            <div>
-                                <label for="">* Telefono (cod. area + numero)</label>
-                                <input type="text">
-                            </div>
-                        </div>
-
+                <div class="main__recordatorio">
+                    <div>
+                        <input id="acepto_politicas" type="checkbox" required>
+                        <label for="acepto_politicas">Acepto las Políticas de Privacidad y Términos y Condiciones.</label>
                     </div>
 
-                    <div class="main__recordatorio">
-                        <div>
-                            <input type="checkbox">
-                            <label for="acepto las politicas">Acepto las Políticas de Privacidad y Términos y Condiciones.</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" checked>
-                            <label for="acepto las noticias">Quiero recibir emails de promociones y noticias.</label>
-                        </div>
-                        <input type="button" value="Crear Mi Cuenta" class="main__recordatorioBoton">
+                    <div>
+                        <input id="aceptar_noticias" type="checkbox" checked>
+                        <label for="aceptar_noticias">Quiero recibir emails de promociones y noticias.</label>
                     </div>
+                    <button type="submit" class="main__recordatorioBoton">
+                        Crear Mi Cuenta
+                    </button>
+                </div>
 
-                </form>
+            </form>
 
-            </section>
-        </main>
+        </section>
+    </main>
 
-        <footer>
-            <section class="footer__pc">
-                <div class="footer__primero">
-                    <div class="footer__navegacion footer__nav1">
-                        <h2>ACERCA DE</h2>
+    <footer>
+        <section class="footer__pc">
+            <div class="footer__primero">
+                <div class="footer__navegacion footer__nav1">
+                    <h2>ACERCA DE</h2>
+                    <ul>
+                        <li><a href="sobre_nosotros.html"> Quiénes somos</a></li>
+                        <li><a href=""> Políticas de Privacidad</a></li>
+                        <li><a href=""> Protocolos COVID-19</a></li>
+                        <li><a href=""> Términos y Condiciones </a></li>
+                        <li><a href=""> Sustentabilidad</a></li>
+                        <li><a href=""> Defensa del Cosumidor</a></li>
+                    </ul>
+                </div>
+                <div class="footer__navegacion footer__nav2">
+                    <h2>INFORMACIÓN</h2>
+                    <ul>
+                        <li><a href="">Preguntas Frecuentes</a></li>
+                        <li><a href=""> ¿Comó Comprar?</a></li>
+                        <li><a href=""> Sucursales</a></li>
+                        <li><a href=""> Pagos y promociones</a></li>
+                        <li><a href=""> Entregas </a></li>
+                        <li><a href=""> Cambios</a></li>
+                        <li><a href="">Botón de arrepentimiento</a></li>
+                    </ul>
+                </div>
+                <div class="footer__atencion">
+                    <h2>CENTRO DE ATENCIÓN AL CLIENTE</h2>
+
+                    <p>Lunes a viernes de 08:30 a 18:30hs</p>
+                    <p>Sábados de 9 a 17:30hs</p>
+                    <a href="">
+                        <i class="fa-solid fa-phone"></i>
+                        +99 9999 9999
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-envelope"></i>
+                            nashe_american@hotmail.com
+                    </a>
+                    <a href="">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Calle Falsa 123
+                    </a>
+                </div>
+
+                <div class="footer__redes">
+                        <h2>SEGUINOS</h2>
+                        <a href="www.facebook.com">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="www.twitter.com">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="www.instagram.com">
+                                <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="www.tiktok.com">
+                                <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                </div>
+
+                <div class="footer__seguridad">
+                    <h2>COMPRA 100% SEGURA</h2>
+                    <p>
+                        Nuestro sitio posee toda la seguridad para tu compra.
+                    </p>
+                </div>
+
+            </div>
+            
+            <div class="footer__segundo">
+                <a href="../index.html">
+                    <img src="../recursos/certificado.png" alt="">
+                </a>
+                <p>© 2022 Nashe American. Todos los derechos reservados
+            </div>
+        </section>
+        
+        <div class="accordion footer__accordion" id="accordionPanelsStayOpenExample">
+            <div class="accordion-item footer__accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                        NOSOTROS
+                    </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body footer__accordion-body">
                         <ul>
                             <li><a href="sobre_nosotros.html"> Quiénes somos</a></li>
                             <li><a href=""> Políticas de Privacidad</a></li>
@@ -447,8 +581,17 @@
                             <li><a href=""> Defensa del Cosumidor</a></li>
                         </ul>
                     </div>
-                    <div class="footer__navegacion footer__nav2">
-                        <h2>INFORMACIÓN</h2>
+                </div>
+            </div>
+
+            <div class="accordion-item footer__accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        INFORMACIÓN
+                    </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body footer__accordion-body">
                         <ul>
                             <li><a href="">Preguntas Frecuentes</a></li>
                             <li><a href=""> ¿Comó Comprar?</a></li>
@@ -456,182 +599,91 @@
                             <li><a href=""> Pagos y promociones</a></li>
                             <li><a href=""> Entregas </a></li>
                             <li><a href=""> Cambios</a></li>
-                            <li><a href="">Botón de arrepentimiento</a></li>
+
                         </ul>
                     </div>
-                    <div class="footer__atencion">
-                        <h2>CENTRO DE ATENCIÓN AL CLIENTE</h2>
-    
+                </div>
+            </div>
+
+            <div class="accordion-item footer__accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        ATENCIÓN AL CLIENTE
+                    </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body footer__accordion-body">
                         <p>Lunes a viernes de 08:30 a 18:30hs</p>
                         <p>Sábados de 9 a 17:30hs</p>
-                        <a href="">
+                        <a href="tel:+9999999999">
                             <i class="fa-solid fa-phone"></i>
                             +99 9999 9999
                         </a>
-                        <a href="">
+                        <a href="mailto:nashe_american@hotmail.com">
                             <i class="fa-solid fa-envelope"></i>
-                                nashe_american@hotmail.com
+                            nashe_american@hotmail.com
                         </a>
-                        <a href="">
+                        <a href="www.google.com/maps">
                             <i class="fa-solid fa-location-dot"></i>
                             Calle Falsa 123
-                        </a>
+                        </a>                        
+
                     </div>
-    
-                    <div class="footer__redes">
-                            <h2>SEGUINOS</h2>
-                            <a href="www.facebook.com">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="www.twitter.com">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                            <a href="www.instagram.com">
-                                    <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="www.tiktok.com">
-                                    <i class="fa-brands fa-tiktok"></i>
-                            </a>
-                    </div>
-    
-                    <div class="footer__seguridad">
-                        <h2>COMPRA 100% SEGURA</h2>
-                        <p>
+                </div>
+            </div>
+
+            <div class="accordion-item footer__accordion-item">
+                <h2 class="accordion-header" id="flush-headingFour">
+                    <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        COMPRA 100% SEGURA
+                    </button>
+                </h2>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body footer__accordion-body">
+                        <p class="footer__redesP">
                             Nuestro sitio posee toda la seguridad para tu compra.
-                        </p>
+                        </p>                  
                     </div>
-    
-                </div>
-                
-                <div class="footer__segundo">
-                    <a href="">
-                        <img src="../recursos/certificado.png" alt="">
-                    </a>
-                    <p>© 2022 Nashe American. Todos los derechos reservados
-                </div>
-            </section>
-            
-            <div class="accordion footer__accordion" id="accordionPanelsStayOpenExample">
-                <div class="accordion-item footer__accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            NOSOTROS
-                        </button>
-                    </h2>
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body footer__accordion-body">
-                            <ul>
-                                <li><a href="sobre_nosotros.html"> Quiénes somos</a></li>
-                                <li><a href=""> Políticas de Privacidad</a></li>
-                                <li><a href=""> Protocolos COVID-19</a></li>
-                                <li><a href=""> Términos y Condiciones </a></li>
-                                <li><a href=""> Sustentabilidad</a></li>
-                                <li><a href=""> Defensa del Cosumidor</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="accordion-item footer__accordion-item">
-                    <h2 class="accordion-header" id="flush-headingTwo">
-                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                            INFORMACIÓN
-                        </button>
-                    </h2>
-                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body footer__accordion-body">
-                            <ul>
-                                <li><a href="">Preguntas Frecuentes</a></li>
-                                <li><a href=""> ¿Comó Comprar?</a></li>
-                                <li><a href=""> Sucursales</a></li>
-                                <li><a href=""> Pagos y promociones</a></li>
-                                <li><a href=""> Entregas </a></li>
-                                <li><a href=""> Cambios</a></li>
-    
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="accordion-item footer__accordion-item">
-                    <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                            ATENCIÓN AL CLIENTE
-                        </button>
-                    </h2>
-                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body footer__accordion-body">
-                            <p>Lunes a viernes de 08:30 a 18:30hs</p>
-                            <p>Sábados de 9 a 17:30hs</p>
-                            <a href="">
-                                <i class="fa-solid fa-phone"></i>
-                                +99 9999 9999
-                            </a>
-                            <a href="">
-                                <i class="fa-solid fa-envelope"></i>
-                                nashe_american@hotmail.com
-                            </a>
-                            <a href="">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Calle Falsa 123
-                            </a>                        
-    
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="accordion-item footer__accordion-item">
-                    <h2 class="accordion-header" id="flush-headingFour">
-                        <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                            COMPRA 100% SEGURA
-                        </button>
-                    </h2>
-                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body footer__accordion-body">
-                            <p class="footer__redesP">
-                                Nuestro sitio posee toda la seguridad para tu compra.
-                            </p>                  
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="footer__redes">
-                    <h2 class="footer__titulos">
-                        SEGUINOS
-    
-                        <a href="www.facebook.com">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="www.twitter.com">
-                            <i class="fa-brands fa-twitter"></i>
-                        </a>
-                        <a href="www.instagram.com">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a href="www.tiktok.com">
-                            <i class="fa-brands fa-tiktok"></i>
-                        </a>
-                        
-                    </h2>
-                </div>
-    
-                <div class="footer__boton">
-                    <a href="">
-                        <button>Botón de Arrepentimiento</button>
-                    </a>
-                </div>
-    
-                <div class="footer__segundo">
-                    <a href="">
-                        <img src="../recursos/certificado.png" alt="">
-                    </a>
-                    <p>© 2022 Nashe American. Todos los derechos reservados
                 </div>
             </div>
             
-        </footer>
-        <!-- SCRIP BOOTSTRAP-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <div class="footer__redes">
+                <h2 class="footer__titulos">
+                    SEGUINOS
+
+                    <a href="www.facebook.com">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="www.twitter.com">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="www.instagram.com">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="www.tiktok.com">
+                        <i class="fa-brands fa-tiktok"></i>
+                    </a>
+                    
+                </h2>
+            </div>
+
+            <div class="footer__boton">
+                <a href="../index.html">
+                    <button>Botón de Arrepentimiento</button>
+                </a>
+            </div>
+
+            <div class="footer__segundo">
+                <a href="../index.html">
+                    <img src="../recursos/certificado.png" alt="">
+                </a>
+                <p>© 2022 Nashe American. Todos los derechos reservados
+            </div>
+        </div>
+        
+    </footer>
+    <!-- SCRIP BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
     </body>
 </html>

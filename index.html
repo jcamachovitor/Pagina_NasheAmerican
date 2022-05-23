@@ -9,11 +9,12 @@
     <!-- BOOTSTRAP-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <link rel="shortcut icon" href="recursos/logo_pequeño.png">
-    <link rel="stylesheet" href="css/estilos.css">
-
     <!--ICONS-->
     <script src="https://kit.fontawesome.com/be0be54633.js" crossorigin="anonymous"></script>
+
+    <!--CSS-->
+    <link rel="shortcut icon" href="recursos/logo_pequeño.png">
+    <link rel="stylesheet" href="css/estilos.css">
 
     <!--FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -47,231 +48,281 @@
             </div>
         </section>
 
+        <!--HEADER DE > 721 px-->
+
         <section class="header__segundo">
-            <div class="header__segundoIzquierda">
-                <a href="#">
-                    <img src="recursos/logo.png" alt="">
-                </a>
-            </div>
+            <div class="header__segundoPC">
 
-            <div class="header__segundoCentro">
-                <nav>
-                    <ul>
-                        <li ><a href="paginas/productos.html">Categorías</a></li>
-                        <li><a href="paginas/productos.html">Mujer</a></li>
-                        <li><a href="paginas/productos.html">Hombres</a></li>
-                        <li><a href="paginas/productos.html">Niños</a></li>
-                        <li><a href="paginas/productos.html">Promociones</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="header__segundoDerecha">
-                <a href="paginas/iniciar_sesion.html">
-                    <i class="fa-solid fa-user fa-2x"></i>
-                </a>
-
-                <div class="accordion accordion-flush header__icon" id="accordionFlushExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingSearch">
-                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseSearch" aria-expanded="false" aria-controls="flush-collapseSearch">
-                                <i class="fa-solid fa-magnifying-glass fa-2x header__iconBuscador"></i>
-                            </button>
-                        </h2>
-                    </div>
-                </div>
-
-                <a href="#">
-                    <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                </a>
-            </div>
-        </section>
-
-        <section class="header__buscadorMedio">
-            <div class="header__buscadorPrimero">
-                <div class="header__segundoIzquierda">
-                    <a href="#">
-                        <img src="recursos/logo.png" alt="">
+                <div class="header__logo">
+                    <a href="index.html">
+                        <img src="recursos/logo.png" alt="Logo_Nashe_American">
                     </a>
                 </div>
 
-                <form class="d-flex header__buscadorLupa">
-                    <button class="btn btn-outline-success header__buscadorButton" type="submit">
+                <form class="d-flex header__buscador">
+                    <button class="btn btn-outline-success" type="submit">
                         <i class="fa-solid fa-magnifying-glass fa-2x"></i>
                     </button>
                     <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
                 </form>
 
-                <div class="header__segundoDerecha">
-                    <a href="paginas/iniciar_sesion.html" class="separacion">
+                <div class="header__iconos">
+                    <a href="paginas/iniciar_sesion.html">
                         <i class="fa-solid fa-user fa-2x"></i>
                     </a>
-
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                    <a href="paginas/iniciar_sesion.html">
+                        <i class="fa-solid fa-heart"></i>
                     </a>
+
+                    <div class="header__iconosShop">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <span>
+                                <i class="fa-solid fa-caret-up"></i>
+                            </span>
+                            <div>
+                                <p>No tienes ningún producto en tu carrito de compras.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <div class="header__segundoCentro">
-                    <nav>
-                        <ul>
-                            <li ><a href="paginas/productos.html">Categorías</a></li>
-                            <li><a href="paginas/productos.html">Mujer</a></li>
-                            <li><a href="paginas/productos.html">Hombres</a></li>
-                            <li><a href="paginas/productos.html">Niños</a></li>
-                            <li><a href="paginas/productos.html">Promociones</a></li>
-                        </ul>
-                    </nav>
-                </div>
+
+            <div class="header__navegacion">
+                <nav>
+                    <ul>
+                        <li class="nav__hombre">
+                            <a href="paginas/productos.html">Hombres</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__mujer">
+                            <a href="paginas/productos.html">Mujeres</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__niño">
+                            <a href="paginas/productos.html">Niños</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__niña">
+                            <a href="paginas/productos.html">Niñas</a>
+                            <ul class="header__submenuPC">
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-shirt fa-2x"></i>
+                                        <p>Indumentaria</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-socks fa-2x"></i>
+                                        <p href="">Calzado</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="paginas/productos.html">
+                                        <i class="fa-solid fa-glasses fa-2x"></i>
+                                        <p href="">Accesorios</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="paginas/productos.html">Promociones</a></li>
+                    </ul>
+                </nav>
             </div>
             
         </section>
 
-
-
-
+        <!--HEADER DE 720 a 320 px-->
         <section class="header__segundoMobile">
-            <nav class="navbar header__navbar header__navColor">
-                <div class="container-fluid header__menu">
-                        <button class="navbar-toggler header__navButton" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                            <span class="header__navIcon">
-                                <i class="fa-solid fa-bars fa-3x"></i>
-                            </span>
-                        </button>
-                        <div class="offcanvas offcanvas-end header__menuEscondido" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="navbar header__completo">
+                <div class="container-fluid header__completoSuperior">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <div>
+                            <i class="fa-solid fa-bars fa-3x"></i>
+                        </div>
+                    </button>
+
+                    <div class="offcanvas offcanvas-end header__menuEscondido" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                         <div class="offcanvas-header header__tituloMenu">
                             <div class="offcanvas-title" id="offcanvasNavbarLabel">
-                                <img src="recursos/logo.png" class="header__submenuMarca" alt="">
+                                <img src="recursos/logo.png" alt="Logo_Nashe_American">
                             </div>
                             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body header__navegadorMenu">
+                        <nav class="offcanvas-body header__navegadorMenu">
                             <ul class="navbar-nav justify-content-end flex-grow-1">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Categorías
+                                    <a class="dropdown-toggle header__opcionesMenu" href="paginas/productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Hombre
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Moda</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Deportivo</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Calzado</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Ver Todo</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <a class="dropdown-toggle header__opcionesMenu" href="paginas/productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         Mujer
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Remera</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Calzado</a></li>
                                         <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Ver Todo</a></li>
+                                    </ul>
+                                </li>
+                                
+                                <li class="nav-item dropdown">
+                                    <a class="dropdown-toggle header__opcionesMenu" href="paginas/productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Niño
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Calzado</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Ver Todo</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hombres
+                                    <a class="dropdown-toggle header__opcionesMenu" href="paginas/productos.html" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Niña
                                     </a>
                                     <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Remera</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Pantalon</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Indumentaria</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Calzado</a></li>
                                         <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Accesorios</a></li>
+                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Ver Todo</a></li>
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        Niños
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Remera</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Pantalon</a></li>
-                                        <li><a class="dropdown-item header__subNavegacion" href="paginas/productos.html">Accesorios</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="paginas/productos.html">Promociones</a>
+                                    <a class="active header__opcionesMenu" aria-current="page" href="paginas/productos.html">Promociones</a>
                                 </li>
                             </ul>
-                        </div>
+                        </nav>
                     </div>
-                </div>
-        
-                <div class="header__marca">
-                    <a href="#">
-                        <img src="recursos/logo.png" alt="">
-                    </a>
-                </div>
-        
-        
-                <div class="header__icons">
-                    <a href="paginas/iniciar_sesion.html" class="header__iconSeparacion">
-                        <i class="fa-solid fa-user fa-2x"></i>
-                    </a>
-                    <div class="accordion accordion-flush header__iconSeparacion header__icon" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    <i class="fa-solid fa-magnifying-glass fa-2x header__iconBuscador"></i>
-                                </button>
-                            </h2>
-                        </div>
-                    </div>
-                    <a href="#">
-                        <i class="fa-solid fa-cart-shopping fa-2x"></i>
-                    </a>
-                </div>
-            </nav>
-        </section>
 
-        <section class="header__conLupa">
-            <div class="accordion accordion-flush" id="accordionFlushExample">
-                <div class="accordion-item">
-                    
-                    <div id="flush-collapseSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingSearch" data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body header__acordionBuscador">
-                            <form class="d-flex">
-                                <button class="btn btn-outline-success header__buscadorButton" type="submit">
-                                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                                </button>
-                                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-                            </form>
+                    <div class="header__logo">
+                        <a href="index.html">
+                            <img src="recursos/logo.png" alt="Logo_Nashe_American">
+                        </a>
+                    </div>
+
+                    <div class="header__iconos">
+                        <a href="paginas/iniciar_sesion.html">
+                            <i class="fa-solid fa-user fa-2x"></i>
+                        </a>
+                        <div class="header__iconosShop">
+                            <button id="btnGroupDrop1" type="button" class="btn btn-primary" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <span>
+                                    <i class="fa-solid fa-caret-up"></i>
+                                </span>
+                                <div>
+                                    <p>Tu carrito está vacío.</p>
+                                </div>
+                                
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
 
-
-
-        <section class="header__sinLupa header__buscador">
-            <form class="d-flex">
-                <button class="btn btn-outline-success header__buscadorButton" type="submit">
-                    <i class="fa-solid fa-magnifying-glass fa-2x"></i>
-                </button>
-                <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
-            </form>
+            <div class="header__buscador">
+                <form class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                    </button>
+                    <input class="form-control" type="search" placeholder="Buscar..." aria-label="Search">
+                </form>
+            </div>
         </section>
     </header>
 
     <main>
         <section class="main__primero">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
 
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="1500">
                         <img src="recursos/principal.png" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="recursos/principal.png" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
                         <img src="recursos/principal.png" class="d-block w-100" alt="...">
                     </div>
 
-                    <button class="carousel-control-prev main__primeroButtonL" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <button class="carousel-control-prev main__primeroButtonL" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
                         <i class="fa-solid fa-3x fa-circle-chevron-left" aria-hidden="true"></i>
                         <span class="visually-hidden">Previous</span>
                     </button>
-                    <button class="carousel-control-next main__primeroButtonR" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <button class="carousel-control-next main__primeroButtonR" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
                         <i class="fa-solid fa-3x fa-circle-chevron-right" aria-hidden="true"></i>
                         <span class="visually-hidden">Next</span>
                     </button>
@@ -290,9 +341,7 @@
         <section class="main__segundo">
             <img src="recursos/banner.png" alt="">
         </section>
-        
-        
-        
+
         <section class="main__tercero">
 
             <div class="main__terceroBloque main__terceroBloqueArriba">
@@ -483,9 +532,7 @@
             </div>
         </section>
         
-
-
-        <div class="accordion footer__accordion" id="accordionPanelsStayOpenExample">
+        <section class="accordion footer__accordion" id="accordionPanelsStayOpenExample">
             <div class="accordion-item footer__accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed footer__titulos" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -601,7 +648,7 @@
                 </a>
                 <p>© 2022 Nashe American. Todos los derechos reservados
             </div>
-        </div>
+        </section>
         
     </footer>
     <!-- SCRIP BOOTSTRAP-->

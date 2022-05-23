@@ -56,8 +56,11 @@ form{
 .main__datos input{
     width: 100%;
     margin-bottom: 20px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding:7px 0
+}
+.main__datos label::before{
+    content: "* ";
+    color: yellow;
 }
 
 .main__ayuda{
@@ -131,10 +134,8 @@ form{
     form{
         width: 90%;
     }
-    .main__ayuda a{
-        font-size: 0.8rem;
+    .main__ayuda a, input, label, button{
+        font-size: 0.9rem;
     }
-    input, label{
-        font-size: 0.8rem;
-    }
+    
 }

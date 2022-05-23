@@ -53,11 +53,16 @@ h3 , input , label ,select{
     margin-bottom: 10px;
     font-family: Roboto,sans-serif;
 }
-input , select{
-    padding-top: 10px;
-    padding-bottom: 10px;
+select{
+    padding: 10px 0;
 }
-
+input{
+    padding:7px 0;
+}
+.main__informacion label::before, .main__sobretucuenta label::before{
+    content: "* ";
+    color: yellow;
+}
 
 /*FORM*/
 .main__informacion{
@@ -110,6 +115,14 @@ input , select{
     margin-top: 15px;
 }
 
+.main__recordatorioBoton{
+    padding: 10px;
+    border: none;
+    color: black;
+    background: yellow;
+    box-shadow: none;
+}
+
 
 @media (max-width:1200px) and (min-width:800px){
     main section{
@@ -130,7 +143,6 @@ input , select{
         padding-top: 50px;
         padding-bottom: 50px;
     }
-    
     main section{
         width: 90%;
         padding: 2rem 0;
@@ -162,12 +174,16 @@ input , select{
     .main__ayuda a{
         font-size: 0.8rem;
     }
-    input, label{
-        font-size: 0.8rem;
-    }
     .main__recordatorio div{
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
     }
+    .main__recordatorio div label{
+        margin-bottom: 0;
+    }
+    .main__recordatorio div:last-child{
+        margin-bottom: 0;
+    }
+
     .main__recordatorioBoton{
         margin-top: 0;
     }
@@ -210,13 +226,30 @@ input , select{
     .main__ayuda a{
         font-size: 0.8rem;
     }
-    input, label{
-        font-size: 0.8rem;
+    input, label,select{
+        font-size: 0.9rem;
     }
     .main__recordatorio div{
         margin-bottom: 1rem;
     }
     .main__recordatorioBoton{
+        margin-top: 0;
+    }
+
+
+    .main__recordatorio div{
+        margin-bottom: 0.5rem;
+    }
+    .main__recordatorio div label{
+        margin-bottom: 0;
+    }
+    .main__recordatorio div:last-child{
+        margin-bottom: 0;
+    }
+
+    .main__recordatorioBoton{
+        font-size: 0.9rem;
+        padding: 5px 0;
         margin-top: 0;
     }
 }
