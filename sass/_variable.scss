@@ -3,3 +3,18 @@ $color-principalmain:rgb(223, 223, 223);
 $color-principalmainProductos:#393c3e;
 $color-principalfooter:rgb(71, 70, 70);
 $color-principalfooterSegundo:rgb(223, 223, 223);
+
+$sizes:(h2:2.5rem, h3:1.2rem);
+@each $titulo, $size in $sizes {
+    #{$titulo}{
+        font-size: $size;
+        font-weight:600;
+    }
+}
+
+@mixin flex($direction,$justify-content) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: center;
+}

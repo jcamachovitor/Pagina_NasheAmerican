@@ -19,10 +19,6 @@ body{
     p{
         margin-bottom: 0;
     }
-    h2{
-        font-weight:600
-    }
-    
 }
 
 /*COSAS CON DISPLAY NONE*/
@@ -46,19 +42,13 @@ header{
 /*HEADER Primero*/
 .header{
     &__primero{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column,center);
         background-color: black;
         margin-bottom: 15px;
         padding: 10px 0;
         margin: 0 30px;
         div{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include flex(row, center);
             width: 50%;
             color: white;
             i{
@@ -115,10 +105,7 @@ header{
 /*HEADER Segundo*/
 
 .header__segundoPC{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    @include flex(row,space-between);
     padding: 1.5rem 2rem;
     .header__logo{
         height: auto;
@@ -161,12 +148,10 @@ header{
 /*ICONOS*/
 .header__iconos{
     width: auto;
-    display: flex;
-    justify-content: space-around;
+    @include flex(row,space-around);
     align-content: center;
     a{
-        display: flex;
-        align-items: center;
+        @include flex(row,center);
         margin-right: 0.6rem;
     }
     i{
@@ -184,8 +169,7 @@ header{
     button{
         margin: 0;
         padding: 0;
-        display: flex;
-        align-items: center;
+        @include flex(row,center);
         border: none;
         background: none;
         height: 100%;
@@ -213,8 +197,7 @@ header{
         border: none;
         background: transparent;
         span{
-            display: flex;
-            justify-content: flex-end;
+            @include flex(row,flex-end);
             padding-top: 1rem;
             padding-bottom: 0;
             i{
@@ -244,9 +227,7 @@ nav{
     ul{
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        @include flex(row,space-around);
         li{
             font-size: 25px;
             padding: 9px 10px;
@@ -292,9 +273,7 @@ nav{
         }
         a{
             color: black;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column,center);
             &:hover{
                 color: rgba(0, 0, 0, 0.74)
             }
@@ -334,9 +313,7 @@ nav{
         }
         .main__primeroIndicador{
             position: relative;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            @include flex(row,center);
             margin-bottom: 0;
             & [data-bs-target]{
                 height: 11px;
@@ -380,7 +357,6 @@ nav{
             margin-bottom: 0;
         }
         h2{
-            font-size: 35px;
             margin-bottom: 35px;
             margin-left: 50px;
             font-family: 'Bebas Neue', cursive;
@@ -392,15 +368,12 @@ nav{
                 padding: 0 50px;
                 width: 100%;
                 height: auto;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
+                @include flex(row,space-around);
                 flex-wrap: nowrap;
                 background: $color-principalmain;
             }
             .index__galeria{
-                display: flex;
-                flex-direction: row;
+                @include flex(row,flex-start);
                 .carousel-item.active, .index__productos{
                     div{
                         background: white;
@@ -409,14 +382,10 @@ nav{
                         border: 1px solid gray;
                         padding: 10px 5px;
                         margin-right: 1rem;
-                        display: flex;
-                        flex-direction: column;
-                        align-items: center;
+                        @include flex(column,flex-start);
                         a{
                             position: relative;
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
+                            @include flex(column,center);
                             width: 100%;
                             img{
                                 width: 100%;
@@ -460,18 +429,14 @@ nav{
 
 /*MAIN cuarto*/
 .main__cuarto{
-    display: flex;
-    justify-content: center;
+    @include flex(row,center);
     padding-top: 100px;
     padding-bottom: 100px;
-
     background-image: url(../recursos/madera.png);
     background-position: center;
     .main__cuartoBoleto {
         width: 900px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column,center);
         border-color: black;
         border-top: solid;
         border-bottom: solid;
@@ -494,9 +459,8 @@ nav{
             color: black;
         }
         div{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
+            @include flex(row,center);
+            align-items: initial;
             width: 100%;
             .main__cuartoInput1{
                 width: 45%;
@@ -540,8 +504,7 @@ footer{
         font-size: 1rem;
         height: 2rem;
     }
-    h2{
-        font-size: 1.2rem;
+    h3{
         font-family: 'Comic Neue';
         margin-bottom: 15px;
         color: white;
@@ -594,9 +557,7 @@ footer{
     }
     /*FOOTER segundo*/
     .footer__segundo{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+        @include flex(row,flex-start);
         margin-top: 40px;
         padding: 15px 30px;
         background: $color-principalfooterSegundo;
@@ -696,6 +657,9 @@ footer{
     /*MAIN TERCERO*/
     .main__tercero{
         padding: 70px 0;
+        h2{
+            font-size: 2.2rem;
+        }
     }
 
     /*MAIN cuarto*/
@@ -729,7 +693,7 @@ footer{
     /*FOOTER*/
 
     footer{ 
-        a, p, h2{
+        a, p, h3{
             font-size: 0.95rem;
         }
     }
@@ -826,12 +790,17 @@ footer{
                             border-radius: 0;
                             border: none;
                             li{
+                                width: 100%;
                                 background: transparent;
                                 padding: 0;
                                 border: none;
                                 margin-bottom: 0.5rem;
                                 &:last-child{
                                     margin-bottom: 0;
+                                }
+                                button{
+                                    border: none;
+                                    background: transparent;
                                 }
                                 .header__opcionesMenu{
                                     display: flex;
@@ -853,6 +822,9 @@ footer{
                                         background-color: black;
                                         color: white;
                                     }
+                                }
+                                .dropdown-menu[data-bs-popper]{
+                                    margin-top: 0;
                                 }
                                 .show:not(.collapsed)::after{
                                     transform: rotate(-180deg);
@@ -1156,7 +1128,7 @@ footer{
         }
         .footer__redes{
             padding: 1rem 1.25rem;
-            h2{
+            h3{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
@@ -1299,12 +1271,17 @@ footer{
                             border-radius: 0;
                             border: none;
                             li{
+                                width: 100%;
                                 background: transparent;
                                 padding: 0;
                                 border: none;
                                 margin-bottom: 0.5rem;
                                 &:last-child{
                                     margin-bottom: 0;
+                                }
+                                button{
+                                    border: none;
+                                    background: transparent;
                                 }
                                 .header__opcionesMenu{
                                     display: flex;
@@ -1326,6 +1303,9 @@ footer{
                                         background-color: black;
                                         color: white;
                                     }
+                                }
+                                .dropdown-menu[data-bs-popper]{
+                                    margin-top: 0;
                                 }
                                 .show:not(.collapsed)::after{
                                     transform: rotate(-180deg);
@@ -1635,7 +1615,7 @@ footer{
         }
         .footer__redes{
             padding: 1rem 1.25rem;
-            h2{
+            h3{
                 display: flex;
                 flex-direction: row;
                 align-items: center;

@@ -1,4 +1,12 @@
 @charset "UTF-8";
+h2 {
+  font-size: 2.5rem;
+  font-weight: 600; }
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600; }
+
 * {
   padding: 0;
   margin: 0;
@@ -14,9 +22,6 @@ body a {
 
 body p {
   margin-bottom: 0; }
-
-body h2 {
-  font-weight: 600; }
 
 /*COSAS CON DISPLAY NONE*/
 .header__primeroPromoCelu2 {
@@ -128,10 +133,14 @@ header {
 .header__iconos {
   width: auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
+  align-items: center;
   align-content: center; }
   .header__iconos a {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin-right: 0.6rem; }
   .header__iconos i {
@@ -147,6 +156,8 @@ header {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     border: none;
     background: none;
@@ -171,7 +182,9 @@ header {
     background: transparent; }
     .header__iconosShop div span {
       display: flex;
+      flex-direction: row;
       justify-content: flex-end;
+      align-items: center;
       padding-top: 1rem;
       padding-bottom: 0; }
       .header__iconosShop div span i {
@@ -196,7 +209,8 @@ nav {
     padding: 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around; }
+    justify-content: space-around;
+    align-items: center; }
     nav ul li {
       font-size: 25px;
       padding: 9px 10px;
@@ -237,6 +251,7 @@ nav {
       color: black;
       display: flex;
       flex-direction: column;
+      justify-content: center;
       align-items: center; }
       .header__submenuPC li a:hover {
         color: rgba(0, 0, 0, 0.74); }
@@ -263,6 +278,7 @@ nav {
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-items: center;
     margin-bottom: 0; }
     .main__primero div .main__primeroIndicador [data-bs-target] {
@@ -294,7 +310,6 @@ nav {
     .main__tercero .main__terceroPC:last-child {
       margin-bottom: 0; }
     .main__tercero .main__terceroPC h2 {
-      font-size: 35px;
       margin-bottom: 35px;
       margin-left: 50px;
       font-family: 'Bebas Neue', cursive;
@@ -308,11 +323,14 @@ nav {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         flex-wrap: nowrap;
         background: #dfdfdf; }
       .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria {
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center; }
         .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div {
           background: white;
           height: auto;
@@ -322,11 +340,13 @@ nav {
           margin-right: 1rem;
           display: flex;
           flex-direction: column;
+          justify-content: flex-start;
           align-items: center; }
           .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a {
             position: relative;
             display: flex;
             flex-direction: column;
+            justify-content: center;
             align-items: center;
             width: 100%; }
             .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a img, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a img {
@@ -358,7 +378,9 @@ nav {
 /*MAIN cuarto*/
 .main__cuarto {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
   padding-top: 100px;
   padding-bottom: 100px;
   background-image: url(../recursos/madera.png);
@@ -367,6 +389,7 @@ nav {
     width: 900px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-color: black;
     border-top: solid;
@@ -389,6 +412,8 @@ nav {
       display: flex;
       flex-direction: row;
       justify-content: center;
+      align-items: center;
+      align-items: initial;
       width: 100%; }
       .main__cuarto .main__cuartoBoleto div .main__cuartoInput1 {
         width: 45%;
@@ -421,8 +446,7 @@ footer {
     color: black;
     font-size: 1rem;
     height: 2rem; }
-  footer h2 {
-    font-size: 1.2rem;
+  footer h3 {
     font-family: 'Comic Neue';
     margin-bottom: 15px;
     color: white; }
@@ -460,6 +484,7 @@ footer {
   .footer__pc .footer__segundo {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     margin-top: 40px;
     padding: 15px 30px;
@@ -519,6 +544,8 @@ footer {
   /*MAIN TERCERO*/
   .main__tercero {
     padding: 70px 0; }
+    .main__tercero h2 {
+      font-size: 2.2rem; }
   /*MAIN cuarto*/
   .main__cuarto {
     padding: 3rem 2rem; }
@@ -539,7 +566,7 @@ footer {
         width: 15%;
         font-size: 0.9rem; }
   /*FOOTER*/
-  footer a, footer p, footer h2 {
+  footer a, footer p, footer h3 {
     font-size: 0.95rem; }
   .footer__pc .footer__primero {
     display: grid;
@@ -605,12 +632,16 @@ footer {
               border-radius: 0;
               border: none; }
               .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li {
+                width: 100%;
                 background: transparent;
                 padding: 0;
                 border: none;
                 margin-bottom: 0.5rem; }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li:last-child {
                   margin-bottom: 0; }
+                .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li button {
+                  border: none;
+                  background: transparent; }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__opcionesMenu {
                   display: flex;
                   width: 100%;
@@ -628,6 +659,8 @@ footer {
                   .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__opcionesMenu:hover {
                     background-color: black;
                     color: white; }
+                .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .dropdown-menu[data-bs-popper] {
+                  margin-top: 0; }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .show:not(.collapsed)::after {
                   transform: rotate(-180deg); }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__subNavegacion {
@@ -835,7 +868,7 @@ footer {
             filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
     footer .footer__redes {
       padding: 1rem 1.25rem; }
-      footer .footer__redes h2 {
+      footer .footer__redes h3 {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -843,13 +876,13 @@ footer {
         font-size: 1rem;
         font-weight: 400;
         color: white; }
-        footer .footer__redes h2 a {
+        footer .footer__redes h3 a {
           margin-left: 0.6rem;
           font-size: 1.3rem;
           color: black; }
-          footer .footer__redes h2 a:hover {
+          footer .footer__redes h3 a:hover {
             color: rgba(0, 0, 0, 0.61); }
-          footer .footer__redes h2 a i {
+          footer .footer__redes h3 a i {
             font-size: 1.8rem; }
     footer .footer__boton {
       margin: 0 1.25rem;
@@ -941,12 +974,16 @@ footer {
               border-radius: 0;
               border: none; }
               .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li {
+                width: 100%;
                 background: transparent;
                 padding: 0;
                 border: none;
                 margin-bottom: 0.5rem; }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li:last-child {
                   margin-bottom: 0; }
+                .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li button {
+                  border: none;
+                  background: transparent; }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__opcionesMenu {
                   display: flex;
                   width: 100%;
@@ -964,6 +1001,8 @@ footer {
                   .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__opcionesMenu:hover {
                     background-color: black;
                     color: white; }
+                .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .dropdown-menu[data-bs-popper] {
+                  margin-top: 0; }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .show:not(.collapsed)::after {
                   transform: rotate(-180deg); }
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__subNavegacion {
@@ -1176,7 +1215,7 @@ footer {
             filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
     footer .footer__redes {
       padding: 1rem 1.25rem; }
-      footer .footer__redes h2 {
+      footer .footer__redes h3 {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -1184,15 +1223,15 @@ footer {
         font-size: 1rem;
         font-weight: 400;
         color: white; }
-        footer .footer__redes h2 a {
+        footer .footer__redes h3 a {
           margin-left: 0.5rem;
           font-size: 1.5rem;
           color: black; }
-          footer .footer__redes h2 a:first-child {
+          footer .footer__redes h3 a:first-child {
             margin-left: 1rem; }
-          footer .footer__redes h2 a:hover {
+          footer .footer__redes h3 a:hover {
             color: rgba(0, 0, 0, 0.61); }
-          footer .footer__redes h2 a i {
+          footer .footer__redes h3 a i {
             font-size: 1.5rem; }
     footer .footer__boton {
       margin: 0 1.25rem;
