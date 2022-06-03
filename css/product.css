@@ -1,715 +1,507 @@
-*{
-    font-family: sans-serif;
-}
-.main__celular{
-    display: none;
-    visibility: visible;
-}
-
-main{
-    padding: 60px 35px;
-    background-color: rgb(223, 223, 223);
-}
-.main__ubicacion{
+main {
+  padding: 60px 35px;
+  background-color: #dfdfdf; }
+  main .main__ubicacion {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px;
-}
-select{
-    width: 75%;
-    padding: 5px;
-    font-size: 15px;
-    margin-bottom: 20px;
-}
-main input{
-    width: 20px;
-    height: 20px;
-}
-label{
-    margin-left: 5px;
-    font-size: 20px;
-}
-/*MAIN bloque 1*/
-.main__tiendaBloqueP{
-    width: 250px;
-}
-
-.main__tienda{
+    margin-bottom: 50px; }
+  main .main__tienda {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-}
-.main__tiendaBusqueda{
-    margin-bottom: 15px;
-}
-.main__tiendaBusqueda h2{
-    font-size: 1.5rem;
-    font-family: 'Roboto Slab', serif;
-    margin-bottom: 1rem;
-}
-.main__tiendaSeleccion{
-    display: flex;
-    flex-direction: column;
-    overflow-y: scroll;
-    padding: 1rem;
-    padding-left: 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
-    height: 200px;
-}
-.main__tiendaSeleccion div{
-    margin-bottom: 10px;
-}
+    justify-content: space-between; }
+    main .main__tienda .main__tiendaBloqueP {
+      width: 230px; }
+      main .main__tienda .main__tiendaBloqueP select {
+        width: 75%;
+        padding: 5px;
+        font-size: 15px;
+        margin-bottom: 20px; }
+      main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda {
+        margin-bottom: 15px; }
+        main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda h2 {
+          font-size: 1.5rem;
+          font-family: 'Roboto Slab', serif;
+          margin-bottom: 0; }
+        main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion {
+          display: flex;
+          flex-direction: column;
+          overflow-y: scroll;
+          padding: 1rem;
+          padding-left: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+          height: 200px; }
+          main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div {
+            margin-bottom: 10px; }
+            main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div input {
+              width: 20px;
+              height: 20px; }
+            main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div label {
+              margin-left: 5px;
+              font-size: 20px; }
+    main .main__tienda .main__tiendaBloqueS {
+      width: 75%;
+      display: flex;
+      flex-direction: column; }
+      main .main__tienda .main__tiendaBloqueS .main__celular {
+        display: none;
+        visibility: visible; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaResultado {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 20px;
+        border-bottom: solid #a1a1a1 1px;
+        width: 100%; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaResultado p:last-child {
+          opacity: .65;
+          margin-left: 5px; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
+        padding-top: 30px;
+        background-color: white;
+        display: grid;
+        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve" "diez once doce";
+        justify-items: center; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
+          margin-bottom: 3rem;
+          width: 80%;
+          display: flex;
+          flex-direction: column;
+          align-items: center; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 5px; }
+            main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a img {
+              width: 100%;
+              margin-bottom: 15px; }
+            main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
+              text-align: center; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
+            font-size: 1.8rem; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto1 {
+          grid-area: uno; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto2 {
+          grid-area: dos; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto3 {
+          grid-area: tres; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto4 {
+          grid-area: cuatro; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto5 {
+          grid-area: cinco; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto6 {
+          grid-area: seis; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto7 {
+          grid-area: siete; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto8 {
+          grid-area: ocho; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto9 {
+          grid-area: nueve; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto10 {
+          grid-area: diez; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto11 {
+          grid-area: once; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa .grid__producto12 {
+          grid-area: doce; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas span a, main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas span p {
+          font-size: 20px; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginasNumero {
+          margin: 0 1rem; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginaActual a {
+          padding: 5px;
+          background: none;
+          border: solid black 1px;
+          border-radius: 50%; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginaActual a:hover {
+            font-weight: 700; }
 
-/**MAIN Bloque 2*/
-
-.main__tiendaBloqueS{
-    width: 75%;
-    display: flex;
-    flex-direction: column;
-    
-}
-.main__tiendaResultado{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-bottom: 20px;
-    border-bottom: solid rgb(161, 161, 161) 1px;
-    width: 100%;
-}
-
-.destacado{
-    opacity: .65;
-    margin-left: 5px;
-}
-
-.main__tiendaRopa{
-    padding-top: 30px;
-    background-color: white;
-    display: grid;
-    grid-template-areas: "uno dos tres"
-                        "cuatro cinco seis"
-                        "siete ocho nueve"
-                        "diez once doce";
-    justify-items: center;
-}
-.grid__producto1{
-    grid-area: uno;
-}
-.grid__producto2{
-    grid-area: dos;
-}
-.grid__producto3{
-    grid-area: tres;
-}
-.grid__producto4{
-    grid-area: cuatro;
-}
-.grid__producto5{
-    grid-area: cinco;
-}
-.grid__producto6{
-    grid-area: seis;
-}
-.grid__producto7{
-    grid-area: siete;
-}
-.grid__producto8{
-    grid-area: ocho;
-}
-.grid__producto9{
-    grid-area: nueve;
-}
-.grid__producto10{
-    grid-area: diez;
-}
-.grid__producto11{
-    grid-area: once;
-}
-.grid__producto12{
-    grid-area: doce;
-}
-
-
-.main__tiendaRopa div{
-    margin-bottom: 3rem;
-    width: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main__tiendaRopa div a{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 5px;
-}
-.main__tiendaRopa p{
-    text-align: center;
-}
-
-.main__tiendaProductos{
-    width: 100%;
-    margin-bottom: 15px;
-}
-/*MAIN paginas*/
-
-.main__tiendaPaginas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 15px;
-}
-
-span a, span p{
-    font-size: 20px;
-}
-.main__tiendaPaginasNumero{
-    margin: 0 1rem;
-}
-
-.main__tiendaPaginaActual a{
-    padding: 5px;
-    background: none;
-    border: solid black 1px;
-    border-radius: 50%;
-}
-.main__tiendaPaginas span a , .main__tiendaPaginas span p{
-    color: #212529;
-}
-
-.main__tiendaPaginas span a:hover{
-    font-weight: 700;
-}
-
-
-@media (max-width:1000px) and (min-width:721px){
-    
-    main{
-        padding: 1rem 0;
-    }
-    .main__ubicacion{
-        margin-left: 1rem;
-    }
-    
-    .main__tiendaBloqueP{
-        width: 265px;
-    }
-
-    .main__tiendaBloqueP select{
-        width: 80%;
-        margin-bottom: 0;
-        margin-left: 1rem;
-    }
-    .main__tiendaSeleccion{
-        padding-left: 1rem;
-        height: 150px;
-    }
-    .main__tiendaSeleccion div{
-        margin-bottom: 0.5rem;
-    }
-
-    label{
-        font-size: 1rem;
-    }
-
-
-    
-    .main__tiendaBusqueda{
+@media (max-width: 1000px) and (min-width: 721px) {
+  main {
+    padding: 2rem 0; }
+    main .main__ubicacion {
+      margin-left: 1rem; }
+    main .main__tienda .main__tiendaBloqueP {
+      width: 250px;
+      margin-right: 5px;
+      margin-left: 1rem; }
+      main .main__tienda .main__tiendaBloqueP select {
+        width: 165px;
+        margin-bottom: 0; }
+      main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda {
         padding-top: 1rem;
-        margin-bottom: 0;
-    }
-    .main__tiendaBusqueda h2{
-        font-size: 1.2rem;
-        margin-bottom: 0;
-        padding: 5px 1rem;
-    }
-    
-    main p, main h2, main a{
-        font-size: 1rem;
-    }
-    .main__tiendaBloqueS{
-        width: 100%;
-    }
-    .main__tiendaResultado{
-        padding-bottom: 0.5rem;
-    }
-    .main__tiendaRopa{
+        margin-bottom: 0; }
+        main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda h2 {
+          font-size: 1.2rem; }
+        main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion {
+          height: 150px; }
+          main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div {
+            margin-bottom: 0.5rem; }
+            main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div label {
+              font-size: 1rem; }
+    main .main__tienda .main__tiendaBloqueS {
+      width: 100%;
+      padding-right: 1rem; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaResultado {
+        padding-bottom: 0.5rem; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
         padding-top: 1rem;
         background-color: white;
         display: grid;
-        grid-template-areas: "uno dos tres"
-                            "cuatro cinco seis"
-                            "siete ocho nueve" 
-                            "diez once doce";
-        justify-items: center;
-    }
-    .main__tiendaRopa div{
-        margin-bottom: 2rem;
-        width: 75%;
-        justify-content: center;
-    }
+        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve"  "diez once doce";
+        justify-items: center; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
+          margin-bottom: 2rem;
+          width: 75%;
+          justify-content: center; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
+            font-size: 0.9rem; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
+            font-size: 1.2rem; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginasNumero {
+        margin: 0 0.5rem; } }
 
-    .main__paginas{
-        justify-content: center;
-        align-items: center;
-        margin: 1rem 0;
-    }
-
-    .main__paginas button{
-        margin: 0 1.5rem;
-        padding: 5px;
-        background: none;
-        border: solid black 1px;
-        border-radius: 50%;
-    }
-
-    .main__paginas a{
-        font-size: 1.2rem;
-    }
-    .main__destacado{
-        opacity: .65;
-    }
-    .main__paginas a:hover{
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-
-}
-
-
-@media (max-width:720px) and (min-width:541px){
-    .main__tiendaBloqueP, .main__tiendaPaginas{
-        display: none;
-        visibility: visibles;
-    }
-    
-    main{
-        padding: 1rem 0;
-    }
-    .main__celular{
+@media (max-width: 720px) and (min-width: 541px) {
+  main {
+    padding: 1rem 0; }
+    main .main__ubicacion {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem; }
+    main .main__tienda .main__tiendaBloqueP {
+      display: none; }
+    main .main__tienda .main__tiendaBloqueS {
+      width: 100%; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas {
+        display: none; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaResultado {
+        padding-bottom: 1rem; }
+      main .main__tienda .main__tiendaBloqueS .main__celular {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 1rem;
-        width: 100%;
-    }
-    .main__ubicacion{
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
-    }
-
-    /*SELECT Y FILTRO*/
-
-    .main__filtros{
-        margin: 1rem 0;
-    }
-    .main__filtros select{
-        width: 35%;
-        margin-bottom: 0;
-    }
-    .header__menu{
-        padding: 0;
-    }
-    .filtro__button{
-        width: 35%;
-        margin-bottom: 0;
-        padding: 0;
-        background: none
-    }
-    .filtro__button .header__menu{
-        width: 100%;
-        height: auto;
-    }
-    .filtro__buttonIn{
-        width: 100%;
-        padding: 8px 0;
-        display: flex;
-        justify-content: center;
-        background: black;
-    }
-    .filtro__buttonIn p{
-        font-size: 0.8rem;
-        font-weight: 800;
-        color: white;
-    }
-    .filtro__buttonIn:hover{
-        background: yellow;
-        border: 1px solid black;
-    }
-    .filtro__buttonIn:focus{
-        box-shadow: 0 0 0 0;
-    }
-    .filtro__buttonIn:hover p{
-        color:black;
-    }
-
-    .main__filtroEscondido.show{
-        left: 0;
-        transform: none;
-    }
-    .main__filtroEscondido{
-        width: 100%;
-        transform: none;
-    }
-
-    
-    /*FILTRO MENUDESPLEGABLE PARTE ARRIBA*/
-    .filtro__menuTitulo{
-        padding-left: 0;
-        background-color: black;
-        border: 2px solid yellow;
-        
-    }
-    .filtro__menuTitulo div{
-        border: 1px solid black;
-    }
-
-    .filtro__menuTitulo button{
-        opacity: 100%;
-        filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%);
-        
-    }
-
-    /*FILTRO MENUDESPLEGABLE PARTE MEDIO*/
-
-    .filtro__navegadorMenu{
-        padding: 1rem 0;
-        border: none;
-        background: none;
-        width: 100%;
-    }
-    .filtro__seleccionScroll{
-        overflow-y: scroll;
-        height: 100%
-    }
-    .filtro__seleccionScroll h2 button{
-        font-family: 'Roboto Slab', serif;
-        font-weight: 700;
-        font-size: 1.5rem;
-    }
-    .filtro__seleccionScroll .accordion-body{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .filtro__seleccionScroll .accordion-body div{
-        width: 50%;
-    }
-    
-    /*FILTRO MENUDESPLEGABLE PARTE ABAJO*/
-    .filtro__menuAbajo{
-        padding: 48px 0;
-        background: rgba(255, 255, 255, 0.678);
-        box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.219),0 3px 14px 2px rgba(0, 0, 0, 0.219),0 5px 5px -3px rgba(0,0,0,.2);
-    }
-    .filtro__menuAbajo div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 1.5rem 0;
-    }
-    .filtro__restablecer{
-        padding: 8px 0;
-        width: 11.25rem;
-        border: none;
-        color: black;
-        background-color: yellow;
-        border-radius: 3px;
-    }
-    .filtro__restablecer:hover{
-        opacity: .75;
-    }
-    .filtro__aplicar{
-        background: none;
-        background-color: black;
-        width: 11.25rem;
-        height: auto;
-        opacity: 100%;
-    }
-    .filtro__aplicar p{
-        color: white;
-        font-size: 1rem;
-        width: 100%;
-        padding: 5px;
-        height: 100%;
-    }
-
-
-
-    /*Ropas*/
-    .main__tiendaBusqueda{
-        padding-top: 1rem;
-    }
-    
-    main p, main h2, main a{
-        font-size: 0.8rem;
-    }
-    
-    .main__tiendaBloqueS{
-        width: 100%;
-    }
-    .main__tiendaResultado{
-        padding-bottom: 0.5rem;
-    }
-    .main__tiendaRopa{
+        width: 100%; }
+      main .main__tienda .main__tiendaBloqueS .main__filtros {
+        margin: 1rem 0; }
+        main .main__tienda .main__tiendaBloqueS .main__filtros select {
+          width: 35%;
+          margin-bottom: 0; }
+        main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button {
+          width: 35%;
+          margin-bottom: 0;
+          padding: 0;
+          background: none; }
+          main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu {
+            padding: 0;
+            width: 100%;
+            height: auto; }
+            main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn {
+              width: 100%;
+              padding: 8px 0;
+              display: flex;
+              justify-content: center;
+              background: black; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn p {
+                font-size: 0.8rem;
+                font-weight: 800;
+                color: white; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover {
+                background: yellow;
+                border: 1px solid black; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover p {
+                  color: black; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:focus {
+                box-shadow: 0 0 0 0; }
+            main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido {
+              width: 100%;
+              transform: none; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido.show {
+                left: 0;
+                transform: none; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo {
+                padding-left: 0;
+                background-color: black;
+                border: 2px solid yellow;
+                padding: 0;
+                padding-right: 1rem; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div {
+                  border: 1px solid black;
+                  background: yellow; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div img {
+                    width: 250px; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo button {
+                  opacity: 100%;
+                  filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll {
+                overflow-y: scroll;
+                height: 100%;
+                background: #dfdfdf; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div {
+                  background: transparent; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button {
+                    font-family: 'Roboto Slab', serif;
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    background: transparent; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button:focus {
+                      box-shadow: none; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button:not(.collapsed) {
+                      background: black;
+                      color: white; }
+                      main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button:not(.collapsed)::after {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                        filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div div .accordion-body {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    background: white; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div div .accordion-body div {
+                      width: 50%; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo {
+                padding: 48px 0;
+                background: rgba(255, 255, 255, 0.678);
+                box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.219), 0 3px 14px 2px rgba(0, 0, 0, 0.219), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                  position: fixed;
+                  bottom: 0;
+                  width: 100%;
+                  padding: 1.5rem 0; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer {
+                    padding: 8px 0;
+                    width: 11.25rem;
+                    border: none;
+                    color: black;
+                    background-color: yellow;
+                    border-radius: 3px; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer:hover {
+                      opacity: .75; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__aplicar {
+                    background: none;
+                    background-color: black;
+                    width: 11.25rem;
+                    height: auto;
+                    opacity: 100%; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__aplicar p {
+                      color: white;
+                      font-size: 1rem;
+                      width: 100%;
+                      padding: 5px;
+                      height: 100%; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
         padding-top: 30px;
         background-color: white;
         display: grid;
-        grid-template-areas: "uno dos tres"
-                            "cuatro cinco seis"
-                            "siete ocho nueve" 
-                            "diez once doce";
-        justify-items: center;
-    }
-    .main__tiendaRopa div{
-        margin-bottom: 2rem;
-        width: 75%;
-        justify-content: center;
-    }
-
-    .main__paginas{
+        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve"  "diez once doce";
+        justify-items: center; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
+          margin-bottom: 2rem;
+          width: 75%;
+          justify-content: center; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
+            font-size: 0.8rem; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
+            font-size: 1.1rem; }
+      main .main__tienda .main__tiendaBloqueS .main__paginas {
         justify-content: center;
         align-items: center;
-        margin: 1rem 0;
-    }
+        margin: 1rem 0; }
+        main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next {
+          font-size: 1.2rem; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next:first-child {
+            opacity: .65; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next:hover {
+            font-weight: 500;
+            font-size: 1.3rem; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next:first-child:hover {
+            font-size: 1.2rem; }
+        main .main__tienda .main__tiendaBloqueS .main__paginas button {
+          margin: 0 1.5rem;
+          padding: 5px;
+          background: none;
+          border: solid black 1px;
+          border-radius: 50%;
+          background: yellow; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas button a {
+            font-size: 1.2rem; } }
 
-    .main__paginas button{
-        margin: 0 1.5rem;
-        padding: 5px;
-        background: none;
-        border: solid black 1px;
-        border-radius: 50%;
-    }
-
-    .main__paginas a{
-        font-size: 1.2rem;
-    }
-    .main__destacado{
-        opacity: .65;
-    }
-    .main__paginas a:hover{
-        font-weight: 500;
-        font-size: 1.3rem;
-    }
-}
-
-
-@media (max-width:540px) and (min-width:320px){
-    .main__tiendaBloqueP, .main__tiendaPaginas{
-        display: none;
-    }
-
-    main{
-        padding: 1rem 0;
-    }
-
-    .main__celular{
+@media (max-width: 540px) and (min-width: 320px) {
+  main {
+    padding: 1rem 0; }
+    main .main__ubicacion {
+      margin-left: 1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 2rem; }
+      main .main__ubicacion a, main .main__ubicacion p {
+        font-size: 0.9rem; }
+    main .main__tienda .main__tiendaBloqueP {
+      display: none; }
+    main .main__tienda .main__tiendaBloqueS {
+      width: 100%; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas {
+        display: none; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaResultado {
+        padding-bottom: 1rem; }
+      main .main__tienda .main__tiendaBloqueS .main__celular {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         margin: 1rem;
-        width: 100%;
-    }
-    .main__ubicacion{
-        margin-left: 1rem;
-        margin-top: 0.5rem;
-        margin-bottom: 2rem;
-    }
-
-    /*SELECT Y FILTRO*/
-
-    .main__filtros{
-        margin: 1rem 0;
-    }
-    .main__filtros select{
-        width: 35%;
-        margin-bottom: 0;
-    }
-    .header__menu{
-        padding: 0;
-    }
-    .filtro__button{
-        width: 35%;
-        margin-bottom: 0;
-        padding: 0;
-        background: none
-    }
-    .filtro__button .header__menu{
-        width: 100%;
-        height: auto;
-    }
-    .filtro__buttonIn{
-        width: 100%;
-        padding: 0.5rem 0;
-        display: flex;
-        justify-content: center;
-        background: black;
-    }
-    .filtro__buttonIn p{
-        font-size: 0.8rem;
-        font-weight: 800;
-        color: white;
-    }
-    .filtro__buttonIn:hover{
-        background: yellow;
-        border: 1px solid black;
-    }
-    .filtro__buttonIn:hover p{
-        color:black;
-    }
-    .filtro__buttonIn:focus{
-        box-shadow: 0 0 0 0;
-    }
-
-    .main__filtroEscondido.show{
-        left: 0;
-        transform: none;
-    }
-    .main__filtroEscondido{
-        width: 100%;
-        transform: none;
-    }
-
-    
-    /*FILTRO MENUDESPLEGABLE PARTE ARRIBA*/
-    .filtro__menuTitulo{
-        padding-left: 0;
-        background-color: black;
-        border: 2px solid yellow;
-        
-    }
-    .filtro__menuTitulo div{
-        border: 1px solid black;
-    }
-
-    .filtro__menuTitulo button{
-        opacity: 100%;
-        filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%);
-        
-    }
-
-    /*FILTRO MENUDESPLEGABLE PARTE MEDIO*/
-    label{
-        font-size: 1rem;
-    }
-    .filtro__navegadorMenu{
-        padding: 1rem 0;
-        border: none;
-        background: none;
-        width: 100%;
-    }
-    .filtro__seleccionScroll{
-        overflow-y: scroll;
-        height: 100%
-    }
-    .filtro__seleccionScroll h2 button{
-        font-family: 'Roboto Slab', serif;
-        font-weight: 700;
-        font-size: 1rem;
-
-    }
-    
-    /*FILTRO MENUDESPLEGABLE PARTE ABAJO*/
-    .filtro__menuAbajo{
-        padding: 3rem 0;
-        background: rgba(255, 255, 255, 0.678);
-        box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.219),0 3px 14px 2px rgba(0, 0, 0, 0.219),0 5px 5px -3px rgba(0,0,0,.2);
-    }
-    .filtro__menuAbajo div{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        padding: 1.5rem 0;
-    }
-    .filtro__restablecer{
-        padding: 0.5rem 0;
-        width: 9.3rem;
-        border: none;
-        color: black;
-        background-color: yellow;
-        border-radius: 3px;
-    }
-    .filtro__restablecer:hover{
-        opacity: .75;
-    }
-    .filtro__aplicar{
-        background: none;
-        background-color: black;
-        width: 9.3rem;
-        height: auto;
-        opacity: 100%;
-    }
-    .filtro__aplicar p{
-        color: white;
-        font-size: 1rem;
-        width: 100%;
-        padding: 5px;
-        height: 100%;
-    }
-
-    .main__tiendaBusqueda{
-        padding-top: 1rem;
-    }
-    
-    main p, main h2, main a{
-        font-size: 0.8rem;
-    }
-    
-    .main__tiendaBloqueS{
-        width: 100%;
-    }
-    .main__tiendaResultado{
-        padding-bottom: 0.5rem;
-    }
-    .main__tiendaRopa{
+        width: 100%; }
+      main .main__tienda .main__tiendaBloqueS .main__filtros {
+        margin: 1rem 0; }
+        main .main__tienda .main__tiendaBloqueS .main__filtros select {
+          font-size: 0.9rem;
+          width: 35%;
+          margin-bottom: 0; }
+        main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button {
+          width: 35%;
+          margin-bottom: 0;
+          padding: 0;
+          background: none; }
+          main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu {
+            padding: 0;
+            width: 100%;
+            height: auto; }
+            main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn {
+              width: 100%;
+              padding: 0.5rem 0;
+              display: flex;
+              justify-content: center;
+              background: black; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn p {
+                font-size: 0.8rem;
+                font-weight: 800;
+                color: white; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover {
+                background: yellow;
+                border: 1px solid black; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover p {
+                  color: black; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:focus {
+                box-shadow: 0 0 0 0; }
+            main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido {
+              width: 100%;
+              transform: none; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido.show {
+                left: 0;
+                transform: none; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo {
+                padding-left: 0;
+                background-color: black;
+                border: 2px solid yellow;
+                padding: 0;
+                padding-right: 1rem; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div {
+                  border: 1px solid black;
+                  background: yellow; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div img {
+                    width: 200px; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo button {
+                  opacity: 100%;
+                  filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll {
+                overflow-y: scroll;
+                height: 100%;
+                background: #dfdfdf; }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div {
+                  background: transparent; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button {
+                    font-family: 'Roboto Slab', serif;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    background: transparent; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button:focus {
+                      box-shadow: none; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button:not(.collapsed) {
+                      background: black;
+                      color: white; }
+                      main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div h2 button:not(.collapsed)::after {
+                        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+                        filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div div .accordion-body {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    background: white;
+                    padding: 1rem 0 1rem 1rem; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div div .accordion-body div {
+                      width: 50%; }
+                      main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div div .accordion-body div label {
+                        font-size: 0.9rem; }
+              main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo {
+                padding: 2.5rem 0;
+                background: rgba(255, 255, 255, 0.678);
+                box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.219), 0 3px 14px 2px rgba(0, 0, 0, 0.219), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+                main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div {
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-around;
+                  position: fixed;
+                  bottom: 0;
+                  width: 100%;
+                  padding: 1rem 0; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer {
+                    padding: 0;
+                    width: 9.3rem;
+                    border: none;
+                    color: black;
+                    background-color: yellow;
+                    border-radius: 3px; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer:hover {
+                      opacity: .75; }
+                  main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__aplicar {
+                    padding: 0;
+                    background: none;
+                    background-color: black;
+                    width: 9.3rem;
+                    height: auto;
+                    opacity: 100%; }
+                    main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__aplicar p {
+                      color: white;
+                      font-size: 1rem;
+                      width: 100%;
+                      padding: 5px; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
         padding-top: 30px;
         background-color: white;
         display: grid;
-        grid-template-areas: "uno dos"
-                            "cuatro tres"
-                            "cinco seis"
-                            "siete ocho" 
-                            "nueve diez"
-                            "once doce";
-        justify-items: center;
-    }
-    .main__tiendaRopa div{
-        margin-bottom: 2rem;
-        width: 80%;
-        justify-content: center;
-    }
-
-    .main__paginas{
+        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve"  "diez once doce";
+        justify-items: center; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
+          margin-bottom: 2rem;
+          width: 75%;
+          justify-content: center; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
+            font-size: 0.8rem; }
+          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
+            font-size: 1.1rem; }
+      main .main__tienda .main__tiendaBloqueS .main__paginas {
         justify-content: center;
         align-items: center;
-        margin: 1rem 0;
-    }
-
-    .main__paginas button{
-        margin: 0 1.5rem;
-        padding: 5px;
-        background: none;
-        border: solid black 1px;
-        border-radius: 50%;
-    }
-
-    .main__paginas a{
-        font-size: 1rem;
-    }
-    .main__destacado{
-        opacity: .65;
-    }
-    .main__paginas a:hover{
-        font-weight: 500;
-        font-size: 1.1rem;
-    }
-}
+        margin: 1rem 0; }
+        main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next {
+          font-size: 1rem; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next:first-child {
+            opacity: .65; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas .main__after-next:last-child:hover {
+            font-weight: 500;
+            font-size: 1.1rem; }
+        main .main__tienda .main__tiendaBloqueS .main__paginas button {
+          margin: 0 1.5rem;
+          padding: 5px;
+          background: none;
+          border: solid black 1px;
+          border-radius: 50%;
+          background: yellow; }
+          main .main__tienda .main__tiendaBloqueS .main__paginas button a {
+            font-size: 1.1rem; } }
