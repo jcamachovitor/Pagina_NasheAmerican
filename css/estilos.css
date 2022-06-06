@@ -1124,7 +1124,7 @@ body p {
             height: auto;
             width: 100%;
             border: 0.063rem solid gray;
-            padding: 0.313rem;
+            padding: 0.313rem 0;
             margin-right: 1rem;
             display: flex;
             flex-direction: column;
@@ -1136,15 +1136,16 @@ body p {
               display: flex;
               flex-direction: column;
               align-items: center;
-              width: 100%; }
+              width: 100%;
+              margin-bottom: 0.5rem; }
               .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div a img, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div a img {
-                width: 100%;
-                margin-bottom: 0.5rem;
-                height: auto; }
+                max-height: 8.75rem;
+                max-width: 7.5rem;
+                margin-bottom: 0.5rem; }
               .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div a p, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div a p {
                 color: #393c3e;
                 font-size: 0.8rem;
-                height: 2.5rem;
+                height: 1.5rem;
                 text-align: center;
                 display: flex;
                 align-items: center; }
