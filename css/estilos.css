@@ -7,34 +7,6 @@ h3 {
   font-size: 1.2rem;
   font-weight: 600; }
 
-* {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  text-decoration: none;
-  font-family: sans-serif; }
-
-body a {
-  text-decoration: none;
-  color: black; }
-  body a:hover {
-    color: black; }
-
-body p {
-  margin-bottom: 0; }
-
-/*COSAS CON DISPLAY NONE*/
-.header__primeroPromoCelu2 {
-  display: none;
-  visibility: visible; }
-
-.footer__accordion {
-  display: none;
-  visibility: visible; }
-
-.header__segundoMobile {
-  display: none; }
-
 /*HEADER*/
 header {
   background-color: yellow;
@@ -47,9 +19,9 @@ header {
   justify-content: center;
   align-items: center;
   background-color: black;
-  margin-bottom: 15px;
-  padding: 10px 0;
-  margin: 0 30px; }
+  margin-bottom: 0.938rem;
+  padding: 0.625rem 0;
+  margin: 0 1.875rem; }
   .header__primero div {
     display: flex;
     flex-direction: row;
@@ -59,9 +31,9 @@ header {
     color: white; }
     .header__primero div i {
       color: white;
-      margin-right: 10px; }
+      margin-right: 0.625rem; }
     .header__primero div p {
-      margin-left: 10px; }
+      margin-left: 0.625rem; }
 
 .header__primeroPromo1 {
   animation-duration: 7s;
@@ -104,15 +76,15 @@ header {
     height: auto;
     border: solid;
     border-color: black;
-    width: 250px; }
+    width: 15.625rem; }
     .header__segundoPC .header__logo a img {
       width: 100%;
-      height: 110px; }
+      height: 6.875rem; }
   .header__segundoPC .header__buscador {
     width: 50%;
     background: white;
-    border-radius: 6px;
-    border: 1px solid black; }
+    border-radius: 0.375rem;
+    border: 0.063rem solid black; }
     .header__segundoPC .header__buscador button {
       margin: 0;
       background-color: white;
@@ -176,7 +148,7 @@ header {
         color: white; }
   .header__iconosShop div {
     width: 100vw;
-    max-width: 440px;
+    max-width: 27.5rem;
     padding: 0;
     border: none;
     background: transparent; }
@@ -194,9 +166,9 @@ header {
         line-height: 0; }
     .header__iconosShop div div {
       background-color: white;
-      border-radius: 5px; }
+      border-radius: 0.313rem; }
       .header__iconosShop div div p {
-        padding: 50px; }
+        padding: 3.125rem; }
 
 /*NAVEGACION*/
 nav {
@@ -212,8 +184,8 @@ nav {
     justify-content: space-around;
     align-items: center; }
     nav ul li {
-      font-size: 25px;
-      padding: 9px 10px;
+      font-size: 1.563rem;
+      padding: 0.563rem 0.625rem;
       color: white;
       font-family: 'Bangers', cursive;
       border: none;
@@ -223,7 +195,7 @@ nav {
         background-color: white;
         color: black; }
       nav ul li a {
-        font-size: 25px;
+        font-size: 1.563rem;
         color: white;
         font-family: 'Bangers', cursive; }
       nav ul li:hover a {
@@ -235,7 +207,7 @@ nav {
   position: absolute;
   width: 100vw;
   z-index: 1000;
-  top: 264px;
+  top: 16.5rem;
   left: 0;
   background: white;
   padding: 1rem 0;
@@ -264,178 +236,12 @@ nav {
 .nav__hombre:hover ul, .nav__mujer:hover ul, .nav__niño:hover ul, .nav__niña:hover ul {
   display: flex; }
 
-/*MAIN*/
-/*MAIN primero*/
-.main__primero {
-  background-color: #dfdfdf; }
-  .main__primero div div .main__primeroButtonL {
-    justify-content: flex-start;
-    padding-left: 1rem; }
-  .main__primero div div .main__primeroButtonR {
-    justify-content: flex-end;
-    padding-right: 1rem; }
-  .main__primero div .main__primeroIndicador {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 0; }
-    .main__primero div .main__primeroIndicador [data-bs-target] {
-      height: 11px;
-      width: 11px;
-      border-radius: 50%;
-      text-indent: 0px;
-      background-color: black; }
-    .main__primero div .main__primeroIndicador .active {
-      height: 13px;
-      width: 13px; }
-
-/*MAIN segundo*/
-.main__segundo {
-  background-color: #dfdfdf;
-  padding-top: 1rem; }
-  .main__segundo img {
-    width: 100%;
-    height: 300px; }
-
-/*MAIN tercero*/
-.main__tercero {
-  padding: 70px 30px;
-  background-color: #dfdfdf; }
-  .main__tercero .main__terceroTablet, .main__tercero .main__terceroPhone {
-    display: none; }
-  .main__tercero .main__terceroPC {
-    margin-bottom: 50px; }
-    .main__tercero .main__terceroPC:last-child {
-      margin-bottom: 0; }
-    .main__tercero .main__terceroPC h2 {
-      margin-bottom: 35px;
-      margin-left: 50px;
-      font-family: 'Bebas Neue', cursive;
-      color: black; }
-    .main__tercero .main__terceroPC #galeria__masVendidos, .main__tercero .main__terceroPC #galeria__lanzamientos {
-      background: #dfdfdf; }
-      .main__tercero .main__terceroPC #galeria__masVendidos .carousel-item-next, .main__tercero .main__terceroPC #galeria__masVendidos .carousel-item-prev, .main__tercero .main__terceroPC #galeria__masVendidos .carousel-item.active, .main__tercero .main__terceroPC #galeria__lanzamientos .carousel-item-next, .main__tercero .main__terceroPC #galeria__lanzamientos .carousel-item-prev, .main__tercero .main__terceroPC #galeria__lanzamientos .carousel-item.active {
-        padding: 0 50px;
-        width: 100%;
-        height: auto;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        flex-wrap: nowrap;
-        background: #dfdfdf; }
-      .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: center; }
-        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div {
-          background: white;
-          height: auto;
-          width: 100%;
-          border: 1px solid gray;
-          padding: 10px 5px;
-          margin-right: 1rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: center; }
-          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a {
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            width: 100%; }
-            .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a img, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a img {
-              width: 100%;
-              margin-bottom: 1rem;
-              height: auto; }
-            .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a p, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a p {
-              color: #393c3e;
-              font-size: 1rem; }
-          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div h3, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div h3 {
-            margin-bottom: 0;
-            margin-top: 0.5rem;
-            font-size: 1.5rem;
-            font-weight: 600; }
-          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div:last-child, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div:last-child {
-            margin-right: 0; }
-        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria button, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria button {
-          width: 50px;
-          color: rgba(0, 0, 0, 0.562);
-          background: #dfdfdf;
-          opacity: 1; }
-          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria button:hover, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria button:hover {
-            color: black;
-            opacity: 1; }
-          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria button:focus, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria button:focus {
-            color: none;
-            opacity: 1; }
-
-/*MAIN cuarto*/
-.main__cuarto {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  background-image: url(../recursos/madera.png);
-  background-position: center; }
-  .main__cuarto .main__cuartoBoleto {
-    width: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-color: black;
-    border-top: solid;
-    border-bottom: solid;
-    border-radius: 20px;
-    background-image: url(../recursos/boleto.png);
-    background-position: center;
-    padding-top: 50px;
-    padding-bottom: 50px; }
-    .main__cuarto .main__cuartoBoleto h2 {
-      font-size: 30px;
-      margin-bottom: 10px;
-      text-align: center;
-      color: black; }
-    .main__cuarto .main__cuartoBoleto p {
-      font-size: 20px;
-      margin-bottom: 30px;
-      color: black; }
-    .main__cuarto .main__cuartoBoleto div {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      align-items: initial;
-      width: 100%; }
-      .main__cuarto .main__cuartoBoleto div .main__cuartoInput1 {
-        width: 45%;
-        height: 40px;
-        padding-left: 15px;
-        border: 1px solid black;
-        border-radius: 3px 0 0 3px; }
-      .main__cuarto .main__cuartoBoleto div .main__cuartoInput2 {
-        width: 15%;
-        font-weight: 600;
-        border: none;
-        background: #dfdfdf;
-        color: rgba(0, 0, 0, 0.767);
-        border: 1px solid black;
-        border-radius: 0 3px 3px 0; }
-
 /*FOOTER*/
 footer {
   border-top: solid;
   border-color: black;
   background-color: #474646;
-  padding-top: 40px; }
+  padding-top: 2.5rem; }
   footer ul {
     padding: 0; }
     footer ul li a:hover, footer ul li a::selection {
@@ -448,7 +254,7 @@ footer {
     height: 2rem; }
   footer h3 {
     font-family: 'Comic Neue';
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
     color: white; }
 
 /*FOOTER primero*/
@@ -486,18 +292,208 @@ footer {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 40px;
-    padding: 15px 30px;
+    margin-top: 2.5rem;
+    padding: 0.938rem 1.875rem;
     background: #dfdfdf; }
     .footer__pc .footer__segundo a {
-      width: 50px;
-      margin-right: 20px;
+      width: 3.125rem;
+      margin-right: 1.25rem;
       height: auto; }
       .footer__pc .footer__segundo a img {
         width: auto;
-        height: 70px; }
+        height: 4.375rem; }
     .footer__pc .footer__segundo p {
       height: auto; }
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: sans-serif; }
+
+body a {
+  text-decoration: none;
+  color: black; }
+  body a:hover {
+    color: black; }
+
+body p {
+  margin-bottom: 0; }
+
+/*COSAS CON DISPLAY NONE*/
+.header__primeroPromoCelu2 {
+  display: none; }
+
+.footer__accordion {
+  display: none; }
+
+.header__segundoMobile {
+  display: none; }
+
+/*MAIN*/
+/*MAIN primero*/
+.main__primero {
+  background-color: #dfdfdf; }
+  .main__primero div div .main__primeroButtonL {
+    justify-content: flex-start;
+    padding-left: 1rem; }
+  .main__primero div div .main__primeroButtonR {
+    justify-content: flex-end;
+    padding-right: 1rem; }
+  .main__primero div .main__primeroIndicador {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; }
+    .main__primero div .main__primeroIndicador [data-bs-target] {
+      width: 0.688rem;
+      height: 0.688rem;
+      border-radius: 50%;
+      text-indent: 0;
+      background-color: black; }
+    .main__primero div .main__primeroIndicador .active {
+      width: 0.813rem;
+      height: 0.813rem; }
+
+/*MAIN segundo*/
+.main__segundo {
+  background-color: #dfdfdf;
+  padding-top: 2rem; }
+  .main__segundo img {
+    width: 100%; }
+
+/*MAIN tercero*/
+.main__tercero {
+  padding: 6.25rem 0;
+  background-color: #dfdfdf; }
+  .main__tercero .main__terceroTablet, .main__tercero .main__terceroPhone {
+    display: none; }
+  .main__tercero .main__terceroPC:first-child {
+    margin-bottom: 3.125rem; }
+  .main__tercero .main__terceroPC h2 {
+    margin-bottom: 2.188rem;
+    margin-left: 3.125rem;
+    font-family: 'Bebas Neue', cursive;
+    color: black; }
+  .main__tercero .main__terceroPC #galeria__masVendidos, .main__tercero .main__terceroPC #galeria__lanzamientos {
+    background: #dfdfdf; }
+    .main__tercero .main__terceroPC #galeria__masVendidos .carousel-item-next, .main__tercero .main__terceroPC #galeria__masVendidos .carousel-item-prev, .main__tercero .main__terceroPC #galeria__masVendidos .carousel-item.active, .main__tercero .main__terceroPC #galeria__lanzamientos .carousel-item-next, .main__tercero .main__terceroPC #galeria__lanzamientos .carousel-item-prev, .main__tercero .main__terceroPC #galeria__lanzamientos .carousel-item.active {
+      padding: 0 3.125rem;
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      background: #dfdfdf; }
+    .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center; }
+      .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div {
+        background: white;
+        max-height: 100%;
+        width: 100%;
+        border: 1px solid gray;
+        padding: 0.625rem 0.313rem;
+        margin-right: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center; }
+        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a {
+          position: relative;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 100%; }
+          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a img, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0.5rem; }
+          .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div a p, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div a p {
+            color: #393c3e;
+            font-size: 1rem;
+            text-align: center; }
+        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div h3, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div h3 {
+          margin-bottom: 0;
+          margin-top: 0.5rem;
+          font-size: 1.5rem;
+          font-weight: 600; }
+        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria .index__productos div:last-child, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria .index__productos div:last-child {
+          margin-right: 0; }
+      .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria button, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria button {
+        width: 3.125rem;
+        color: rgba(0, 0, 0, 0.562);
+        background: #dfdfdf;
+        opacity: 1; }
+        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria button:hover, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria button:hover {
+          color: black;
+          opacity: 1; }
+        .main__tercero .main__terceroPC #galeria__masVendidos .index__galeria button:focus, .main__tercero .main__terceroPC #galeria__lanzamientos .index__galeria button:focus {
+          color: none;
+          opacity: 1; }
+
+/*MAIN cuarto*/
+.main__cuarto {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-image: url(../recursos/madera.png);
+  background-position: center; }
+  .main__cuarto .main__cuartoBoleto {
+    width: 56.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-color: black;
+    border-top: solid;
+    border-bottom: solid;
+    border-radius: 1.25rem;
+    background-image: url(../recursos/boleto.png);
+    background-position: center;
+    padding-top: 3.125rem;
+    padding-bottom: 3.125rem; }
+    .main__cuarto .main__cuartoBoleto h2 {
+      font-size: 1.875;
+      margin-bottom: 0.625rem;
+      text-align: center;
+      color: black; }
+    .main__cuarto .main__cuartoBoleto p {
+      font-size: 1.25rem;
+      margin-bottom: 1.875rem;
+      color: black; }
+    .main__cuarto .main__cuartoBoleto div {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      align-items: initial;
+      width: 100%; }
+      .main__cuarto .main__cuartoBoleto div .main__cuartoInput1 {
+        width: 45%;
+        height: 2.5rem;
+        padding-left: 0.938rem;
+        border: 0.063rem solid black;
+        border-radius: 0.188rem 0 0 0.188rem; }
+      .main__cuarto .main__cuartoBoleto div .main__cuartoInput2 {
+        width: 15%;
+        font-weight: 600;
+        border: none;
+        background: #dfdfdf;
+        color: rgba(0, 0, 0, 0.767);
+        border: 0.063rem solid black;
+        border-radius: 0 0.188rem 0.188rem 0; }
 
 /*MOBILE*/
 @media (max-width: 1000px) and (min-width: 721px) {
@@ -520,7 +516,7 @@ footer {
         height: 100px; }
     .header__segundoPC .header__buscador {
       width: 45%;
-      height: 40px; }
+      height: 2.5rem; }
       .header__segundoPC .header__buscador button {
         margin: 0; }
         .header__segundoPC .header__buscador button i {
@@ -528,7 +524,7 @@ footer {
     .header__segundoPC .header__iconos a {
       margin-right: 0.4rem; }
   .header__submenuPC {
-    top: 248px; }
+    top: 15.5rem; }
   /*MAIN PRIMERO*/
   .main__primeroButtonR {
     padding-right: 0.5rem; }
@@ -538,14 +534,18 @@ footer {
     font-size: 2.5em; }
   /*MAIN SEGUNDO*/
   .main__segundo {
-    padding-top: 2rem; }
+    padding-top: 1rem; }
     .main__segundo img {
-      height: 100%; }
+      height: 80%; }
   /*MAIN TERCERO*/
   .main__tercero {
-    padding: 70px 0; }
+    padding: 3.125rem 0; }
     .main__tercero h2 {
       font-size: 2.2rem; }
+    .main__tercero p {
+      display: flex;
+      align-items: center;
+      height: 3.125rem; }
   /*MAIN cuarto*/
   .main__cuarto {
     padding: 3rem 2rem; }
@@ -556,11 +556,11 @@ footer {
         text-align: center; }
       .main__cuarto .main__cuartoBoleto p {
         font-size: 1rem;
-        margin-bottom: 10px;
+        margin-bottom: 0.625;
         text-align: center; }
       .main__cuarto .main__cuartoBoleto div .main__cuartoInput1 {
         width: 50%;
-        height: 35px;
+        height: 2.188rem;
         font-size: 1rem; }
       .main__cuarto .main__cuartoBoleto div .main__cuartoInput2 {
         width: 15%;
@@ -615,15 +615,15 @@ footer {
             box-shadow: none; }
         .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido {
           background-color: #dfdfdf;
-          left: -1000px; }
+          left: -62.5rem; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__tituloMenu {
             background-color: yellow;
             padding: 0 1rem;
             padding-left: 0.8rem;
-            border: solid black 1px; }
+            border: solid black 0.063rem; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__tituloMenu div img {
               width: 100%;
-              height: 90px; }
+              height: 5.625rem; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu {
             background: transparent;
             border: none;
@@ -666,19 +666,19 @@ footer {
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__subNavegacion {
                   padding: 0.5rem 0rem 0.5rem 2rem; }
         .header__segundoMobile .header__completo .header__completoSuperior .offcanvas.show {
-          transform: translateX(1000px); }
+          transform: translateX(62.5rem); }
         .header__segundoMobile .header__completo .header__completoSuperior .header__logo {
           width: 100%;
           border: none;
           display: flex;
           justify-content: center; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__logo a {
-            width: 203px;
+            width: 12.688rem;
             height: auto;
             border: solid black; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__logo a img {
               width: 100%;
-              height: 90px; }
+              height: 5.625rem; }
         .header__segundoMobile .header__completo .header__completoSuperior .header__iconos a {
           margin-right: 0.5rem; }
         .header__segundoMobile .header__completo .header__completoSuperior .header__iconos i {
@@ -686,11 +686,11 @@ footer {
         .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop {
           position: relative; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop div {
-            max-width: 370px; }
+            max-width: 23.125rem; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop div span i {
               margin-right: 0.35rem; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop div div p {
-              padding: 40px 1rem;
+              padding: 2.5rem 1rem;
               text-align: center; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop .dropdown-menu[data-bs-popper] {
             left: auto;
@@ -730,37 +730,36 @@ footer {
     #carouselExampleIndicators .carousel-inner .main__primeroButtonL i {
       font-size: 2em; }
   #carouselExampleIndicators .main__primeroIndicador button {
-    height: 9px;
-    width: 9px; }
+    width: 0.563rem;
+    height: 0.563rem; }
   #carouselExampleIndicators .main__primeroIndicador .active {
-    height: 11px;
-    width: 11px; }
+    width: 0.688rem;
+    height: 0.688rem; }
   /*MAIN SEGUNDO*/
   .main__segundo {
-    padding-top: 2rem; }
-  .main__segundo img {
-    height: 100%; }
+    padding-top: 0.5rem; }
+    .main__segundo img {
+      height: 100%; }
   /*MAIN TERCERO*/
   .main__tercero {
-    padding: 70px 0;
+    padding: 2.5rem 0;
+    padding-bottom: 0;
     background-color: #dfdfdf; }
     .main__tercero .main__terceroPC, .main__tercero .main__terceroPhone {
       display: none; }
     .main__tercero .main__terceroTablet {
       display: block;
-      margin-bottom: 50px; }
-      .main__tercero .main__terceroTablet:last-child {
-        margin-bottom: 0px; }
+      padding-bottom: 2.5rem; }
       .main__tercero .main__terceroTablet h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
-        margin-left: 50px;
+        margin-left: 3.125rem;
         font-family: 'Bebas Neue', cursive;
         color: black; }
       .main__tercero .main__terceroTablet #galeria__masVendidosTablet, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet {
         background: #dfdfdf; }
         .main__tercero .main__terceroTablet #galeria__masVendidosTablet .carousel-item-next, .main__tercero .main__terceroTablet #galeria__masVendidosTablet .carousel-item-prev, .main__tercero .main__terceroTablet #galeria__masVendidosTablet .carousel-item.active, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .carousel-item-next, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .carousel-item-prev, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .carousel-item.active {
-          padding: 0 50px;
+          padding: 0 3.125rem;
           width: 100%;
           height: auto;
           display: flex;
@@ -775,8 +774,8 @@ footer {
             background: white;
             height: auto;
             width: 100%;
-            border: 1px solid gray;
-            padding: 10px 5px;
+            border: 0.063rem solid gray;
+            padding: 0.625rem 0.313rem;
             margin-right: 1rem;
             display: flex;
             flex-direction: column;
@@ -789,14 +788,17 @@ footer {
               width: 100%; }
               .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .index__productos div a img, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .index__productos div a img {
                 width: 100%;
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
                 height: auto; }
               .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .index__productos div a p, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .index__productos div a p {
                 color: #393c3e;
-                font-size: 0.9rem; }
+                display: flex;
+                align-items: center;
+                font-size: 0.9rem;
+                height: 3.125rem;
+                text-align: center; }
             .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .index__productos div h3, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .index__productos div h3 {
               margin-bottom: 0;
-              margin-top: 0.5rem;
               font-size: 1.2rem;
               font-weight: 600; }
             .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroTablet #galeria__masVendidosTablet .index__galeria .index__productos div:last-child, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroTablet #galeria__lanzamientosTablet .index__galeria .index__productos div:last-child {
@@ -861,6 +863,10 @@ footer {
           display: flex;
           flex-direction: column;
           background-color: #dfdfdf; }
+          footer .footer__accordion .footer__accordion-item .footer__accordion-body p, footer .footer__accordion .footer__accordion-item .footer__accordion-body a {
+            color: rgba(0, 0, 0, 0.637); }
+          footer .footer__accordion .footer__accordion-item .footer__accordion-body a:hover {
+            color: black; }
         footer .footer__accordion .footer__accordion-item .accordion-button:not(.collapsed) {
           background: black;
           color: white; }
@@ -890,8 +896,8 @@ footer {
       font-size: 1rem; }
       footer .footer__boton a button {
         font-family: 'Comic Neue';
-        border: solid 2px;
-        padding: 8px 16px;
+        border: solid 0.125rem;
+        padding: 0.5rem 1rem;
         border-color: black;
         background: black;
         color: white; }
@@ -907,12 +913,12 @@ footer {
       padding-left: 1rem;
       background: #dfdfdf; }
       footer .footer__segundo a {
-        width: 50px;
+        width: 3.125rem;
         margin-right: 1rem;
         height: auto; }
         footer .footer__segundo a img {
           width: auto;
-          height: 70px; }
+          height: 4.375rem; }
       footer .footer__segundo p {
         height: auto;
         font-size: 0.95rem; } }
@@ -957,15 +963,15 @@ footer {
             box-shadow: none; }
         .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido {
           background-color: #dfdfdf;
-          left: -1000px; }
+          left: -62.5rem; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__tituloMenu {
             background-color: yellow;
             padding: 0 1rem;
             padding-left: 0.8rem;
-            border: solid black 1px; }
+            border: solid black 0.063rem; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__tituloMenu div img {
               width: 100%;
-              height: 90px; }
+              height: 5.625rem; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu {
             background: transparent;
             border: none;
@@ -1008,19 +1014,19 @@ footer {
                 .header__segundoMobile .header__completo .header__completoSuperior .header__menuEscondido .header__navegadorMenu ul li .header__subNavegacion {
                   padding: 0.5rem 0rem 0.5rem 2rem; }
         .header__segundoMobile .header__completo .header__completoSuperior .offcanvas.show {
-          transform: translateX(1000px); }
+          transform: translateX(62.5rem); }
         .header__segundoMobile .header__completo .header__completoSuperior .header__logo {
           width: 100%;
           border: none;
           display: flex;
           justify-content: center; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__logo a {
-            width: 160px;
+            width: 10rem;
             height: auto;
             border: solid black; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__logo a img {
               width: 100%;
-              height: 70px; }
+              height: 4.375rem; }
         .header__segundoMobile .header__completo .header__completoSuperior .header__iconos a {
           margin-right: 0.2rem; }
         .header__segundoMobile .header__completo .header__completoSuperior .header__iconos i {
@@ -1028,11 +1034,11 @@ footer {
         .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop {
           position: relative; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop div {
-            max-width: 250px; }
+            max-width: 15.625rem; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop div span i {
               margin-right: 0.2rem; }
             .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop div div p {
-              padding: 30px 1rem;
+              padding: 1.875rem 1rem;
               text-align: center; }
           .header__segundoMobile .header__completo .header__completoSuperior .header__iconos .header__iconosShop .dropdown-menu[data-bs-popper] {
             left: auto;
@@ -1072,11 +1078,11 @@ footer {
     #carouselExampleIndicators .carousel-inner .main__primeroButtonL i {
       font-size: 1.3em; }
   #carouselExampleIndicators .main__primeroIndicador button {
-    height: 7px;
-    width: 7px; }
+    height: 0.438rem;
+    width: 0.438rem; }
   #carouselExampleIndicators .main__primeroIndicador .active {
-    height: 9px;
-    width: 9px; }
+    height: 0.563rem;
+    width: 0.563rem; }
   /*MAIN SEGUNDO*/
   .main__segundo {
     padding-top: 0rem; }
@@ -1117,12 +1123,14 @@ footer {
             background: white;
             height: auto;
             width: 100%;
-            border: 1px solid gray;
-            padding: 10px 5px;
+            border: 0.063rem solid gray;
+            padding: 0.313rem;
             margin-right: 1rem;
             display: flex;
             flex-direction: column;
-            align-items: center; }
+            align-items: center;
+            max-width: 10rem;
+            max-height: 16.25rem; }
             .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div a, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div a, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div a {
               position: relative;
               display: flex;
@@ -1131,14 +1139,17 @@ footer {
               width: 100%; }
               .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div a img, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div a img, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div a img {
                 width: 100%;
-                margin-bottom: 1rem;
+                margin-bottom: 0.5rem;
                 height: auto; }
               .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div a p, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div a p, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div a p {
                 color: #393c3e;
-                font-size: 0.8rem; }
+                font-size: 0.8rem;
+                height: 2.5rem;
+                text-align: center;
+                display: flex;
+                align-items: center; }
             .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div h3, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div h3, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div h3 {
               margin-bottom: 0;
-              margin-top: 0.5rem;
               font-size: 1rem;
               font-weight: 600; }
             .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroPhone #galeria__masVendidosPhone .index__galeria .index__productos div:last-child, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .carousel-item.active div:last-child, .main__tercero .main__terceroPhone #galeria__lanzamientosPhone .index__galeria .index__productos div:last-child {
@@ -1164,15 +1175,15 @@ footer {
       .main__cuarto .main__cuartoBoleto h2 {
         font-size: 1rem;
         text-align: center;
-        margin-bottom: 5px; }
+        margin-bottom: 0.313rem; }
       .main__cuarto .main__cuartoBoleto p {
         font-size: 0.8rem;
         text-align: center;
-        margin-bottom: 5px; }
+        margin-bottom: 0.313rem; }
       .main__cuarto .main__cuartoBoleto div .main__cuartoInput1 {
         width: 50%;
-        height: 30px;
-        padding-left: 5px;
+        height: 1.875rem;
+        padding-left: 0.313rem;
         font-size: 0.9rem; }
       .main__cuarto .main__cuartoBoleto div .main__cuartoInput2 {
         width: 20%;
@@ -1199,7 +1210,7 @@ footer {
           padding-left: 0;
           margin-bottom: 0; }
           footer .footer__accordion .footer__accordion-item ul li {
-            height: 2rem; }
+            height: 1.5rem; }
             footer .footer__accordion .footer__accordion-item ul li a {
               color: rgba(0, 0, 0, 0.637); }
               footer .footer__accordion .footer__accordion-item ul li a:hover {
@@ -1208,6 +1219,10 @@ footer {
           display: flex;
           flex-direction: column;
           background-color: #dfdfdf; }
+          footer .footer__accordion .footer__accordion-item .footer__accordion-body p, footer .footer__accordion .footer__accordion-item .footer__accordion-body a {
+            color: rgba(0, 0, 0, 0.637); }
+          footer .footer__accordion .footer__accordion-item .footer__accordion-body a:hover {
+            color: black; }
         footer .footer__accordion .footer__accordion-item .accordion-button:not(.collapsed) {
           background: black;
           color: white; }
@@ -1239,8 +1254,8 @@ footer {
       font-size: 1rem; }
       footer .footer__boton a button {
         font-family: 'Comic Neue';
-        border: solid 2px;
-        padding: 8px 16px;
+        border: solid 0.125rem;
+        padding: 0.5rem 1rem;
         border-color: black;
         background: black;
         color: white; }
@@ -1256,12 +1271,12 @@ footer {
       padding-left: 1rem;
       background: #dfdfdf; }
       footer .footer__segundo a {
-        width: 50px;
+        width: 3.125rem;
         margin-right: 0.5rem;
         height: auto; }
         footer .footer__segundo a img {
           width: auto;
-          height: 60px; }
+          height: 3.75rem; }
       footer .footer__segundo p {
         height: auto;
         font-size: 0.8rem; } }

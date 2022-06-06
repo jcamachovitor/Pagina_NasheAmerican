@@ -16,6 +16,12 @@ h1, h2{
     width: 70%;
     padding: 160px 0;
 }
+.main__somos div p{
+    margin-bottom: 1rem;
+}
+.main__somos div p:last-child{
+    margin-bottom: 0;
+}
 
 /*MAIN equipo*/
 .main__info{

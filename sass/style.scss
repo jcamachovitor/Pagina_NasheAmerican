@@ -1,4 +1,6 @@
 @import 'variable';
+@import 'header';
+@import 'footer';
 
 *{
     padding: 0;
@@ -24,276 +26,13 @@ body{
 /*COSAS CON DISPLAY NONE*/
 .header__primeroPromoCelu2{
     display: none;
-    visibility: visible;
 }
 .footer__accordion{
     display: none;
-    visibility: visible;
 }
 .header__segundoMobile{
     display: none;
 }
-
-/*HEADER*/
-header{
-    background-color: $color-principalheader;
-    position: relative;
-}
-/*HEADER Primero*/
-.header{
-    &__primero{
-        @include flex(column,center);
-        background-color: black;
-        margin-bottom: 15px;
-        padding: 10px 0;
-        margin: 0 30px;
-        div{
-            @include flex(row, center);
-            width: 50%;
-            color: white;
-            i{
-                color: white;
-                margin-right: 10px;
-            }
-            p{
-                margin-left: 10px;
-            }
-        }
-    }
-    &__primeroPromo1{
-        animation-duration: 7s;
-        animation-name: promo1;
-        animation-iteration-count: infinite;
-    }
-    &__primeroPromo2{
-        position: absolute;
-        animation-duration: 7s;
-        animation-name: promo2;
-        animation-iteration-count: infinite;
-        z-index: -1;
-    }
-}
-
-/*ANIMACION promo1*/
-@keyframes promo1 {    
-    0%{
-        z-index: 1;
-    }
-    40%{
-        z-index: 1;
-    }
-    100%{
-        z-index: -1;
-    }
-
-}
-
-/*ANIMACION promo2*/
-@keyframes promo2 {    
-    0%{
-        z-index: -1;
-    }
-    60%{
-        z-index: -1;
-    }
-    100%{
-        z-index: 1;
-    }
-
-}
-
-/*HEADER Segundo*/
-
-.header__segundoPC{
-    @include flex(row,space-between);
-    padding: 1.5rem 2rem;
-    .header__logo{
-        height: auto;
-        border: solid;
-        border-color: black;
-        width: 250px;
-        a img{
-            width: 100%;
-            height: 110px;
-        }
-    }
-    .header__buscador{
-        width: 50%;
-        background: white;
-        border-radius:  6px;
-        border: 1px solid black;
-        button{
-            margin: 0;
-            background-color: white;
-            border: none;
-            border-radius: none;
-            &:hover{
-                background: black;
-            }
-            i{
-                font-size: 1.6em;
-                color: black;
-                font-size: 2em;
-                &:hover{
-                    color: white;
-                }
-            }
-        }
-        input{
-            border: none;
-        }
-    }
-}
-
-/*ICONOS*/
-.header__iconos{
-    width: auto;
-    @include flex(row,space-around);
-    align-content: center;
-    a{
-        @include flex(row,center);
-        margin-right: 0.6rem;
-    }
-    i{
-        color: black;
-        font-size: 2.5em;
-        &:hover{
-            color: white;
-        }
-    }
-}
-
-/*ICON SHOP*/
-.header__iconosShop{
-    padding: 0;
-    button{
-        margin: 0;
-        padding: 0;
-        @include flex(row,center);
-        border: none;
-        background: none;
-        height: 100%;
-        line-height: normal;
-        &:hover{
-            background-color: transparent;
-        }
-        &:focus{
-            background: none;
-            box-shadow: none;
-            border: none;
-        }
-        i{
-            color: black;
-            line-height: normal;
-            &:hover{
-                color: white;
-            }
-        }
-    }
-    div{
-        width: 100vw;
-        max-width: 440px;
-        padding: 0;
-        border: none;
-        background: transparent;
-        span{
-            @include flex(row,flex-end);
-            padding-top: 1rem;
-            padding-bottom: 0;
-            i{
-                color: white;
-                font-size: 2em;
-                margin-right: 0.5rem;
-                line-height: 0;
-            }
-        }
-        div{
-            background-color: white;
-            border-radius: 5px;
-            p{
-                padding: 50px;
-            }
-
-        }
-    }
-}
-
-/*NAVEGACION*/
-nav{
-    width: 100%;
-    border: solid;
-    border-color: black;
-    background-color: black;
-    ul{
-        margin: 0;
-        padding: 0;
-        @include flex(row,space-around);
-        li{
-            font-size: 25px;
-            padding: 9px 10px;
-            color: white;
-            font-family: 'Bangers', cursive;
-            border: none;
-            line-height: normal;
-            background-color: black;
-            &:hover{
-                background-color: white;
-                color: black;
-            }
-            a{
-                font-size: 25px;
-                color: white;
-                font-family: 'Bangers', cursive;
-            }
-            &:hover a{
-                color: black;
-            }
-        }
-    }
-}
-
-/*SUBMENU*/
-.header__submenuPC{
-    display: none;
-    position: absolute;
-    width: 100vw;
-    z-index: 1000;
-    top: 264px;
-    left: 0;
-    background: white;
-    padding: 1rem 0;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    li{
-        margin-right: 4rem;
-        background: transparent;
-        &:last-child{
-            margin-right: 0;
-        }
-        a{
-            color: black;
-            @include flex(column,center);
-            &:hover{
-                color: rgba(0, 0, 0, 0.74)
-            }
-            i{
-                font-size: 1.5em;
-                padding-bottom: 1rem;
-            }
-            p{
-                font-size: 1rem;
-            }
-        }
-    }
-}
-
-.nav__hombre,.nav__mujer,.nav__niño,.nav__niña{
-    &:hover ul{
-        display: flex;
-    }
-}
-
 
 /*MAIN*/
 
@@ -316,15 +55,13 @@ nav{
             @include flex(row,center);
             margin-bottom: 0;
             & [data-bs-target]{
-                height: 11px;
-                width: 11px;
+                @include ancho_alto(0.688rem,0.688rem);
                 border-radius: 50%;
-                text-indent:0px;
+                text-indent: 0;
                 background-color: black;
             }
             .active{
-                height: 13px;
-                width: 13px;
+                @include ancho_alto(0.813rem, 0.813rem);
             }
         }
     }
@@ -336,38 +73,35 @@ nav{
 /*MAIN segundo*/
 .main__segundo{
     background-color: $color-principalmain;
-    padding-top: 1rem;
+    padding-top: 2rem;
     img{
         width: 100%;
-        height: 300px;
     }
 }
 
 /*MAIN tercero*/
 
 .main__tercero{
-    padding: 70px 30px;
+    padding: 6.25rem 0;
     background-color: $color-principalmain;
     .main__terceroTablet, .main__terceroPhone{
         display: none;
     }
     .main__terceroPC{
-        margin-bottom: 50px;
-        &:last-child{
-            margin-bottom: 0;
+        &:first-child{
+            margin-bottom: 3.125rem;
         }
         h2{
-            margin-bottom: 35px;
-            margin-left: 50px;
+            margin-bottom: 2.188rem;
+            margin-left: 3.125rem;
             font-family: 'Bebas Neue', cursive;
             color: black;
         }
         #galeria__masVendidos, #galeria__lanzamientos{
             background: $color-principalmain;
             .carousel-item-next, .carousel-item-prev, .carousel-item.active{
-                padding: 0 50px;
-                width: 100%;
-                height: auto;
+                padding: 0 3.125rem;
+                @include ancho_alto(100%,auto);
                 @include flex(row,space-around);
                 flex-wrap: nowrap;
                 background: $color-principalmain;
@@ -377,10 +111,10 @@ nav{
                 .carousel-item.active, .index__productos{
                     div{
                         background: white;
-                        height: auto;
+                        max-height: 100%;
                         width: 100%;
                         border: 1px solid gray;
-                        padding: 10px 5px;
+                        padding: 0.625rem 0.313rem;
                         margin-right: 1rem;
                         @include flex(column,flex-start);
                         a{
@@ -388,13 +122,13 @@ nav{
                             @include flex(column,center);
                             width: 100%;
                             img{
-                                width: 100%;
-                                margin-bottom: 1rem;
-                                height: auto;
+                                @include ancho_alto(100%,100%);
+                                margin-bottom: 0.5rem;
                             }
                             p{
                                 color: $color-principalmainProductos;
                                 font-size: 1rem;
+                                text-align: center;
                             }
                         }
                         h3{
@@ -409,7 +143,7 @@ nav{
                     }
                 }
                 button{
-                    width: 50px;
+                    width: 3.125rem;
                     color: rgba(0, 0, 0, 0.562);
                     background: $color-principalmain;
                     opacity: 1;
@@ -430,32 +164,32 @@ nav{
 /*MAIN cuarto*/
 .main__cuarto{
     @include flex(row,center);
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 6.25rem;
+    padding-bottom: 6.25rem;
     background-image: url(../recursos/madera.png);
     background-position: center;
     .main__cuartoBoleto {
-        width: 900px;
+        width: 56.25rem;
         @include flex(column,center);
         border-color: black;
         border-top: solid;
         border-bottom: solid;
-        border-radius: 20px;
+        border-radius: 1.25rem;
 
         background-image: url(../recursos/boleto.png);
         background-position: center;
 
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 3.125rem;
+        padding-bottom: 3.125rem;
         h2{
-            font-size: 30px;
-            margin-bottom: 10px;
+            font-size: 1.875;
+            margin-bottom: 0.625rem;
             text-align: center;
             color: black;
         }
         p{
-            font-size: 20px;
-            margin-bottom: 30px;
+            font-size: 1.25rem;
+            margin-bottom: 1.875rem;
             color: black;
         }
         div{
@@ -463,11 +197,10 @@ nav{
             align-items: initial;
             width: 100%;
             .main__cuartoInput1{
-                width: 45%;
-                height: 40px;
-                padding-left: 15px;
-                border: 1px solid black;
-                border-radius: 3px 0 0 3px;
+                @include ancho_alto(45%,2.5rem);
+                padding-left: 0.938rem;
+                border: 0.063rem solid black;
+                border-radius: 0.188rem 0 0 0.188rem;
             }
             .main__cuartoInput2{
                 width: 15%;
@@ -475,105 +208,10 @@ nav{
                 border: none;
                 background: $color-principalmain;
                 color: rgba(0, 0, 0, 0.767);
-                border: 1px solid black;
-                border-radius: 0 3px 3px 0;
+                border: 0.063rem solid black;
+                border-radius: 0 0.188rem 0.188rem 0;
             }
         }
-    }
-}
-
-/*FOOTER*/
-
-footer{
-    border-top: solid;
-    border-color: black;
-    background-color: $color-principalfooter;
-    padding-top: 40px;
-    ul{
-        padding: 0;
-        li{
-            a:hover,a::selection{
-                text-decoration: underline;
-                text-decoration-color: white;
-                color: black;
-            }
-        }
-    }
-    a,p{
-        color: black;
-        font-size: 1rem;
-        height: 2rem;
-    }
-    h3{
-        font-family: 'Comic Neue';
-        margin-bottom: 15px;
-        color: white;
-    }
-}
-
-/*FOOTER primero*/
-.footer__pc{
-    .footer__primero{
-        display: grid;
-        padding: 0 2rem;
-        grid-template-areas: "uno dos tres cuatro"
-                            "uno dos tres cinco";
-        grid-template-columns: auto auto auto 25%;
-        .footer{
-            &__navegacion{
-                display: flex;
-                flex-direction: column;
-            }
-            &__nav1{
-                grid-area: uno;
-            }
-            &__nav2{
-                grid-area:dos;
-            }
-            &__atencion{
-                grid-area: tres;
-                display: flex;
-                flex-direction: column;
-                height: auto;
-                a:hover{
-                    color: black;
-                }
-            }
-            &__redes{
-                grid-area: cuatro;
-                a{
-                    &:hover{
-                        color: rgba(0, 0, 0, 0.733);
-                    }
-                    i{
-                        font-size: 2.5em;
-                    }
-                }
-            }
-            &__seguridad{
-                grid-area: cinco;
-            }
-        }
-    }
-    /*FOOTER segundo*/
-    .footer__segundo{
-        @include flex(row,flex-start);
-        margin-top: 40px;
-        padding: 15px 30px;
-        background: $color-principalfooterSegundo;
-        a{
-            width: 50px;
-            margin-right: 20px;
-            height: auto;
-            img{
-                width: auto;
-                height: 70px;
-            }
-        }
-        p{
-            height: auto;
-        }
-
     }
 }
 
@@ -608,8 +246,7 @@ footer{
                     }
                 }
                 &__buscador{
-                    width: 45%;
-                    height: 40px;
+                    @include ancho_alto(45%, 2.5rem);
                     button{
                         margin: 0;
                         i{
@@ -625,7 +262,7 @@ footer{
             }
         }
         &__submenuPC{
-            top: 248px;
+            top: 15.5rem;
         }
     }
 
@@ -648,17 +285,22 @@ footer{
 
     /*MAIN SEGUNDO*/
     .main__segundo{
-        padding-top: 2rem;
+        padding-top: 1rem;
         img{
-            height: 100%;
+            height: 80%;
         }
     }
 
     /*MAIN TERCERO*/
     .main__tercero{
-        padding: 70px 0;
+        padding: 3.125rem 0;
         h2{
             font-size: 2.2rem;
+        }
+        p{
+            display: flex;
+            align-items: center;
+            height: 3.125rem;
         }
     }
 
@@ -673,13 +315,12 @@ footer{
             }
             p{
                 font-size: 1rem;
-                margin-bottom: 10px;
+                margin-bottom: 0.625;
                 text-align: center;
             }
             div{
                 .main__cuartoInput1{
-                    width: 50%;
-                    height: 35px;
+                    @include ancho_alto(50%, 2.188rem);
                     font-size: 1rem;
                 }
                 .main__cuartoInput2{
@@ -769,16 +410,15 @@ footer{
                 }
                 .header__menuEscondido{
                     background-color: rgb(223, 223, 223);
-                    left: -1000px;
+                    left: -62.5rem;
                     .header__tituloMenu{
                         background-color: $color-principalheader;
                         padding: 0 1rem;
                         padding-left: 0.8rem;
-                        border: solid black 1px;
+                        border: solid black 0.063rem;
                         div{
                             img{
-                                width: 100%;
-                                height: 90px;
+                                @include ancho_alto(100%, 5.625rem);
                             }
                         }
                     }
@@ -837,7 +477,7 @@ footer{
                     }
                 }
                 .offcanvas.show{
-                    transform: translateX(1000px);
+                    transform: translateX(62.5rem);
                 }
                 .header__logo{
                     width: 100%;
@@ -845,12 +485,11 @@ footer{
                     display: flex;
                     justify-content: center;
                     a{
-                        width: 203px;
-                        height: auto;
+                        @include ancho_alto(12.688rem, auto);
                         border: solid black;
                         img{
                             width: 100%;
-                            height: 90px;
+                            height: 5.625rem;
                         }
                     }
                 }
@@ -864,7 +503,7 @@ footer{
                     .header__iconosShop{
                         position: relative;
                         div{
-                            max-width: 370px;
+                            max-width: 23.125rem;
                             span{
                                 i{
                                     margin-right: 0.35rem;
@@ -872,7 +511,7 @@ footer{
                             }
                             div{
                                 p{
-                                    padding: 40px 1rem;
+                                    padding: 2.5rem 1rem;
                                     text-align: center;
                                 }
                             }
@@ -941,49 +580,44 @@ footer{
         }
         .main__primeroIndicador{
             button{
-                height: 9px;
-                width: 9px;
+                @include ancho_alto(0.563rem, 0.563rem);
             }
             .active{
-                height: 11px;
-            width: 11px;
+                @include ancho_alto(0.688rem, 0.688rem);
             }
         }
     }
 
     /*MAIN SEGUNDO*/
     .main__segundo{
-        padding-top: 2rem;
-    }
-    .main__segundo img{
-        height: 100%;
+        padding-top: 0.5rem;
+        img{
+            height: 100%;
+        }
     }
     /*MAIN TERCERO*/
     .main__tercero{
-        padding: 70px 0;
+        padding: 2.5rem 0;
+        padding-bottom: 0;
         background-color: $color-principalmain;
         .main__terceroPC, .main__terceroPhone{
             display: none;
         }
         .main__terceroTablet{
             display: block;
-            margin-bottom: 50px;
-            &:last-child{
-                margin-bottom: 0px;
-            }
+            padding-bottom: 2.5rem;
             h2{
                 font-size: 2rem;
                 margin-bottom: 2rem;
-                margin-left: 50px;
+                margin-left: 3.125rem;
                 font-family: 'Bebas Neue', cursive;
                 color: black;
             }
             #galeria__masVendidosTablet, #galeria__lanzamientosTablet{
                 background: $color-principalmain;
                 .carousel-item-next, .carousel-item-prev, .carousel-item.active{
-                    padding: 0 50px;
-                    width: 100%;
-                    height: auto;
+                    padding: 0 3.125rem;
+                    @include ancho_alto(100%,auto);
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -998,8 +632,8 @@ footer{
                             background: white;
                             height: auto;
                             width: 100%;
-                            border: 1px solid gray;
-                            padding: 10px 5px;
+                            border: 0.063rem solid gray;
+                            padding: 0.625rem 0.313rem;
                             margin-right: 1rem;
                             display: flex;
                             flex-direction: column;
@@ -1012,17 +646,20 @@ footer{
                                 width: 100%;
                                 img{
                                     width: 100%;
-                                    margin-bottom: 1rem;
+                                    margin-bottom: 0.5rem;
                                     height: auto;
                                 }
                                 p{
                                     color: $color-principalmainProductos;
+                                    display: flex;
+                                    align-items: center;
                                     font-size: 0.9rem;
+                                    height: 3.125rem;
+                                    text-align: center;
                                 }
                             }
                             h3{
                                 margin-bottom: 0;
-                                margin-top: 0.5rem;
                                 font-size: 1.2rem;
                                 font-weight: 600;
                             }
@@ -1116,6 +753,12 @@ footer{
                     display: flex;
                     flex-direction: column;
                     background-color: rgb(223, 223, 223);
+                    p, a{
+                        color: rgba(0, 0, 0, 0.637);
+                    }
+                    a:hover{
+                        color: black;
+                    }
                 }
                 .accordion-button:not(.collapsed){
                     background: black;
@@ -1156,8 +799,8 @@ footer{
             a{
                 button{
                     font-family: 'Comic Neue';
-                    border: solid 2px;
-                    padding: 8px 16px;
+                    border: solid 0.125rem;
+                    padding: 0.5rem 1rem;
                     border-color: black;
                     
                     background: black;
@@ -1178,12 +821,12 @@ footer{
             padding-left: 1rem;
             background: $color-principalfooterSegundo;
             a{
-                width: 50px;
+                width: 3.125rem;
                 margin-right: 1rem;
                 height: auto;
                 img{
                     width: auto;
-                    height: 70px;
+                    height: 4.375rem;
                 }
             }
             p{
@@ -1250,16 +893,16 @@ footer{
                 }
                 .header__menuEscondido{
                     background-color: rgb(223, 223, 223);
-                    left: -1000px;
+                    left: -62.5rem;
                     .header__tituloMenu{
                         background-color: $color-principalheader;
                         padding: 0 1rem;
                         padding-left: 0.8rem;
-                        border: solid black 1px;
+                        border: solid black 0.063rem;
                         div{
                             img{
                                 width: 100%;
-                                height: 90px;
+                                height: 5.625rem;
                             }
                         }
                     }
@@ -1318,7 +961,7 @@ footer{
                     }
                 }
                 .offcanvas.show{
-                    transform: translateX(1000px);
+                    transform: translateX(62.5rem);
                 }
                 .header__logo{
                     width: 100%;
@@ -1326,12 +969,12 @@ footer{
                     display: flex;
                     justify-content: center;
                     a{
-                        width: 160px;
+                        width: 10rem;
                         height: auto;
                         border: solid black;
                         img{
                             width: 100%;
-                            height: 70px;
+                            height: 4.375rem;
                         }
                     }
                 }
@@ -1345,7 +988,7 @@ footer{
                     .header__iconosShop{
                         position: relative;
                         div{
-                            max-width: 250px;
+                            max-width: 15.625rem;
                             span{
                                 i{
                                     margin-right: 0.2rem;
@@ -1353,7 +996,7 @@ footer{
                             }
                             div{
                                 p{
-                                    padding: 30px 1rem;
+                                    padding: 1.875rem 1rem;
                                     text-align: center;
                                 }
                             }
@@ -1422,12 +1065,12 @@ footer{
         }
         .main__primeroIndicador{
             button{
-                height: 7px;
-                width: 7px;
+                height: 0.438rem;
+                width: 0.438rem;
             }
             .active{
-                height: 9px;
-                width: 9px;
+                height: 0.563rem;
+                width: 0.563rem;
             }
         }
     }
@@ -1480,12 +1123,14 @@ footer{
                             background: white;
                             height: auto;
                             width: 100%;
-                            border: 1px solid gray;
-                            padding: 10px 5px;
+                            border: 0.063rem solid gray;
+                            padding: 0.313rem;
                             margin-right: 1rem;
                             display: flex;
                             flex-direction: column;
                             align-items: center;
+                            max-width: 10rem;
+                            max-height: 16.25rem;
                             a{
                                 position: relative;
                                 display: flex;
@@ -1494,17 +1139,20 @@ footer{
                                 width: 100%;
                                 img{
                                     width: 100%;
-                                    margin-bottom: 1rem;
+                                    margin-bottom: 0.5rem;
                                     height: auto;
                                 }
                                 p{
                                     color: $color-principalmainProductos;
                                     font-size: 0.8rem;
+                                    height: 2.5rem;
+                                    text-align: center;
+                                    display: flex;
+                                    align-items: center;
                                 }
                             }
                             h3{
                                 margin-bottom: 0;
-                                margin-top: 0.5rem;
                                 font-size: 1rem;
                                 font-weight: 600;
                             }
@@ -1542,18 +1190,18 @@ footer{
             h2{
                 font-size: 1rem;
                 text-align: center;
-                margin-bottom: 5px;
+                margin-bottom: 0.313rem;
             }
             p{
                 font-size: 0.8rem;
                 text-align: center;
-                margin-bottom: 5px;
+                margin-bottom: 0.313rem;
             }
             div{
                 .main__cuartoInput1{
                     width: 50%;
-                    height: 30px;
-                    padding-left: 5px;
+                    height: 1.875rem;
+                    padding-left: 0.313rem;
                     font-size: 0.9rem;
                 }
                 .main__cuartoInput2{
@@ -1590,7 +1238,7 @@ footer{
                     padding-left: 0;
                     margin-bottom: 0;
                     li{
-                        height: 2rem;
+                        height: 1.5rem;
                         a{
                             color: rgba(0, 0, 0, 0.637);
                             &:hover{
@@ -1603,6 +1251,12 @@ footer{
                     display: flex;
                     flex-direction: column;
                     background-color: rgb(223, 223, 223);
+                    p, a{
+                        color: rgba(0, 0, 0, 0.637);
+                    }
+                    a:hover{
+                        color: black;
+                    }
                 }
                 .accordion-button:not(.collapsed){
                     background: black;
@@ -1646,8 +1300,8 @@ footer{
             a{
                 button{
                     font-family: 'Comic Neue';
-                    border: solid 2px;
-                    padding: 8px 16px;
+                    border: solid 0.125rem;
+                    padding: 0.5rem 1rem;
                     border-color: black;
                     
                     background: black;
@@ -1668,12 +1322,12 @@ footer{
             padding-left: 1rem;
             background: $color-principalfooterSegundo;
             a{
-                width: 50px;
+                width: 3.125rem;
                 margin-right: 0.5rem;
                 height: auto;
                 img{
                     width: auto;
-                    height: 60px;
+                    height: 3.75rem;
                 }
             }
             p{

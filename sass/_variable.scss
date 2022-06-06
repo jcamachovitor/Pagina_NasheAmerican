@@ -12,6 +12,11 @@ $sizes:(h2:2.5rem, h3:1.2rem);
     }
 }
 
+@mixin ancho_alto($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
 @mixin flex($direction,$justify-content) {
     display: flex;
     flex-direction: $direction;
