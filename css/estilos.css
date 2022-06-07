@@ -1172,7 +1172,7 @@ body p {
     .main__cuarto .main__cuartoBoleto {
       width: 95%;
       background-size: auto;
-      padding: 2rem 0; }
+      padding: 2rem 0.5rem; }
       .main__cuarto .main__cuartoBoleto h2 {
         font-size: 1rem;
         text-align: center;
@@ -1187,7 +1187,7 @@ body p {
         padding-left: 0.313rem;
         font-size: 0.9rem; }
       .main__cuarto .main__cuartoBoleto div .main__cuartoInput2 {
-        width: 20%;
+        width: 30%;
         font-size: 0.6rem; }
   /*FOOTER*/
   footer {
