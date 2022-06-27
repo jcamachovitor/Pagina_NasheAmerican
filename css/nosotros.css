@@ -1,189 +1,118 @@
-.main__motivadora{
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dfdfdf; }
+  main .main__motivadora {
     width: 100%;
-    height: 40rem;
-}
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(223, 223, 223);
-}
-h1, h2{
+    height: 40rem; }
+  main section h1, main section h2 {
     margin-bottom: 1rem;
-}
-/**MAIN somos*/
-.main__somos{
+    font-weight: 700; }
+  main .main__somos {
     width: 70%;
-    padding: 160px 0;
-}
-.main__somos div p{
-    margin-bottom: 1rem;
-}
-.main__somos div p:last-child{
-    margin-bottom: 0;
-}
-
-/*MAIN equipo*/
-.main__info{
+    padding: 10rem 0; }
+    main .main__somos div p {
+      margin-bottom: 1rem; }
+      main .main__somos div p:last-child {
+        margin-bottom: 0; }
+  main .main__info {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 160px;
-}
-.main__info img{
-    width: 44%;
-}
-.main__info div{
-    width: 44%;
-}
+    margin-bottom: 10rem; }
+    main .main__info img, main .main__info div {
+      width: 44%; }
 
-
-@media (max-width:1000px) and (min-width:721px){
-
-    h1{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    h2{
-        font-size: 1.3rem;
-    }
-    main{
-        padding: 0 ;
-    }
-    main p{
-        font-size: 0.8rem;
-    }
-    
-    .main__motivadora{
-        height: 25rem;
-    }
-    /*MAIN SOMOS*/
-    .main__somos{
-        padding: 6rem 0rem;
-        width: 80%;
-    }
-
-
-    /*MAIN INFO*/
-    .main__info{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 6rem;
-        padding: 0 6rem;
-    }
-    .main__info img{
+@media (max-width: 1000px) and (min-width: 721px) {
+  main {
+    padding: 0; }
+    main .main__motivadora {
+      height: 25rem; }
+    main section h1 {
+      font-size: 1.5rem;
+      text-align: center; }
+    main section h2 {
+      font-size: 1.3rem; }
+    main section div p {
+      font-size: 0.8rem; }
+    main .main__somos {
+      padding: 6rem 0rem;
+      width: 80%; }
+    main .main__info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 6rem;
+      padding: 0 6rem; }
+      main .main__info img {
         width: 100%;
         height: 20rem;
-        margin-bottom: 1rem;
-    }
-    .main__info div{
-        width: 100%;
-    }
+        margin-bottom: 1rem; }
+      main .main__info div {
+        width: 100%; }
+    main .main__infoDestacado {
+      display: flex;
+      flex-direction: column-reverse; } }
 
-    /*DESTACADO*/
-    .main__infoDestacado{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
-
-@media (max-width:720px) and (min-width:541px){
-    
-
-    /*MAIN INFO*/
-    h1{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    h2{
-        font-size: 1.3rem;
-    }
-    main{
-        padding: 0 ;
-    }
-    main p{
-        font-size: 0.8rem;
-    }
-    
-    .main__motivadora{
-        height: 18rem;
-    }
-    /*MAIN SOMOS*/
-    .main__somos{
-        padding: 3rem 2rem;
-        width: auto;
-    }
-
-
-    /*MAIN INFO*/
-    .main__info{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 3rem;
-        padding: 0 3rem;
-    }
-    .main__info img{
+@media (max-width: 720px) and (min-width: 541px) {
+  /*MAIN INFO*/
+  main {
+    padding: 0; }
+    main section h1 {
+      font-size: 1.5rem;
+      text-align: center; }
+    main section h2 {
+      font-size: 1.3rem; }
+    main section div p {
+      font-size: 0.8rem; }
+    main .main__motivadora {
+      height: 18rem; }
+    main .main__somos {
+      padding: 3rem 2rem;
+      width: auto; }
+    main .main__info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      padding: 0 3rem; }
+      main .main__info img {
         width: 100%;
         height: 15rem;
-        margin-bottom: 1rem;
-    }
-    .main__info div{
-        width: 100%;
-    }
+        margin-bottom: 1rem; }
+      main .main__info div {
+        width: 100%; }
+    main .main__infoDestacado {
+      display: flex;
+      flex-direction: column-reverse; } }
 
-    /*DESTACADO*/
-    .main__infoDestacado{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
-
-@media (max-width:540px) and (min-width:320px){
-    h1{
-        font-size: 1.7rem;
-        text-align: center;
-    }
-    h2{
-        font-size: 1.5rem;
-    }
-    main{
-        padding: 0 ;
-    }
-    main p{
-        font-size: 0.8rem;
-    }
-    
-    .main__motivadora{
-        height: 18rem;
-    }
-    /*MAIN SOMOS*/
-    .main__somos{
-        padding: 3rem 1rem;
-        width: auto;
-    }
-
-    
-
-    /*MAIN INFO*/
-    .main__info{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 3rem;
-        padding: 0 1rem;
-    }
-    .main__info img{
+@media (max-width: 540px) and (min-width: 320px) {
+  main {
+    padding: 0; }
+    main h1 {
+      font-size: 1.7rem;
+      text-align: center;
+      font-weight: 600; }
+    main h2 {
+      font-size: 1.5rem; }
+    main section p {
+      font-size: 0.8rem; }
+    main .main__motivadora {
+      height: 18rem; }
+    main .main__somos {
+      padding: 3rem 1rem;
+      width: auto; }
+    main .main__info {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 3rem;
+      padding: 0 1rem; }
+      main .main__info img {
         width: 100%;
         height: 15rem;
-        margin-bottom: 1rem;
-    }
-    .main__info div{
-        width: 100%;
-    }
-
-    /*DESTACADO*/
-    .main__infoDestacado{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-}
+        margin-bottom: 1rem; }
+      main .main__info div {
+        width: 100%; }
+    main .main__infoDestacado {
+      display: flex;
+      flex-direction: column-reverse; } }

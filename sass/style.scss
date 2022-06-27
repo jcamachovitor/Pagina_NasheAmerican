@@ -235,11 +235,11 @@ body{
             padding: 1.5rem 1rem;
             .header{
                 &__logo{
-                    width: 209px;
+                    width: 13.063rem;
                     margin-right: 0.5rem;
                     a{
                         img{
-                            height: 100px;
+                            height: 6.25rem;
                         }
                     }
                 }
@@ -339,18 +339,15 @@ body{
 
     .footer__pc{
         .footer__primero{
-            display: grid;
             padding: 0 1rem;
             grid-template-areas: "uno dos tres"
                                 "cinco nada cuatro";
             grid-template-columns: 31% 31% 37%;
             .footer{
                 &__redes{
-                    grid-area: cuatro;
                     margin-top: 1rem;
                 }
                 &__seguridad{
-                    grid-area: cinco;
                     margin-top: 1rem;
                 }
             }

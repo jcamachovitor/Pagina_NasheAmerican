@@ -1,23 +1,23 @@
 main {
-  padding: 60px 35px;
+  padding: 3.75rem 2.188rem;
   background-color: #dfdfdf; }
   main .main__ubicacion {
     display: flex;
     flex-direction: row;
-    margin-bottom: 50px; }
+    margin-bottom: 3.125rem; }
   main .main__tienda {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
     main .main__tienda .main__tiendaBloqueP {
-      width: 230px; }
+      width: 14.375rem; }
       main .main__tienda .main__tiendaBloqueP select {
         width: 75%;
-        padding: 5px;
-        font-size: 15px;
-        margin-bottom: 20px; }
+        padding: 0.313rem;
+        font-size: 0.938rem;
+        margin-bottom: 1.25rem; }
       main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda {
-        margin-bottom: 15px; }
+        margin-bottom: 0.938rem; }
         main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda h2 {
           font-size: 1.5rem;
           font-family: 'Roboto Slab', serif;
@@ -28,16 +28,16 @@ main {
           overflow-y: scroll;
           padding: 1rem;
           padding-left: 0;
-          border-bottom: 1px solid rgba(0, 0, 0, 0.384);
-          height: 200px; }
+          border-bottom: 0.063rem solid rgba(0, 0, 0, 0.384);
+          height: 12.5rem; }
           main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div {
-            margin-bottom: 10px; }
+            margin-bottom: 0.625rem; }
             main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div input {
-              width: 20px;
-              height: 20px; }
+              width: 1.25rem;
+              height: 1.25rem; }
             main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div label {
-              margin-left: 5px;
-              font-size: 20px; }
+              margin-left: 0.313rem;
+              font-size: 1.25rem; }
     main .main__tienda .main__tiendaBloqueS {
       width: 75%;
       display: flex;
@@ -49,14 +49,14 @@ main {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        padding-bottom: 20px;
-        border-bottom: solid #a1a1a1 1px;
+        padding-bottom: 1.25rem;
+        border-bottom: solid #a1a1a1 0.063rem;
         width: 100%; }
         main .main__tienda .main__tiendaBloqueS .main__tiendaResultado p:last-child {
           opacity: .65;
-          margin-left: 5px; }
+          margin-left: 0.313rem; }
       main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
-        padding-top: 30px;
+        padding-top: 1.875rem;
         background-color: white;
         display: grid;
         grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve" "diez once doce";
@@ -71,10 +71,10 @@ main {
             display: flex;
             flex-direction: column;
             align-items: center;
-            padding-bottom: 5px; }
+            padding-bottom: 0.313rem; }
             main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a img {
               width: 100%;
-              margin-bottom: 15px; }
+              margin-bottom: 0.938rem; }
             main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
               text-align: center; }
           main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
@@ -108,15 +108,15 @@ main {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        padding-top: 15px; }
+        padding-top: 0.938rem; }
         main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas span a, main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas span p {
-          font-size: 20px; }
+          font-size: 1.25rem; }
         main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginasNumero {
           margin: 0 1rem; }
         main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginaActual a {
-          padding: 5px;
+          padding: 0.313rem;
           background: none;
-          border: solid black 1px;
+          border: solid black 0.063rem;
           border-radius: 50%; }
           main .main__tienda .main__tiendaBloqueS .main__tiendaPaginas .main__tiendaPaginaActual a:hover {
             font-weight: 700; }
@@ -127,11 +127,11 @@ main {
     main .main__ubicacion {
       margin-left: 1rem; }
     main .main__tienda .main__tiendaBloqueP {
-      width: 250px;
-      margin-right: 5px;
+      width: 15.625rem;
+      margin-right: 0.313rem;
       margin-left: 1rem; }
       main .main__tienda .main__tiendaBloqueP select {
-        width: 165px;
+        width: 10.313rem;
         margin-bottom: 0; }
       main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda {
         padding-top: 1rem;
@@ -139,7 +139,7 @@ main {
         main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda h2 {
           font-size: 1.2rem; }
         main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion {
-          height: 150px; }
+          height: 9.375rem; }
           main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div {
             margin-bottom: 0.5rem; }
             main .main__tienda .main__tiendaBloqueP .main__tiendaBusqueda .main__tiendaSeleccion div label {
@@ -151,10 +151,7 @@ main {
         padding-bottom: 0.5rem; }
       main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
         padding-top: 1rem;
-        background-color: white;
-        display: grid;
-        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve"  "diez once doce";
-        justify-items: center; }
+        background-color: white; }
         main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
           margin-bottom: 2rem;
           width: 75%;
@@ -203,7 +200,7 @@ main {
             height: auto; }
             main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn {
               width: 100%;
-              padding: 8px 0;
+              padding: 0.5rem 0;
               display: flex;
               justify-content: center;
               background: black; }
@@ -213,7 +210,7 @@ main {
                 color: white; }
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover {
                 background: yellow;
-                border: 1px solid black; }
+                border: 0.063rem solid black; }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover p {
                   color: black; }
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:focus {
@@ -227,14 +224,14 @@ main {
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo {
                 padding-left: 0;
                 background-color: black;
-                border: 2px solid yellow;
+                border: 0.125rem solid yellow;
                 padding: 0;
                 padding-right: 1rem; }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div {
                   border: 1px solid black;
                   background: yellow; }
                   main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div img {
-                    width: 250px; }
+                    width: 15.625rem; }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo button {
                   opacity: 100%;
                   filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
@@ -265,9 +262,9 @@ main {
                     main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__seleccionScroll div div .accordion-body div {
                       width: 50%; }
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo {
-                padding: 48px 0;
+                padding: 3rem 0;
                 background: rgba(255, 255, 255, 0.678);
-                box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.219), 0 3px 14px 2px rgba(0, 0, 0, 0.219), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+                box-shadow: 0 0.625rem 0px 0px rgba(0, 0, 0, 0.219), 0 0.188rem 0.875rem 0.125rem rgba(0, 0, 0, 0.219), 0 0.313rem 0.313rem -0.188rem rgba(0, 0, 0, 0.2); }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div {
                   display: flex;
                   flex-direction: row;
@@ -277,12 +274,12 @@ main {
                   width: 100%;
                   padding: 1.5rem 0; }
                   main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer {
-                    padding: 8px 0;
+                    padding: 0.5rem 0;
                     width: 11.25rem;
                     border: none;
                     color: black;
                     background-color: yellow;
-                    border-radius: 3px; }
+                    border-radius: 0.188rem; }
                     main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer:hover {
                       opacity: .75; }
                   main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__aplicar {
@@ -295,22 +292,16 @@ main {
                       color: white;
                       font-size: 1rem;
                       width: 100%;
-                      padding: 5px;
+                      padding: 0.313rem;
                       height: 100%; }
-      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
-        padding-top: 30px;
-        background-color: white;
-        display: grid;
-        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve"  "diez once doce";
-        justify-items: center; }
-        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
-          margin-bottom: 2rem;
-          width: 75%;
-          justify-content: center; }
-          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
-            font-size: 0.8rem; }
-          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
-            font-size: 1.1rem; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
+        margin-bottom: 2rem;
+        width: 75%;
+        justify-content: center; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
+          font-size: 0.8rem; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
+          font-size: 1.1rem; }
       main .main__tienda .main__tiendaBloqueS .main__paginas {
         justify-content: center;
         align-items: center;
@@ -326,9 +317,9 @@ main {
             font-size: 1.2rem; }
         main .main__tienda .main__tiendaBloqueS .main__paginas button {
           margin: 0 1.5rem;
-          padding: 5px;
+          padding: 0.313rem;
           background: none;
-          border: solid black 1px;
+          border: solid black 0.063rem;
           border-radius: 50%;
           background: yellow; }
           main .main__tienda .main__tiendaBloqueS .main__paginas button a {
@@ -384,7 +375,7 @@ main {
                 color: white; }
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover {
                 background: yellow;
-                border: 1px solid black; }
+                border: 0.063rem solid black; }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:hover p {
                   color: black; }
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .filtro__buttonIn:focus {
@@ -398,14 +389,14 @@ main {
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo {
                 padding-left: 0;
                 background-color: black;
-                border: 2px solid yellow;
+                border: 0.125rem solid yellow;
                 padding: 0;
                 padding-right: 1rem; }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div {
-                  border: 1px solid black;
+                  border: 0.063rem solid black;
                   background: yellow; }
                   main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo div img {
-                    width: 200px; }
+                    width: 12.5rem; }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuTitulo button {
                   opacity: 100%;
                   filter: invert(100%) sepia(46%) saturate(0%) hue-rotate(131deg) brightness(109%) contrast(101%); }
@@ -441,7 +432,7 @@ main {
               main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo {
                 padding: 2.5rem 0;
                 background: rgba(255, 255, 255, 0.678);
-                box-shadow: 0 10px 0px 0px rgba(0, 0, 0, 0.219), 0 3px 14px 2px rgba(0, 0, 0, 0.219), 0 5px 5px -3px rgba(0, 0, 0, 0.2); }
+                box-shadow: 0 0.625rem 0px 0px rgba(0, 0, 0, 0.219), 0 0.188rem 0.875rem 0.125rem rgba(0, 0, 0, 0.219), 0 0.313rem 0.313rem -0.188rem rgba(0, 0, 0, 0.2); }
                 main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div {
                   display: flex;
                   flex-direction: row;
@@ -456,7 +447,7 @@ main {
                     border: none;
                     color: black;
                     background-color: yellow;
-                    border-radius: 3px; }
+                    border-radius: 0.188rem; }
                     main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__restablecer:hover {
                       opacity: .75; }
                   main .main__tienda .main__tiendaBloqueS .main__filtros .filtro__button .header__menu .main__filtroEscondido .filtro__menuAbajo div .filtro__aplicar {
@@ -470,21 +461,15 @@ main {
                       color: white;
                       font-size: 1rem;
                       width: 100%;
-                      padding: 5px; }
-      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa {
-        padding-top: 30px;
-        background-color: white;
-        display: grid;
-        grid-template-areas: "uno dos tres" "cuatro cinco seis" "siete ocho nueve"  "diez once doce";
-        justify-items: center; }
-        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
-          margin-bottom: 2rem;
-          width: 75%;
-          justify-content: center; }
-          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
-            font-size: 0.8rem; }
-          main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
-            font-size: 1.1rem; }
+                      padding: 0.313rem; }
+      main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div {
+        margin-bottom: 2rem;
+        width: 75%;
+        justify-content: center; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div a p {
+          font-size: 0.8rem; }
+        main .main__tienda .main__tiendaBloqueS .main__tiendaRopa div h2 {
+          font-size: 1.1rem; }
       main .main__tienda .main__tiendaBloqueS .main__paginas {
         justify-content: center;
         align-items: center;
@@ -498,9 +483,9 @@ main {
             font-size: 1.1rem; }
         main .main__tienda .main__tiendaBloqueS .main__paginas button {
           margin: 0 1.5rem;
-          padding: 5px;
+          padding: 0.313rem;
           background: none;
-          border: solid black 1px;
+          border: solid black 0.063rem;
           border-radius: 50%;
           background: yellow; }
           main .main__tienda .main__tiendaBloqueS .main__paginas button a {
