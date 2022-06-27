@@ -1,15 +1,15 @@
 # Pagina_NasheAmerican
 
-##Proyecto Final de Desarollo Web de Coder House
+## Proyecto Final de Desarollo Web de Coder House
 Sobre una tienda de ropa online
 
-##Herramientas que utilice
+## Herramientas que utilice
 HTML
 CSS
 SASS
 BOOTSTRAP
 NODE
 
-##Review
+## Review
 [img](recursos/review.jpg)
 
